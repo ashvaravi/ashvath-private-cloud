@@ -1,0 +1,55 @@
+{
+  "data": {
+    "current_backend_version": "1.0.0",
+    "current_mac_role": "Provide safe structured exports and execute approved backend/script actions only.",
+    "current_safe_service_summary": {
+      "backend": {
+        "health": "reachable",
+        "port": 8000,
+        "reachable": true,
+        "service_name": "Vetri backend"
+      },
+      "backup_metadata_count": 12,
+      "frontend": {
+        "health": "reachable",
+        "port": 5173,
+        "reachable": true,
+        "service_name": "Vetri frontend"
+      },
+      "homeassistant": {
+        "health": "reachable",
+        "port": 8123,
+        "reachable": true,
+        "service_name": "Home Assistant"
+      }
+    },
+    "current_windows_role": "Reasoning, companion chat, voice responses, memory, RAG, proactive checks, and OpenAI orchestration.",
+    "do_not_violate_rules_summary": [
+      "Do not expose credentials.",
+      "Do not export raw logs, media, database dumps, or SSH identity material.",
+      "Do not call Home Assistant directly from Windows.",
+      "Do not execute actions from exports."
+    ],
+    "known_limitations": [
+      "Mac does not run the AI brain.",
+      "Mac does not run local LLM, embeddings, vector database, or heavy AI processing.",
+      "Mac exports summaries, not raw private data."
+    ],
+    "locked_architecture_summary": {
+      "backend": "primary_control_gateway",
+      "homeassistant": "controlled_through_backend",
+      "mac": "execution_server",
+      "ssh": "emergency_fallback_only",
+      "windows": "vetri_ai_brain"
+    },
+    "project_name": "Ashvath Private Cloud + Vetri AI",
+    "safe_next_step": "Use this context for friendly answers and route any real action request through the Mac backend safety layer."
+  },
+  "errors": [],
+  "generated_at": "2026-05-14T23:50:09+05:30",
+  "ok": true,
+  "source": "vetri-mac-export",
+  "spoken_summary": "Vetri is connected to the Mac execution server. The Mac provides safe status only; Windows remains the AI brain.",
+  "summary": "Safe companion context for Windows Vetri AI conversation and voice responses.",
+  "warnings": []
+}

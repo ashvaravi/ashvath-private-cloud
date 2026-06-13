@@ -1,0 +1,199 @@
+{
+  "data": {
+    "backend_protected_status": {
+      "backups_summary": {
+        "auth_required": true,
+        "reachable": true,
+        "status": 401
+      },
+      "dashboard_summary": {
+        "auth_required": true,
+        "reachable": true,
+        "status": 401
+      },
+      "home_status": {
+        "auth_required": true,
+        "reachable": true,
+        "status": 401
+      },
+      "network_status": {
+        "auth_required": true,
+        "reachable": true,
+        "status": 401
+      },
+      "storage_status": {
+        "auth_required": true,
+        "reachable": true,
+        "status": 401
+      }
+    },
+    "backend_reachable": true,
+    "docker_availability": {
+      "available": false,
+      "container_count": 0
+    },
+    "frontend_reachable": true,
+    "homeassistant_reachable": true,
+    "known_port_status": {
+      "homeassistant": {
+        "health": "reachable",
+        "port": 8123,
+        "reachable": true,
+        "service_name": "Home Assistant"
+      },
+      "immich": {
+        "health": "unknown",
+        "port": 2283,
+        "reachable": true,
+        "service_name": "Immich"
+      },
+      "netdata": {
+        "health": "unknown",
+        "port": 19999,
+        "reachable": true,
+        "service_name": "Netdata"
+      },
+      "portainer": {
+        "health": "unknown",
+        "port": 9443,
+        "reachable": true,
+        "service_name": "Portainer"
+      },
+      "uptime_kuma": {
+        "health": "unknown",
+        "port": 3001,
+        "reachable": true,
+        "service_name": "Uptime Kuma"
+      },
+      "vetri_backend": {
+        "health": "reachable",
+        "port": 8000,
+        "reachable": true,
+        "service_name": "Vetri backend"
+      },
+      "vetri_frontend": {
+        "health": "reachable",
+        "port": 5173,
+        "reachable": true,
+        "service_name": "Vetri frontend"
+      }
+    },
+    "launch_agent_presence": {
+      "com.ashvath.vetri-backend.plist": true,
+      "com.ashvath.vetri-frontend.plist": true
+    },
+    "recent_backup_file_metadata": [
+      {
+        "group": "immich",
+        "modified_at": "2026-05-14T21:39:04+05:30",
+        "name": "immich-control-2026-05-14_21-39-04.tar.gz",
+        "size_bytes": 2191
+      },
+      {
+        "group": "uptime-kuma",
+        "modified_at": "2026-05-14T17:16:59+05:30",
+        "name": "uptime-kuma-2026-05-14_17-16-56.tar.gz",
+        "size_bytes": 313
+      },
+      {
+        "group": "portainer",
+        "modified_at": "2026-05-14T17:16:58+05:30",
+        "name": "portainer-2026-05-14_17-16-56.tar.gz",
+        "size_bytes": 42776
+      },
+      {
+        "group": "homeassistant",
+        "modified_at": "2026-05-14T17:16:56+05:30",
+        "name": "homeassistant-2026-05-14_17-16-56.tar.gz",
+        "size_bytes": 157717
+      },
+      {
+        "group": "immich",
+        "modified_at": "2026-05-14T17:16:56+05:30",
+        "name": "immich-control-2026-05-14_17-16-56.tar.gz",
+        "size_bytes": 2191
+      },
+      {
+        "group": "immich",
+        "modified_at": "2026-05-14T15:39:04+05:30",
+        "name": "immich-control-2026-05-14_15-39-04.tar.gz",
+        "size_bytes": 2191
+      },
+      {
+        "group": "immich",
+        "modified_at": "2026-05-13T04:40:44+05:30",
+        "name": "immich-control-2026-05-13_04-40-43.tar.gz",
+        "size_bytes": 2191
+      },
+      {
+        "group": "immich",
+        "modified_at": "2026-05-12T22:40:43+05:30",
+        "name": "immich-control-2026-05-12_22-40-43.tar.gz",
+        "size_bytes": 2191
+      },
+      {
+        "group": "immich",
+        "modified_at": "2026-05-12T16:40:42+05:30",
+        "name": "immich-control-2026-05-12_16-40-42.tar.gz",
+        "size_bytes": 2191
+      },
+      {
+        "group": "immich",
+        "modified_at": "2026-05-12T10:40:42+05:30",
+        "name": "immich-control-2026-05-12_10-40-42.tar.gz",
+        "size_bytes": 2191
+      },
+      {
+        "group": "immich",
+        "modified_at": "2026-05-12T04:40:42+05:30",
+        "name": "immich-control-2026-05-12_04-40-41.tar.gz",
+        "size_bytes": 2191
+      },
+      {
+        "group": "immich",
+        "modified_at": "2026-05-11T22:40:41+05:30",
+        "name": "immich-control-2026-05-11_22-40-41.tar.gz",
+        "size_bytes": 2191
+      }
+    ],
+    "safe_next_step": "Use Windows monitoring rules to evaluate these read-only facts. Execute changes only through approved Mac backend APIs or approved scripts.",
+    "script_presence": {
+      "backup-four-services.sh": true,
+      "backup-immich-db.sh": true,
+      "cloudctl.sh": true,
+      "emergency-restart.sh": true,
+      "export-vetri-logs.sh": true,
+      "export-vetri-snapshot.sh": true,
+      "export-vetri-summary.sh": true,
+      "export-vetri-v4-context.sh": true,
+      "remote-health-check.sh": true,
+      "smoke-test-vetri-backend.sh": false,
+      "smoke-test-vetri-frontend.sh": true,
+      "test-vetri-backend.sh": true,
+      "validate-vetri-ai-exports.sh": true,
+      "vetri-restart.sh": true,
+      "vetri-start.sh": true,
+      "vetri-status.sh": true,
+      "vetri-stop.sh": true,
+      "view-logs.sh": true
+    },
+    "ssd_df_summary": {
+      "available": true,
+      "text": "Filesystem     Size   Used  Avail Capacity iused      ifree %iused  Mounted on\n/dev/disk4s1  931Gi   62Gi  869Gi     7%   50869 9110943640    0%   /Volumes/AshvathCloud"
+    },
+    "ssd_mount_status": {
+      "mounted": true,
+      "path": "/Volumes/AshvathCloud"
+    },
+    "status": "ready"
+  },
+  "errors": [],
+  "generated_at": "2026-05-14T23:50:09+05:30",
+  "ok": true,
+  "source": "vetri-mac-export",
+  "spoken_summary": "Monitoring inputs are ready. Backend, frontend, storage, backups, Home Assistant, scripts, and ports were summarized safely.",
+  "summary": "Safe monitoring inputs generated for Windows Vetri AI rules.",
+  "warnings": [
+    "backend_smoke_equivalent_is_test_vetri_backend"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "project_name": "Ashvath Private Cloud + Vetri AI",
+  "windows_project_root": "Z:\\HomeLLM",
+  "windows_voice_folder": "Z:\\HomeLLM\\voice",
+  "mac_ssh_alias": "vetri-mac",
+  "mac_private_cloud_root": "~/Ashvath-private-cloud",
+  "mac_backend_root": "~/Ashvath-private-cloud/application/backend",
+  "active_voice_mode": "terminal_only_openwakeword",
+  "current_wake_phrase": "hey jarvis",
+  "future_wake_phrase_plan": "Train Hey Vetri custom openWakeWord model later using Colab",
+  "abandoned_paths": [
+    "voice_station.py",
+    "browser voice dashboard",
+    "frontend voice station approach"
+  ],
+  "core_architecture": [
+    "Windows runs local wake-word engine and Vetri AI brain",
+    "Windows uses OpenAI STT only after wake word",
+    "Windows routes safe commands to local modules",
+    "Home Assistant control must go through Mac Vetri backend",
+    "Windows must never directly call Home Assistant",
+    "Home Assistant token stays only on Mac backend",
+    "Mac backend verifies Home Assistant final state",
+    "Spotify is controlled through Spotify Web API from Windows",
+    "Local Windows TTS speaks command summaries",
+    "Mac exports sanitized operational truth for Windows AI memory/RAG"
+  ],
+  "mac_services": {
+    "vetri_backend": {
+      "status": "version 1.0.0 locked and healthy",
+      "root": "~/Ashvath-private-cloud/application/backend",
+      "port": 8000,
+      "role": "Unified backend for private cloud control, Home Assistant gateway, diagnostics, backup visibility, network status, and dashboard summary"
+    },
+    "immich": {"role": "Private photo/video backup service", "port": 2283},
+    "home_assistant": {"role": "IoT/home automation platform", "port": 8123},
+    "frontend": {"role": "Vetri frontend dashboard", "port": 5173},
+    "uptime_kuma": {"role": "Service monitoring and alerts"},
+    "tailscale": {"role": "Private VPN access between Windows, phone, and Mac server"}
+  },
+  "home_assistant_entities": [
+    "switch.ashvas_bedroom_strip_light",
+    "switch.ashvas_bedroom_light_1",
+    "switch.ashvas_bedroom_light_2",
+    "switch.ashvas_bedroom_fan"
+  ],
+  "home_assistant_groups": {
+    "bedroom_lights": [
+      "switch.ashvas_bedroom_light_1",
+      "switch.ashvas_bedroom_light_2",
+      "switch.ashvas_bedroom_strip_light"
+    ],
+    "bedroom_all": [
+      "switch.ashvas_bedroom_light_1",
+      "switch.ashvas_bedroom_light_2",
+      "switch.ashvas_bedroom_strip_light",
+      "switch.ashvas_bedroom_fan"
+    ]
+  },
+  "backend_endpoints": {
+    "home_control_verified": "POST /api/v1/home/control/verified",
+    "home_group_control_verified": "POST /api/v1/home/control/group/verified",
+    "network_status": "/api/v1/network/status",
+    "dashboard_summary": "/api/v1/dashboard/summary",
+    "export_contract": "~/Ashvath-private-cloud/exports/for-vetri-ai"
+  },
+  "voice_files": {
+    "wake_loop": "Z:\\HomeLLM\\voice\\terminal_openwakeword.py",
+    "wake_config": "Z:\\HomeLLM\\voice\\terminal_openwakeword_config.json",
+    "spotify_control": "Z:\\HomeLLM\\voice\\spotify_control.py",
+    "home_assistant_control": "Z:\\HomeLLM\\voice\\home_assistant_control.py",
+    "home_assistant_read": "Z:\\HomeLLM\\voice\\home_assistant_read.py",
+    "tts": "Z:\\HomeLLM\\voice\\vetri_tts.py",
+    "voice_cli": "Z:\\HomeLLM\\voice\\voice_cli.py"
+  },
+  "completed_checkpoints": [
+    "Mac backend version 1.0.0 locked and healthy",
+    "Backend/frontend/private cloud foundation completed",
+    "Home Assistant backend gateway working",
+    "V1A.4 wake-word stability test passed",
+    "V1C local Windows TTS passed",
+    "V2C Spotify voice routing passed",
+    "Spotify memory/regional search work started",
+    "Mac safe export layer completed and validated",
+    "Mac export summary validation passed",
+    "Mac backend equivalent smoke test passed with 19 passed and 0 failed",
+    "Mac frontend smoke test passed with 26 passed and 0 failed"
+  ],
+  "mac_export_files": [
+    "latest_status_snapshot.json",
+    "latest_backup_summary.json",
+    "latest_dashboard_summary.json",
+    "latest_backend_health.json",
+    "latest_homeassistant_summary.json",
+    "latest_network_summary.json",
+    "latest_service_summary.json",
+    "sanitized_events.jsonl",
+    "export_manifest.json"
+  ],
+  "safety_rules": [
+    "Do not execute arbitrary shell commands from chat brain",
+    "Do not directly call Home Assistant from Windows",
+    "Do not modify backend core unless explicitly requested",
+    "Do not reintroduce voice_station.py",
+    "Do not change wake phrase yet",
+    "Do not auto-create Home Assistant routines",
+    "Home control requires backend verification",
+    "High-risk operations require explicit confirmation",
+    "OpenAI receives only sanitized context packets",
+    "Mac exports are the operational truth source for Windows AI memory/RAG"
+  ]
+}

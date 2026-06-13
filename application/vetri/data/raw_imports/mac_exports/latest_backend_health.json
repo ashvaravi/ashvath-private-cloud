@@ -1,0 +1,47 @@
+{
+  "data": {
+    "backend_public_root": {
+      "auth_required": false,
+      "data": {
+        "app": "Vetri Unified Backend",
+        "message": "Use /api/v1/system/*, /api/v1/storage/*, /api/v1/docker/*, /api/v1/services/*, /api/v1/backups/*, /api/v1/audit/*, /api/v1/home/*, /api/v1/actions/*, /api/v1/dashboard/*, and /api/v1/network/* endpoints",
+        "status": "running",
+        "version": "1.0.0"
+      },
+      "reachable": true,
+      "status": 200
+    },
+    "backend_root_exists": true,
+    "launch_agents": {
+      "com.ashvath.vetri-backend.plist": true,
+      "com.ashvath.vetri-frontend.plist": true
+    },
+    "protected_endpoint_behavior": {
+      "backups_summary": "auth_required",
+      "dashboard_summary": "auth_required",
+      "network_status": "auth_required",
+      "storage_status": "auth_required"
+    },
+    "scripts": {
+      "backup-four-services.sh": true,
+      "backup-immich-db.sh": true,
+      "cloudctl.sh": true,
+      "emergency-restart.sh": true,
+      "remote-health-check.sh": true,
+      "smoke-test-vetri-backend.sh": false,
+      "smoke-test-vetri-frontend.sh": true,
+      "test-vetri-backend.sh": true,
+      "vetri-restart.sh": true,
+      "vetri-start.sh": true,
+      "vetri-status.sh": true,
+      "vetri-stop.sh": true,
+      "view-logs.sh": true
+    }
+  },
+  "errors": [],
+  "generated_at": "2026-05-14T23:50:09+05:30",
+  "ok": true,
+  "source": "vetri-mac-export",
+  "summary": "Backend root checked without exporting credentials.",
+  "warnings": []
+}

@@ -1,0 +1,267 @@
+{
+  "project_root": "Z:\\HomeLLM",
+  "vetri_module": "vetri_ai.main",
+  "python_command": "python",
+  "record_seconds": 5,
+  "sample_rate": 16000,
+  "speech_to_text_model": "gpt-4o-mini-transcribe",
+  "text_to_speech_model": "gpt-4o-mini-tts",
+  "tts_voice": "coral",
+  "speak_responses": true,
+  "print_full_output": true,
+  "max_spoken_chars": 450,
+  "minimum_match_score": 55,
+
+  "local_voice_commands": {
+    "repeat last response": [
+      "repeat",
+      "repeat last",
+      "repeat last response",
+      "say that again",
+      "can you repeat",
+      "repeat what you said"
+    ],
+    "mute voice": [
+      "mute",
+      "mute voice",
+      "stop speaking",
+      "turn off voice",
+      "silent mode"
+    ],
+    "unmute voice": [
+      "unmute",
+      "unmute voice",
+      "start speaking",
+      "turn on voice",
+      "voice on"
+    ],
+    "show logs": [
+      "logs",
+      "show logs",
+      "show history",
+      "voice history",
+      "show recent logs"
+    ]
+  },
+
+  "local_command_policy": {
+    "repeat last response": {
+      "enabled": true,
+      "risk": "local",
+      "requires_confirmation": false,
+      "description": "Repeats the most recent spoken summary."
+    },
+    "mute voice": {
+      "enabled": true,
+      "risk": "local",
+      "requires_confirmation": false,
+      "description": "Mutes voice playback while keeping terminal output active."
+    },
+    "unmute voice": {
+      "enabled": true,
+      "risk": "local",
+      "requires_confirmation": false,
+      "description": "Restores voice playback."
+    },
+    "show logs": {
+      "enabled": true,
+      "risk": "local",
+      "requires_confirmation": false,
+      "description": "Displays recent voice session logs."
+    }
+  },
+
+  "allowed_commands": {
+    "diagnose immich": [
+      "diagnose immich",
+      "check immich",
+      "immich status",
+      "is immich okay",
+      "is immich healthy",
+      "why is immich slow",
+      "diagnose image",
+      "diagnose images",
+      "diagnose imich",
+      "diagnose emmich",
+      "check image",
+      "check images"
+    ],
+    "diagnose backup": [
+      "diagnose backup",
+      "check backup",
+      "backup status",
+      "are backups okay",
+      "are my backups okay",
+      "is backup healthy"
+    ],
+    "diagnose storage": [
+      "diagnose storage",
+      "check storage",
+      "storage status",
+      "ssd status",
+      "is storage okay",
+      "is my ssd okay"
+    ],
+    "diagnose network": [
+      "diagnose network",
+      "check network",
+      "network status",
+      "tailscale status",
+      "is network okay",
+      "is tailscale okay"
+    ],
+    "diagnose backend": [
+      "diagnose backend",
+      "check backend",
+      "backend status",
+      "is backend healthy",
+      "is my backend okay",
+      "check back end",
+      "diagnose back end"
+    ],
+    "diagnose frontend": [
+      "diagnose frontend",
+      "check frontend",
+      "frontend status",
+      "is frontend healthy",
+      "is my frontend okay",
+      "check front end",
+      "diagnose front end"
+    ],
+    "explain diagnose immich": [
+      "explain diagnose immich",
+      "explain immich diagnosis",
+      "explain why immich is slow",
+      "explain image diagnosis"
+    ],
+    "preview context immich": [
+      "preview context immich",
+      "show immich context",
+      "preview immich context",
+      "preview image context"
+    ],
+    "openai intent why is immich slow": [
+      "openai intent why is immich slow",
+      "understand why immich is slow",
+      "what is the intent for why immich is slow",
+      "open ai intent why is image slow"
+    ],
+    "openai run why is immich slow": [
+      "openai run why is immich slow",
+      "ask openai why immich is slow",
+      "run openai diagnosis for immich slow",
+      "open ai run why is image slow"
+    ],
+    "validate endpoints": [
+      "validate endpoints",
+      "check endpoints",
+      "test endpoints",
+      "validate end points",
+      "check end points",
+      "are endpoints working",
+      "check my private cloud",
+      "is my private cloud okay"
+    ],
+    "validate skills": [
+      "validate skills",
+      "check skills",
+      "test skills",
+      "validation skills",
+      "are skills working"
+    ]
+  },
+
+  "command_policy": {
+    "diagnose immich": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Runs read-only Immich diagnosis through the existing Vetri Phase 3 CLI."
+    },
+    "diagnose backup": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Runs read-only backup diagnosis."
+    },
+    "diagnose storage": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Runs read-only storage diagnosis."
+    },
+    "diagnose network": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Runs read-only network diagnosis."
+    },
+    "diagnose backend": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Runs read-only backend diagnosis."
+    },
+    "diagnose frontend": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Runs read-only frontend diagnosis."
+    },
+    "explain diagnose immich": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Explains Immich diagnosis using the existing OpenAI-assisted reasoning layer."
+    },
+    "preview context immich": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Shows read-only context packet preview for Immich."
+    },
+    "openai intent why is immich slow": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Uses OpenAI only to suggest intent. Local Vetri still validates."
+    },
+    "openai run why is immich slow": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Runs the approved OpenAI-assisted read-only Immich troubleshooting path."
+    },
+    "validate endpoints": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Checks configured backend endpoints for reachability."
+    },
+    "validate skills": {
+      "enabled": true,
+      "risk": "low",
+      "requires_confirmation": false,
+      "description": "Validates registered safe Vetri skills."
+    }
+  },
+
+  "blocked_keywords": [
+    "restart",
+    "reboot",
+    "shutdown",
+    "delete",
+    "remove file",
+    "modify file",
+    "edit file",
+    "run backup",
+    "execute backup",
+    "turn on",
+    "turn off",
+    "home assistant",
+    "spotify",
+    "ssh",
+    "terminal command",
+    "arbitrary command"
+  ]
+}

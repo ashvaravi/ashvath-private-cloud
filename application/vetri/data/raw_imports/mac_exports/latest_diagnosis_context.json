@@ -1,0 +1,197 @@
+{
+  "data": {
+    "backend_protected_endpoint_auth_required_behavior": {
+      "backups_summary": {
+        "auth_required": true,
+        "reachable": true,
+        "status": 401
+      },
+      "dashboard_summary": {
+        "auth_required": true,
+        "reachable": true,
+        "status": 401
+      },
+      "home_status": {
+        "auth_required": true,
+        "reachable": true,
+        "status": 401
+      },
+      "network_status": {
+        "auth_required": true,
+        "reachable": true,
+        "status": 401
+      },
+      "storage_status": {
+        "auth_required": true,
+        "reachable": true,
+        "status": 401
+      }
+    },
+    "backup_status": {
+      "local_backup_dir_exists": true,
+      "recent_backup_file_metadata": [
+        {
+          "group": "immich",
+          "modified_at": "2026-05-14T21:39:04+05:30",
+          "name": "immich-control-2026-05-14_21-39-04.tar.gz",
+          "size_bytes": 2191
+        },
+        {
+          "group": "uptime-kuma",
+          "modified_at": "2026-05-14T17:16:59+05:30",
+          "name": "uptime-kuma-2026-05-14_17-16-56.tar.gz",
+          "size_bytes": 313
+        },
+        {
+          "group": "portainer",
+          "modified_at": "2026-05-14T17:16:58+05:30",
+          "name": "portainer-2026-05-14_17-16-56.tar.gz",
+          "size_bytes": 42776
+        },
+        {
+          "group": "homeassistant",
+          "modified_at": "2026-05-14T17:16:56+05:30",
+          "name": "homeassistant-2026-05-14_17-16-56.tar.gz",
+          "size_bytes": 157717
+        },
+        {
+          "group": "immich",
+          "modified_at": "2026-05-14T17:16:56+05:30",
+          "name": "immich-control-2026-05-14_17-16-56.tar.gz",
+          "size_bytes": 2191
+        },
+        {
+          "group": "immich",
+          "modified_at": "2026-05-14T15:39:04+05:30",
+          "name": "immich-control-2026-05-14_15-39-04.tar.gz",
+          "size_bytes": 2191
+        },
+        {
+          "group": "immich",
+          "modified_at": "2026-05-13T04:40:44+05:30",
+          "name": "immich-control-2026-05-13_04-40-43.tar.gz",
+          "size_bytes": 2191
+        },
+        {
+          "group": "immich",
+          "modified_at": "2026-05-12T22:40:43+05:30",
+          "name": "immich-control-2026-05-12_22-40-43.tar.gz",
+          "size_bytes": 2191
+        },
+        {
+          "group": "immich",
+          "modified_at": "2026-05-12T16:40:42+05:30",
+          "name": "immich-control-2026-05-12_16-40-42.tar.gz",
+          "size_bytes": 2191
+        },
+        {
+          "group": "immich",
+          "modified_at": "2026-05-12T10:40:42+05:30",
+          "name": "immich-control-2026-05-12_10-40-42.tar.gz",
+          "size_bytes": 2191
+        },
+        {
+          "group": "immich",
+          "modified_at": "2026-05-12T04:40:42+05:30",
+          "name": "immich-control-2026-05-12_04-40-41.tar.gz",
+          "size_bytes": 2191
+        },
+        {
+          "group": "immich",
+          "modified_at": "2026-05-11T22:40:41+05:30",
+          "name": "immich-control-2026-05-11_22-40-41.tar.gz",
+          "size_bytes": 2191
+        }
+      ]
+    },
+    "frontend_reachable_status": {
+      "health": {
+        "auth_required": false,
+        "reachable": true,
+        "status": 200
+      },
+      "root": {
+        "auth_required": false,
+        "reachable": true,
+        "status": 200
+      }
+    },
+    "homeassistant_reachability": {
+      "control_path": "Vetri backend verified-control endpoints only.",
+      "port": {
+        "health": "reachable",
+        "port": 8123,
+        "reachable": true,
+        "service_name": "Home Assistant"
+      },
+      "root": {
+        "auth_required": false,
+        "reachable": true,
+        "status": 200
+      }
+    },
+    "missing_script_notes": {
+      "smoke-test-vetri-backend.sh": "absent",
+      "test-vetri-backend.sh": "backend smoke equivalent present"
+    },
+    "safe_next_step": "Diagnose using read-only exports first. If action is required, ask the Mac backend to validate and execute an approved action.",
+    "service_ports": {
+      "homeassistant": {
+        "health": "reachable",
+        "port": 8123,
+        "reachable": true,
+        "service_name": "Home Assistant"
+      },
+      "immich": {
+        "health": "unknown",
+        "port": 2283,
+        "reachable": true,
+        "service_name": "Immich"
+      },
+      "netdata": {
+        "health": "unknown",
+        "port": 19999,
+        "reachable": true,
+        "service_name": "Netdata"
+      },
+      "portainer": {
+        "health": "unknown",
+        "port": 9443,
+        "reachable": true,
+        "service_name": "Portainer"
+      },
+      "uptime_kuma": {
+        "health": "unknown",
+        "port": 3001,
+        "reachable": true,
+        "service_name": "Uptime Kuma"
+      },
+      "vetri_backend": {
+        "health": "reachable",
+        "port": 8000,
+        "reachable": true,
+        "service_name": "Vetri backend"
+      },
+      "vetri_frontend": {
+        "health": "reachable",
+        "port": 5173,
+        "reachable": true,
+        "service_name": "Vetri frontend"
+      }
+    },
+    "storage_status": {
+      "ashvath_cloud_mounted": true,
+      "df_summary": "Filesystem     Size   Used  Avail Capacity iused      ifree %iused  Mounted on\n/dev/disk4s1  931Gi   62Gi  869Gi     7%   50869 9110943640    0%   /Volumes/AshvathCloud"
+    }
+  },
+  "errors": [],
+  "generated_at": "2026-05-14T23:50:09+05:30",
+  "ok": true,
+  "source": "vetri-mac-export",
+  "spoken_summary": "Diagnosis context is ready. Windows can inspect reachability, protected endpoint behavior, storage, backups, service ports, and safe next steps.",
+  "summary": "Safe read-only diagnosis context generated for Windows Vetri AI.",
+  "warnings": [
+    "smoke-test-vetri-backend.sh_absent",
+    "test-vetri-backend.sh_available_as_backend_smoke_equivalent"
+  ]
+}

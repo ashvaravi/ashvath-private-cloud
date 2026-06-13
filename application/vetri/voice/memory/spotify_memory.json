@@ -1,0 +1,129 @@
+{
+  "version": "V2D.1",
+  "track_mappings": {
+    "aathangara marame by ilayaraja": {
+      "spotify_uri": "spotify:track:30xrEbUcLCRLOsMkNdgqxD",
+      "track_name": "Aathangara Marame (From \"Kizhakku Cheemayile\")",
+      "artist": "Mano, Sujatha",
+      "matched_variant": "aathangara marame by ilayaraja",
+      "success_count": 2,
+      "created_at": "2026-05-14T15:59:47.758822+00:00",
+      "last_used_at": "2026-05-14T16:09:00.875464+00:00",
+      "_memory_key": "aathangara marame by ilayaraja",
+      "_memory_similarity": 0.967741935483871
+    },
+    "ஆத தங கர மரம by இள யர ஜ": {
+      "spotify_uri": "spotify:track:0IBeba4UKSAX4cE1nLtrt6",
+      "track_name": "Thendral Vandhu",
+      "artist": "Ilaiyaraaja, K. J. Yesudas, S. Janaki",
+      "matched_variant": "ஆத தங கர மரம by இள யர ஜ",
+      "success_count": 1,
+      "created_at": "2026-05-14T16:04:04.919736+00:00",
+      "last_used_at": "2026-05-14T16:04:04.919770+00:00"
+    },
+    "aathma maramaramay": {
+      "spotify_uri": "spotify:track:26PpLbJhPrBxb9LfTVAJH2",
+      "track_name": "Aathma Rama",
+      "artist": "Vayuu",
+      "matched_variant": "aathma maramaramay",
+      "success_count": 1,
+      "created_at": "2026-05-14T16:06:45.691025+00:00",
+      "last_used_at": "2026-05-14T16:06:45.691051+00:00"
+    },
+    "aathma maramarame": {
+      "spotify_uri": "spotify:track:26PpLbJhPrBxb9LfTVAJH2",
+      "track_name": "Aathma Rama",
+      "artist": "Vayuu",
+      "matched_variant": "aathma maramaramay",
+      "success_count": 1,
+      "created_at": "2026-05-14T16:06:45.691025+00:00",
+      "last_used_at": "2026-05-14T16:06:45.691051+00:00"
+    },
+    "aathangara marame song": {
+      "spotify_uri": "spotify:track:3cUwZxueNIsgBToQV90O2O",
+      "track_name": "Aathangara Marame",
+      "artist": "Shravan Kalai",
+      "matched_variant": "aathangara marame song",
+      "success_count": 1,
+      "created_at": "2026-05-14T16:08:39.395259+00:00",
+      "last_used_at": "2026-05-14T16:08:39.395287+00:00"
+    },
+    "aathangara marame": {
+      "spotify_uri": "spotify:track:3cUwZxueNIsgBToQV90O2O",
+      "track_name": "Aathangara Marame",
+      "artist": "Shravan Kalai",
+      "matched_variant": "aathangara marame song",
+      "success_count": 1,
+      "created_at": "2026-05-14T16:08:39.395259+00:00",
+      "last_used_at": "2026-05-14T16:08:39.395287+00:00"
+    }
+  },
+  "stt_corrections": {
+    "resium music": "resume music",
+    "resim music": "resume music",
+    "receium music": "resume music",
+    "receive music": "resume music",
+    "presume music": "resume music",
+    "resume audio": "resume music",
+    "resium audio": "resume music",
+    "pressium audio": "resume music",
+    "pause audio": "pause music",
+    "play audio": "play music",
+    "next audio": "next song",
+    "skip audio": "next song",
+    "previous audio": "previous song",
+    "prev song": "previous song",
+    "volume of": "volume up",
+    "volium up": "volume up",
+    "volium down": "volume down"
+  },
+  "manual_aliases": {
+    "aathangara marame": [
+      "Aathangara Marame Ilaiyaraaja",
+      "Aathangara Marame Kizhakku Cheemayile",
+      "Athangara Marame Ilaiyaraaja",
+      "Aathangarai Marame Ilaiyaraaja",
+      "Aathangara Marame Tamil"
+    ],
+    "vaathi coming": [
+      "Vaathi Coming",
+      "Vathi Coming",
+      "Vaathi Coming Anirudh"
+    ],
+    "munbe vaa": [
+      "Munbe Vaa",
+      "Munbe Vaa Sillunu Oru Kaadhal"
+    ],
+    "athangara marame": [
+      "Aathangara Marame Ilaiyaraaja",
+      "Aathangara Marame Kizhakku Cheemayile",
+      "Athangara Marame Ilaiyaraaja"
+    ],
+    "???????? ???? by ????????": [
+      "Aathangara Marame Ilaiyaraaja",
+      "Aathangara Marame Kizhakku Cheemayile",
+      "Athangara Marame Ilaiyaraaja"
+    ],
+    "???????? ????": [
+      "Aathangara Marame Ilaiyaraaja",
+      "Aathangara Marame Kizhakku Cheemayile"
+    ],
+    "??????????? ???? ?? ????????": [
+      "Aathangara Marame Ilaiyaraaja",
+      "Aathangara Marame Kizhakku Cheemayile"
+    ],
+    "aathangara marame ilaiyaraaja": [
+      "Aathangara Marame Ilaiyaraaja",
+      "Aathangara Marame Kizhakku Cheemayile",
+      "Athangara Marame Ilaiyaraaja",
+      "Aathangara Marame Tamil"
+    ]
+  },
+  "stats": {
+    "memory_hits": 2,
+    "spotify_searches": 6,
+    "learned_tracks": 6,
+    "last_updated_at": "2026-05-14T16:09:00.876210+00:00",
+    "last_manual_alias_update": "aathangara_marame_unicode_patch"
+  }
+}

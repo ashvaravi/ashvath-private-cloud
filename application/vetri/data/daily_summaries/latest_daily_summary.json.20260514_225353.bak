@@ -1,0 +1,27 @@
+{
+  "date": "2026-05-14",
+  "milestones": [
+    "Hey Vetri postponed; keep hey jarvis until custom Colab model.",
+    "Voice Station abandoned.",
+    "Tamil Spotify search needs Unicode-safe normalization, aliases, title guards, memory correction, and better STT for music commands.",
+    "Spotify empty response bug was fixed.",
+    "STT corrections like resium/resim music to resume music were added.",
+    "Mac safe export layer completed and validated.",
+    "Mac backend equivalent smoke test passed with 19 passed and 0 failed.",
+    "Mac frontend smoke test passed with 26 passed and 0 failed."
+  ],
+  "failures": [
+    "Spotify regional search weakness"
+  ],
+  "fixes": [],
+  "decisions": [
+    "Preserve stable terminal voice layer; AI brain remains deterministic and safety-routed."
+  ],
+  "next_recommended_steps": [
+    "Run Mac sync when reachable.",
+    "Strengthen Spotify regional NLP correction/title-guard flow.",
+    "Expand read-only diagnosis coverage from synced exports."
+  ],
+  "mac_export_manifest_present": false,
+  "safe_for_ai": true
+}

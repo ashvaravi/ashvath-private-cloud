@@ -1,0 +1,9 @@
+{
+  "llm_enabled": false,
+  "model": "gpt-4o-mini",
+  "max_context_items": 12,
+  "send_sanitized_context_only": true,
+  "never_send_secrets": true,
+  "never_execute_actions": true,
+  "log_ai_requests_safely": true
+}

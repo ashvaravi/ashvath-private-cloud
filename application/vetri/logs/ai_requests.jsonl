@@ -1,0 +1,11 @@
+{"timestamp": "2026-05-15T00:07:57+05:30", "provider": "openai", "mode": "openai_reasoning", "used_openai": true, "request_preview": "help me plan the next safe step", "sanitized_context_items": 0}
+{"timestamp": "2026-05-15T00:08:03+05:30", "provider": "openai", "mode": "openai_reasoning", "used_openai": true, "request_preview": "talk to me like a friend about my project", "sanitized_context_items": 3}
+{"timestamp": "2026-05-15T00:08:09+05:30", "provider": "openai", "mode": "openai_reasoning", "used_openai": true, "request_preview": "talk to me like a friend about my project", "sanitized_context_items": 3}
+{"timestamp": "2026-05-15T00:09:57+05:30", "provider": "openai", "mode": "openai_reasoning", "used_openai": true, "request_preview": "help me plan the next safe step", "sanitized_context_items": 0}
+{"timestamp": "2026-05-15T00:10:13+05:30", "provider": "openai", "mode": "openai_reasoning", "used_openai": true, "request_preview": "talk to me like a friend about my project", "sanitized_context_items": 4}
+{"timestamp": "2026-05-15T00:13:56+05:30", "provider": "openai", "mode": "openai_reasoning", "used_openai": true, "request_preview": "talk to me like a friend about my project", "sanitized_context_items": 5}
+{"timestamp": "2026-05-15T00:14:53+05:30", "provider": "openai", "mode": "openai_reasoning", "used_openai": true, "request_preview": "talk to me like a friend about my project", "sanitized_context_items": 5}
+{"timestamp": "2026-05-15T00:27:12+05:30", "provider": "openai", "mode": "openai_reasoning", "used_openai": true, "request_preview": "How's the front-end?", "sanitized_context_items": 5}
+{"timestamp": "2026-05-15T00:32:33+05:30", "provider": "openai", "mode": "openai_reasoning", "used_openai": true, "request_preview": "Am I a good person?", "sanitized_context_items": 5}
+{"timestamp": "2026-05-15T00:35:48+05:30", "provider": "openai", "mode": "openai_reasoning", "used_openai": true, "request_preview": "How is the weather today in Ahmedabad?", "sanitized_context_items": 5}
+{"timestamp": "2026-05-15T00:40:18+05:30", "provider": "openai", "mode": "openai_reasoning", "used_openai": true, "request_preview": "What is the state of the switches in my bedroom?", "sanitized_context_items": 5}

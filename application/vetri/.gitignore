@@ -1,0 +1,35 @@
+# Secrets
+.env
+*.key
+*.pem
+id_rsa
+id_ed25519
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs
+logs/*.log
+logs/*.tmp
+
+# Legacy logs must not be indexed or committed
+legacy/old_logs_do_not_index/
+
+# Local databases
+data/sqlite/*.db
+data/sqlite/*.db-shm
+data/sqlite/*.db-wal
+
+# Large/generated RAG files for later phases
+data/rag_store/
+data/vector_store/
+data/embeddings/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

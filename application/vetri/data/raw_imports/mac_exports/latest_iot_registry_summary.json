@@ -1,0 +1,102 @@
+{
+  "data": {
+    "backend_endpoints": [
+      {
+        "method": "POST",
+        "path": "/api/v1/home/control/verified",
+        "purpose": "Verified single entity control"
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/home/control/group/verified",
+        "purpose": "Verified group control"
+      }
+    ],
+    "capabilities": {
+      "entity_control": [
+        "turn_on",
+        "turn_off"
+      ],
+      "group_control": [
+        "turn_on",
+        "turn_off"
+      ],
+      "verification_required": true
+    },
+    "control_rule": "Windows must not call Home Assistant directly. Use Vetri backend verified-control endpoints only.",
+    "known_entities": [
+      {
+        "capabilities": [
+          "turn_on",
+          "turn_off",
+          "verified_state"
+        ],
+        "entity_id": "switch.ashvas_bedroom_strip_light",
+        "risk_level": "low",
+        "room": "bedroom"
+      },
+      {
+        "capabilities": [
+          "turn_on",
+          "turn_off",
+          "verified_state"
+        ],
+        "entity_id": "switch.ashvas_bedroom_light_1",
+        "risk_level": "low",
+        "room": "bedroom"
+      },
+      {
+        "capabilities": [
+          "turn_on",
+          "turn_off",
+          "verified_state"
+        ],
+        "entity_id": "switch.ashvas_bedroom_light_2",
+        "risk_level": "low",
+        "room": "bedroom"
+      },
+      {
+        "capabilities": [
+          "turn_on",
+          "turn_off",
+          "verified_state"
+        ],
+        "entity_id": "switch.ashvas_bedroom_fan",
+        "risk_level": "medium",
+        "room": "bedroom"
+      }
+    ],
+    "known_groups": {
+      "bedroom_all": [
+        "switch.ashvas_bedroom_light_1",
+        "switch.ashvas_bedroom_light_2",
+        "switch.ashvas_bedroom_strip_light",
+        "switch.ashvas_bedroom_fan"
+      ],
+      "bedroom_lights": [
+        "switch.ashvas_bedroom_light_1",
+        "switch.ashvas_bedroom_light_2",
+        "switch.ashvas_bedroom_strip_light"
+      ]
+    },
+    "risk_levels": {
+      "low": "Lighting only.",
+      "medium": "Fan or grouped room control; requires normal backend verification."
+    },
+    "room_mappings": {
+      "bedroom": [
+        "switch.ashvas_bedroom_strip_light",
+        "switch.ashvas_bedroom_light_1",
+        "switch.ashvas_bedroom_light_2",
+        "switch.ashvas_bedroom_fan"
+      ]
+    }
+  },
+  "errors": [],
+  "generated_at": "2026-05-14T23:50:09+05:30",
+  "ok": true,
+  "source": "vetri-mac-export",
+  "spoken_summary": "Bedroom lights and fan are known. Windows must request Home Assistant control through the Mac backend only.",
+  "summary": "Safe IoT registry summary for Windows Vetri AI planning.",
+  "warnings": []
+}

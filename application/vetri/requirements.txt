@@ -1,0 +1,5 @@
+# Vetri AI foundation prefers the Python standard library.
+# Optional developer/test dependencies:
+pytest
+requests
+python-dotenv

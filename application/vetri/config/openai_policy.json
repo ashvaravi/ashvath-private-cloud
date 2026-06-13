@@ -1,0 +1,117 @@
+{
+  "phase": "3.0",
+  "status": "design_locked",
+  "core_rule": "OpenAI understands, explains, reasons, and suggests. Local Vetri code validates, allows, blocks, and executes only approved actions.",
+  "openai_allowed_modes": [
+    "diagnosis_explanation",
+    "status_explanation",
+    "safe_next_step_recommendation",
+    "intent_suggestion",
+    "technical_summary"
+  ],
+  "openai_can_receive": [
+    "current_user_request",
+    "sanitized_status_summary",
+    "sanitized_diagnosis_summary",
+    "allowed_action_names",
+    "service_names",
+    "risk_labels",
+    "safe_project_architecture_summary",
+    "non_sensitive_error_summary",
+    "safe_recent_findings"
+  ],
+  "openai_must_not_receive": [
+    ".env files",
+    "api keys",
+    "passwords",
+    "tokens",
+    "ssh keys",
+    "Home Assistant token",
+    "Tailscale auth keys",
+    "raw full logs",
+    "raw Docker logs",
+    "raw Home Assistant event firehose",
+    "photos",
+    "videos",
+    "Immich database",
+    "database dumps",
+    "backup archives",
+    "private media metadata",
+    "full personal conversation history",
+    "CCTV feeds",
+    "financial/private documents"
+  ],
+  "openai_can_return": [
+    "plain_language_explanation",
+    "technical_reasoning",
+    "safe_recommendations",
+    "structured_intent_suggestion",
+    "clarifying_question",
+    "summary"
+  ],
+  "openai_must_not_return_or_execute": [
+    "shell commands for execution",
+    "arbitrary SSH commands",
+    "direct backend calls",
+    "direct Home Assistant calls",
+    "file deletion commands",
+    "firewall modifications",
+    "Tailscale ACL changes",
+    "Docker volume deletion",
+    "secret extraction",
+    "instructions to bypass safety router"
+  ],
+  "intent_suggestion_schema": {
+    "type": "intent_suggestion",
+    "intent": "string",
+    "target": "string_or_null",
+    "confidence": "number_between_0_and_1",
+    "mode": "read_only_or_control_or_clarify",
+    "reason": "short_string"
+  },
+  "explanation_schema": {
+    "type": "explanation",
+    "summary": "string",
+    "reasoning": [
+      "string"
+    ],
+    "safe_next_steps": [
+      "string"
+    ],
+    "requires_action": "boolean",
+    "suggested_intent": "string_or_null"
+  },
+  "local_validation_rules": [
+    "All OpenAI-suggested intents must be checked against vetri_actions.json.",
+    "If the intent is not allowlisted, block it.",
+    "If confidence is below threshold, ask clarification.",
+    "If risk is medium, require confirmation.",
+    "If risk is high, block unless manually implemented later.",
+    "OpenAI cannot directly execute anything.",
+    "OpenAI cannot bypass the safety router.",
+    "OpenAI output is advisory until local Vetri validates it."
+  ],
+  "confidence_rules": {
+    "execute_if_read_only_and_confidence_gte": 0.85,
+    "clarify_if_confidence_between": [0.5, 0.84],
+    "reject_if_confidence_below": 0.5
+  },
+  "phase_3_initial_scope": {
+    "enabled_first": [
+      "explain diagnosis result",
+      "explain status result",
+      "recommend safe next checks"
+    ],
+    "enabled_later": [
+      "intent suggestion mode"
+    ],
+    "not_enabled_yet": [
+      "Home Assistant control",
+      "voice",
+      "memory writes",
+      "RAG",
+      "autonomous actions",
+      "write actions"
+    ]
+  }
+}

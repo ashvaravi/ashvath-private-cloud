@@ -1,0 +1,19 @@
+{
+  "spotify_nlp_v4_enabled": true,
+  "diagnosis_skills_v4_enabled": true,
+  "monitoring_rules_v4_enabled": true,
+  "iot_registry_v4_enabled": true,
+  "voice_ai_integration_v4_enabled": true,
+  "voice_ai_fallback_only": false,
+  "companion_chat_v4_enabled": true,
+  "openai_reasoning_v4_enabled": true,
+  "openai_requires_api_key": true,
+  "openai_timeout_seconds": 10,
+  "openai_fail_closed_to_local_fallback": true,
+  "memory_v4_enabled": true,
+  "rich_personal_memory_enabled": true,
+  "rag_fts_v4_enabled": true,
+  "ssh_emergency_enabled": false,
+  "home_assistant_direct_windows_calls_enabled": false,
+  "autonomous_actions_enabled": false
+}

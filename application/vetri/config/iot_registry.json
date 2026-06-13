@@ -1,0 +1,67 @@
+{
+  "control_route": "mac_backend_verified_only",
+  "backend_endpoints": {
+    "entity": "POST /api/v1/home/control/verified",
+    "group": "POST /api/v1/home/control/group/verified"
+  },
+  "rooms": {
+    "bedroom": {
+      "aliases": ["bedroom", "my room", "ashvas bedroom"],
+      "devices": [
+        "switch.ashvas_bedroom_strip_light",
+        "switch.ashvas_bedroom_light_1",
+        "switch.ashvas_bedroom_light_2",
+        "switch.ashvas_bedroom_fan"
+      ]
+    }
+  },
+  "groups": {
+    "bedroom_lights": {
+      "room": "bedroom",
+      "risk": "medium",
+      "requires_confirmation": true,
+      "entities": [
+        "switch.ashvas_bedroom_light_1",
+        "switch.ashvas_bedroom_light_2",
+        "switch.ashvas_bedroom_strip_light"
+      ]
+    },
+    "bedroom_all": {
+      "room": "bedroom",
+      "risk": "medium",
+      "requires_confirmation": true,
+      "entities": [
+        "switch.ashvas_bedroom_light_1",
+        "switch.ashvas_bedroom_light_2",
+        "switch.ashvas_bedroom_strip_light",
+        "switch.ashvas_bedroom_fan"
+      ]
+    }
+  },
+  "devices": {
+    "switch.ashvas_bedroom_strip_light": {
+      "name": "Bedroom strip light",
+      "room": "bedroom",
+      "capabilities": ["on", "off"],
+      "risk": "medium"
+    },
+    "switch.ashvas_bedroom_light_1": {
+      "name": "Bedroom light 1",
+      "room": "bedroom",
+      "capabilities": ["on", "off"],
+      "risk": "medium"
+    },
+    "switch.ashvas_bedroom_light_2": {
+      "name": "Bedroom light 2",
+      "room": "bedroom",
+      "capabilities": ["on", "off"],
+      "risk": "medium"
+    },
+    "switch.ashvas_bedroom_fan": {
+      "name": "Bedroom fan",
+      "room": "bedroom",
+      "capabilities": ["on", "off"],
+      "risk": "medium"
+    }
+  }
+}

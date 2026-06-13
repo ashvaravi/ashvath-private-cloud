@@ -1,0 +1,90 @@
+{
+    "backend_url":  "http://100.79.123.44:8000",
+    "api_key_env":  "VETRI_API_KEY",
+    "backend_url_env":  "VETRI_BACKEND_URL",
+    "entities_endpoint":  "/api/v1/home/entities",
+    "control_endpoint":  "/api/v1/home/control/verified",
+    "control_endpoint_method":  "POST",
+    "execution_mode":  "backend_live",
+    "live_enabled":  true,
+    "require_confirmation":  true,
+    "allowed_domains":  [
+                            "switch"
+                        ],
+    "allowed_actions":  [
+                            "turn_on",
+                            "turn_off"
+                        ],
+    "entity_allowlist":  {
+                             "switch.ashvas_bedroom_strip_light":  {
+                                                                       "enabled":  true,
+                                                                       "live_enabled":  true,
+                                                                       "friendly_name":  "Bedroom Strip Light",
+                                                                       "aliases":  [
+                                                                                       "strip light",
+                                                                                       "bedroom strip light",
+                                                                                       "ashvas bedroom strip light"
+                                                                                   ]
+                                                                   },
+                             "switch.ashvas_bedroom_light_1":  {
+                                                                   "enabled":  true,
+                                                                   "live_enabled":  true,
+                                                                   "friendly_name":  "Bedroom Light One",
+                                                                   "aliases":  [
+                                                                                   "bedroom light one",
+                                                                                   "bedroom light 1",
+                                                                                   "light one",
+                                                                                   "light 1",
+                                                                                   "first bedroom light",
+                                                                                   "ashvas bedroom light one",
+                                                                                   "ashvas bedroom light 1"
+                                                                               ]
+                                                               },
+                             "switch.ashvas_bedroom_light_2":  {
+                                                                   "enabled":  true,
+                                                                   "live_enabled":  true,
+                                                                   "friendly_name":  "Bedroom Light Two",
+                                                                   "aliases":  [
+                                                                                   "bedroom light two",
+                                                                                   "bedroom light 2",
+                                                                                   "light two",
+                                                                                   "light 2",
+                                                                                   "second bedroom light",
+                                                                                   "ashvas bedroom light two",
+                                                                                   "ashvas bedroom light 2"
+                                                                               ]
+                                                               },
+                             "switch.ashvas_bedroom_fan":  {
+                                                               "enabled":  true,
+                                                               "live_enabled":  true,
+                                                               "friendly_name":  "Bedroom Fan",
+                                                               "aliases":  [
+                                                                               "fan",
+                                                                               "bedroom fan",
+                                                                               "ashvas bedroom fan"
+                                                                           ]
+                                                           }
+                         },
+    "blocked_domains":  [
+                            "lock",
+                            "alarm_control_panel",
+                            "cover",
+                            "climate",
+                            "camera"
+                        ],
+    "blocked_words":  [
+                          "unlock",
+                          "lock",
+                          "open",
+                          "close",
+                          "delete",
+                          "remove",
+                          "restart",
+                          "reboot",
+                          "shutdown",
+                          "set temperature",
+                          "change temperature"
+                      ],
+    "max_candidates":  10,
+    "group_control_endpoint":  "/api/v1/home/control/group/verified"
+}

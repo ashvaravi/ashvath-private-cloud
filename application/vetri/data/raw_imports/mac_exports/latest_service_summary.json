@@ -1,0 +1,42 @@
+{
+  "data": {
+    "containers": [],
+    "docker_available": false,
+    "known_ports": {
+      "homeassistant_8123": true,
+      "immich_2283": true,
+      "netdata_19999": true,
+      "portainer_9443": true,
+      "uptime_kuma_3001": true,
+      "vetri_backend_8000": true,
+      "vetri_frontend_5173": true
+    },
+    "launch_agents": {
+      "com.ashvath.vetri-backend.plist": true,
+      "com.ashvath.vetri-frontend.plist": true
+    },
+    "scripts": {
+      "backup-four-services.sh": true,
+      "backup-immich-db.sh": true,
+      "cloudctl.sh": true,
+      "emergency-restart.sh": true,
+      "remote-health-check.sh": true,
+      "smoke-test-vetri-backend.sh": false,
+      "smoke-test-vetri-frontend.sh": true,
+      "test-vetri-backend.sh": true,
+      "vetri-restart.sh": true,
+      "vetri-start.sh": true,
+      "vetri-status.sh": true,
+      "vetri-stop.sh": true,
+      "view-logs.sh": true
+    }
+  },
+  "errors": [],
+  "generated_at": "2026-05-14T23:50:09+05:30",
+  "ok": true,
+  "source": "vetri-mac-export",
+  "summary": "Local service summary generated from port checks, script existence, LaunchAgent files, and Docker metadata when available.",
+  "warnings": [
+    "docker_ps_unavailable"
+  ]
+}

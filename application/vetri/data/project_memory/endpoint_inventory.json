@@ -1,0 +1,9 @@
+{
+  "backend_root": "/",
+  "dashboard_summary": "/api/v1/dashboard/summary",
+  "network_status": "/api/v1/network/status",
+  "storage_status": "/api/v1/storage/status",
+  "backup_summary": "/api/v1/backups/summary",
+  "home_control_verified": "POST /api/v1/home/control/verified",
+  "home_group_control_verified": "POST /api/v1/home/control/group/verified"
+}

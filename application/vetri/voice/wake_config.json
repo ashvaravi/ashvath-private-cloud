@@ -1,0 +1,29 @@
+{
+  "project_root": "Z:\\HomeLLM",
+  "python_command": "python",
+
+  "wake_phrases": [
+    "hey vetri"
+  ],
+
+  "wake_record_seconds": 2.5,
+  "command_record_seconds": 5,
+  "sample_rate": 16000,
+
+  "speech_to_text_model": "gpt-4o-mini-transcribe",
+  "text_to_speech_model": "gpt-4o-mini-tts",
+  "tts_voice": "coral",
+
+  "wake_cooldown_seconds": 1.5,
+  "max_empty_wake_transcripts_before_hint": 8,
+
+  "speak_wake_ack": false,
+  "wake_ack_text": "Yes Ashva, I am listening.",
+
+  "wake_min_rms": 0.0045,
+  "command_min_rms": 0.0065,
+
+  "command_prompt": "Transcribe exactly what the user says after the wake phrase. Do not invent a command if the audio is silent, unclear, or background noise. If nothing clear is spoken, return an empty transcript.",
+
+  "wake_prompt": "Transcribe exactly. Only detect the wake phrase Hey Vetri. If Hey Vetri is not clearly spoken, return the actual heard words and do not invent the phrase."
+}

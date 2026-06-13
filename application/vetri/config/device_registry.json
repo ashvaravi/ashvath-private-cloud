@@ -1,0 +1,35 @@
+{
+  "home_assistant": {
+    "control_route": "mac_backend_only",
+    "entities": [
+      "switch.ashvas_bedroom_strip_light",
+      "switch.ashvas_bedroom_light_1",
+      "switch.ashvas_bedroom_light_2",
+      "switch.ashvas_bedroom_fan"
+    ],
+    "groups": {
+      "bedroom_lights": [
+        "switch.ashvas_bedroom_light_1",
+        "switch.ashvas_bedroom_light_2",
+        "switch.ashvas_bedroom_strip_light"
+      ],
+      "bedroom_all": [
+        "switch.ashvas_bedroom_light_1",
+        "switch.ashvas_bedroom_light_2",
+        "switch.ashvas_bedroom_strip_light",
+        "switch.ashvas_bedroom_fan"
+      ]
+    },
+    "device_aliases": {
+      "strip light": "switch.ashvas_bedroom_strip_light",
+      "bedroom fan": "switch.ashvas_bedroom_fan"
+    },
+    "room_aliases": {
+      "bedroom": "bedroom_all"
+    }
+  },
+  "future": {
+    "solar": {"status": "placeholder", "control": "none"},
+    "cctv": {"status": "placeholder", "access": "read_only_future_no_raw_footage"}
+  }
+}

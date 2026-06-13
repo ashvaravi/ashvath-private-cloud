@@ -1,0 +1,4 @@
+{"timestamp":"2026-05-14T00:00:00+05:30","type":"architecture_decision","summary":"Windows is the AI brain; MacBook is the execution server; Mac FastAPI backend is the primary control gateway."}
+{"timestamp":"2026-05-14T00:00:00+05:30","type":"architecture_decision","summary":"Home Assistant control must go through the Mac backend. Windows must never directly call Home Assistant."}
+{"timestamp":"2026-05-14T00:00:00+05:30","type":"architecture_decision","summary":"OpenAI is only for reasoning, explanation, planning, and conversation. Local Vetri code decides policy, memory, and execution."}
+{"timestamp":"2026-05-14T00:00:00+05:30","type":"architecture_decision","summary":"The stable terminal openWakeWord voice assistant is preserved and integrated later only through a wrapper hook."}

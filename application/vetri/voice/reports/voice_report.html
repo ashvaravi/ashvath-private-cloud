@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vetri Voice Report</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a2f;
+      --panel-2: #18223d;
+      --text: #ecf2ff;
+      --muted: #9fb0d0;
+      --border: rgba(255,255,255,0.12);
+      --accent: #ff8a00;
+      --success: #16a34a;
+      --danger: #dc2626;
+      --warning: #d97706;
+      --neutral: #2563eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top left, #1d2b53 0, var(--bg) 42%);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(255,138,0,0.16), rgba(37,99,235,0.14));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.24);
+    }
+
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 34px;
+      letter-spacing: -0.6px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: rgba(18, 26, 47, 0.86);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.22);
+    }
+
+    .card-label {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .card-value {
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin: 0 0 14px 0;
+      font-size: 18px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 14px;
+      font-size: 13px;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--muted);
+      text-align: left;
+      background: rgba(255,255,255,0.04);
+      font-weight: 600;
+    }
+
+    tr:hover td {
+      background: rgba(255,255,255,0.035);
+    }
+
+    .wide-card {
+      background: rgba(18, 26, 47, 0.86);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.22);
+      overflow-x: auto;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .success {
+      background: rgba(22,163,74,0.18);
+      color: #86efac;
+      border: 1px solid rgba(22,163,74,0.34);
+    }
+
+    .danger {
+      background: rgba(220,38,38,0.18);
+      color: #fca5a5;
+      border: 1px solid rgba(220,38,38,0.34);
+    }
+
+    .warning {
+      background: rgba(217,119,6,0.18);
+      color: #fcd34d;
+      border: 1px solid rgba(217,119,6,0.34);
+    }
+
+    .neutral {
+      background: rgba(37,99,235,0.18);
+      color: #93c5fd;
+      border: 1px solid rgba(37,99,235,0.34);
+    }
+
+    .footer {
+      color: var(--muted);
+      margin-top: 24px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    code {
+      color: #ffd28a;
+    }
+
+    @media (max-width: 900px) {
+      .grid,
+      .section-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page {
+        padding: 18px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>Vetri Voice Report</h1>
+      <p class="subtitle">
+        Local report generated from <code>voice/logs/voice_sessions.jsonl</code>.
+        Generated at 2026-05-14 12:50:41 UTC.
+        This report is local-only and does not modify the Vetri Phase 3 core.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <div class="card-label">Total Sessions</div>
+        <div class="card-value">12</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Successful Executions</div>
+        <div class="card-value">6</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Blocked Attempts</div>
+        <div class="card-value">1</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Failed/Error Sessions</div>
+        <div class="card-value">0</div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <div class="card-label">Average Duration</div>
+        <div class="card-value">8.0s</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Latest Version</div>
+        <div class="card-value">V0F</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Latest Command</div>
+        <div class="card-value" style="font-size:18px;"></div>
+      </div>
+      <div class="card">
+        <div class="card-label">Log Source</div>
+        <div class="card-value" style="font-size:18px;">JSONL</div>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <div class="card">
+        <h2>Status Breakdown</h2>
+        <table>
+          <thead><tr><th>Status</th><th>Count</th></tr></thead>
+          <tbody>
+            <tr><td>Success</td><td>6</td></tr>
+<tr><td>Local</td><td>4</td></tr>
+<tr><td>No Match</td><td>1</td></tr>
+<tr><td>Blocked</td><td>1</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Command Frequency</h2>
+        <table>
+          <thead><tr><th>Command</th><th>Count</th></tr></thead>
+          <tbody>
+            <tr><td>validate endpoints</td><td>3</td></tr>
+<tr><td>No matched command</td><td>2</td></tr>
+<tr><td>diagnose backend</td><td>2</td></tr>
+<tr><td>repeat last response</td><td>2</td></tr>
+<tr><td>mute voice</td><td>1</td></tr>
+<tr><td>unmute voice</td><td>1</td></tr>
+<tr><td>diagnose storage</td><td>1</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Policy Risk Usage</h2>
+        <table>
+          <thead><tr><th>Risk</th><th>Count</th></tr></thead>
+          <tbody>
+            <tr><td>none</td><td>12</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <div class="card">
+        <h2>Version Breakdown</h2>
+        <table>
+          <thead><tr><th>Version</th><th>Count</th></tr></thead>
+          <tbody>
+            <tr><td>V0D</td><td>6</td></tr>
+<tr><td>V0F</td><td>4</td></tr>
+<tr><td>V0C</td><td>2</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Safety Notes</h2>
+        <p class="subtitle">
+          This report only reads local logs. It does not call OpenAI, execute commands,
+          access Home Assistant, access Spotify, or modify backend files.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Useful Commands</h2>
+        <p class="subtitle">
+          Generate report:<br>
+          <code>python .\voice\voice_report.py</code><br><br>
+          Open report:<br>
+          <code>python .\voice\voice_report.py --open</code>
+        </p>
+      </div>
+    </section>
+
+    <section class="wide-card">
+      <h2>Recent Voice Sessions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Status</th>
+            <th>Version</th>
+            <th>Mode</th>
+            <th>Heard</th>
+            <th>Corrected</th>
+            <th>Command</th>
+            <th>Risk</th>
+            <th>Summary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>2026-05-14 12:43:59 UTC</td><td><span class='badge danger'>Blocked</span></td><td>V0F</td><td>text_test</td><td>restart immich</td><td>restart immich</td><td></td><td></td><td>I heard a blocked action related to &#x27;restart&#x27;. Voice mode is limited to safe read-only Vetri Phase 3 commands.</td></tr>
+<tr><td>2026-05-14 12:43:58 UTC</td><td><span class='badge neutral'>Local</span></td><td>V0F</td><td>text_test</td><td>repeat last response</td><td>repeat last response</td><td>repeat last response</td><td></td><td>Backend endpoint validation completed. All 7 out of 7 endpoints are reachable. No failed endpoints.</td></tr>
+<tr><td>2026-05-14 12:43:57 UTC</td><td><span class='badge success'>Success</span></td><td>V0F</td><td>text_test</td><td>validate endpoints</td><td>validate endpoints</td><td>validate endpoints</td><td></td><td>Backend endpoint validation completed. All 7 out of 7 endpoints are reachable. No failed endpoints.</td></tr>
+<tr><td>2026-05-14 12:43:54 UTC</td><td><span class='badge success'>Success</span></td><td>V0F</td><td>text_test</td><td>is my backend okay</td><td>is my backend okay</td><td>diagnose backend</td><td></td><td>Vetri Backend diagnosis completed. Overall status is healthy. Failed steps: 0. No immediate action is needed.</td></tr>
+<tr><td>2026-05-14 12:35:47 UTC</td><td><span class='badge success'>Success</span></td><td>V0D</td><td>vetri_phase3</td><td>Diagnose storage.</td><td>diagnose storage</td><td>diagnose storage</td><td></td><td>Storage diagnosis completed. Overall status is healthy. Failed steps: 0. No immediate action is needed.</td></tr>
+<tr><td>2026-05-14 12:31:40 UTC</td><td><span class='badge neutral'>Local</span></td><td>V0D</td><td>local_voice</td><td>Unmute voice.</td><td>unmute voice</td><td>unmute voice</td><td></td><td>Voice output is now unmuted.</td></tr>
+<tr><td>2026-05-14 12:31:23 UTC</td><td><span class='badge neutral'>Local</span></td><td>V0D</td><td>local_voice</td><td>Mute voice.</td><td>mute voice</td><td>mute voice</td><td></td><td>Voice output is now muted. I will still print responses in the terminal.</td></tr>
+<tr><td>2026-05-14 12:31:10 UTC</td><td><span class='badge neutral'>Local</span></td><td>V0D</td><td>local_voice</td><td>Repeat last text response.</td><td>repeat last text response</td><td>repeat last response</td><td></td><td>Vetri Backend diagnosis completed. Overall status is healthy. Failed steps: 0. No immediate action is needed.</td></tr>
+<tr><td>2026-05-14 12:30:48 UTC</td><td><span class='badge success'>Success</span></td><td>V0D</td><td>vetri_phase3</td><td>Is my backend okay?</td><td>is my backend okay</td><td>diagnose backend</td><td></td><td>Vetri Backend diagnosis completed. Overall status is healthy. Failed steps: 0. No immediate action is needed.</td></tr>
+<tr><td>2026-05-14 12:30:27 UTC</td><td><span class='badge warning'>No Match</span></td><td>V0D</td><td>none</td><td>इसमें बैकएंड ओके?</td><td></td><td></td><td></td><td>I could not safely match that to an approved Vetri command. Try saying diagnose backend, diagnose immich, validate endpoints, or repeat last response.</td></tr>
+<tr><td>2026-05-14 12:25:49 UTC</td><td><span class='badge success'>Success</span></td><td>V0C</td><td></td><td>Validate endpoints.</td><td>validate endpoints</td><td>validate endpoints</td><td></td><td>Backend endpoint validation completed. All 7 out of 7 endpoints are reachable. No failed endpoints.</td></tr>
+<tr><td>2026-05-14 12:23:39 UTC</td><td><span class='badge success'>Success</span></td><td>V0C</td><td></td><td>Validate endpoints.</td><td>validate endpoints</td><td>validate endpoints</td><td></td><td>OpenAI-assisted read-only execution Local validation required [OK] Backend Endpoint Validation Total: 7 Reachable: 7 Failed: 0 [OK] backend_ping GET / -&gt; reachable (200) [OK] dashboard_summary GET /api/v1/dashboard/summary -&gt; reachable (200) [OK] system_ping GET /api/v1/system/ping -&gt; reachable (200) [OK] system_health GET /api/v1/system/health -&gt; reachable (200) [OK] storage_status GET /api/v1/storage/status -&gt; reachable (200) [OK].</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p class="footer">
+      Vetri Voice V0H checkpoint. Current voice layer remains:
+      Voice/Text → Safe Matcher → Policy Check → Vetri Phase 3 CLI → Local Summary → Local Logs.
+    </p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "data": {
+    "endpoint": {
+      "auth_required": true,
+      "data": null,
+      "reachable": true,
+      "status": 401
+    },
+    "frontend": {
+      "auth_required": false,
+      "data": {
+        "body_preview": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n\n    <meta\n      name=\"viewport\"\n      content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover\"\n    />\n\n    <meta name=\"theme-color\" content=\"#05070D\" />\n    <met"
+      },
+      "reachable": true,
+      "status": 200
+    },
+    "storage_mount": {
+      "df": "Filesystem     Size   Used  Avail Capacity iused      ifree %iused  Mounted on\n/dev/disk4s1  931Gi   62Gi  869Gi     7%   50869 9110943640    0%   /Volumes/AshvathCloud",
+      "mounted": true,
+      "path": "/Volumes/AshvathCloud"
+    }
+  },
+  "errors": [],
+  "generated_at": "2026-05-14T23:50:09+05:30",
+  "ok": true,
+  "source": "vetri-mac-export",
+  "summary": "Dashboard endpoint checked safely.",
+  "warnings": [
+    "auth_required"
+  ]
+}

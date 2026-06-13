@@ -1,0 +1,29 @@
+{
+  "data": {
+    "backend_endpoint": {
+      "auth_required": true,
+      "data": null,
+      "reachable": true,
+      "status": 401
+    },
+    "known_ports": {
+      "homeassistant_8123": true,
+      "immich_2283": true,
+      "netdata_19999": true,
+      "portainer_9443": true,
+      "uptime_kuma_3001": true,
+      "vetri_backend_8000": true,
+      "vetri_frontend_5173": true
+    },
+    "tailscale_ipv4": [],
+    "tailscale_ipv4_available": false
+  },
+  "errors": [],
+  "generated_at": "2026-05-14T23:50:09+05:30",
+  "ok": true,
+  "source": "vetri-mac-export",
+  "summary": "Network summary generated without credential material.",
+  "warnings": [
+    "auth_required"
+  ]
+}

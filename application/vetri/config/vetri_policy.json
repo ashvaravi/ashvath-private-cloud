@@ -1,0 +1,116 @@
+{
+  "phase": "windows_brain_foundation",
+  "risk_levels": {
+    "none": "chat only, no tool action",
+    "low": "read-only status, logs, summaries, dashboard, backup summary, Spotify playback metadata",
+    "medium": "restart service, run backup, refresh service, update cache, Home Assistant control through backend only",
+    "high": "delete files, remove Docker volumes, firewall, SSH config, Tailscale ACL, public exposure"
+  },
+  "risk_rules": {
+    "none": "execute",
+    "low": "execute",
+    "medium": "confirm",
+    "high": "block",
+    "unknown": "block",
+    "blocked": "block"
+  },
+  "confirmation_rules": {
+    "home_assistant_control": true,
+    "service_restart": true,
+    "backup_run": true,
+    "memory_preference_update": true,
+    "routine_or_automation": true
+  },
+  "allowed_action_categories": [
+    "chat",
+    "memory_query",
+    "explicit_low_risk_memory_update",
+    "read_only_backend_status",
+    "read_only_mac_export_summary",
+    "read_only_diagnosis",
+    "spotify_memory_summary",
+    "local_rag_keyword_search"
+  ],
+  "blocked_actions": [
+    "delete_files_automatically",
+    "wipe_volumes",
+    "modify_firewall",
+    "change_tailscale_acl",
+    "edit_ssh_config",
+    "remove_docker_volumes",
+    "expose_public_ports",
+    "read_private_photos_or_videos",
+    "send_secrets_to_openai",
+    "run_arbitrary_shell_commands",
+    "install_packages_automatically",
+    "modify_docker_compose_automatically",
+    "access_raw_cctv_footage_automatically",
+    "mass_delete_logs_without_retention_policy",
+    "direct_home_assistant_from_windows"
+  ],
+  "blocked_keywords": [
+    "rm -rf",
+    "delete all logs",
+    "delete logs",
+    "wipe",
+    "format",
+    "erase",
+    "remove docker volume",
+    "docker volume rm",
+    "change firewall",
+    "tailscale acl",
+    "edit ssh config",
+    "expose port",
+    "public port",
+    "install package",
+    "modify docker compose",
+    "edit docker-compose",
+    "read photos",
+    "read videos",
+    "cctv footage",
+    "home assistant token"
+  ],
+  "openai_privacy_rules": {
+    "llm_enabled_default": false,
+    "send_sanitized_context_only": true,
+    "never_send_secrets": true,
+    "never_send_raw_logs": true,
+    "never_send_env": true,
+    "never_send_media": true,
+    "never_execute_actions": true
+  },
+  "memory_rules": {
+    "auto_save_allowed": [
+      "successful_spotify_song_mappings",
+      "safe_stt_corrections",
+      "frequently_used_command_aliases",
+      "last_successful_commands",
+      "project_milestones",
+      "debug_events",
+      "low_risk_skill_mappings",
+      "daily_summaries",
+      "incident_summaries"
+    ],
+    "ask_before_saving": [
+      "home_assistant_routines",
+      "behavior_changing_rules",
+      "personal_preferences",
+      "daily_schedules",
+      "automations",
+      "anything_that_controls_devices",
+      "anything_long_term_and_personal"
+    ],
+    "never_auto_save": [
+      "random_failed_speech",
+      "sensitive_personal_details",
+      "uncertain_guesses",
+      "wrong_spotify_matches",
+      "high_risk_actions",
+      "raw_private_conversations"
+    ]
+  },
+  "home_assistant_rule": "Windows must never directly call Home Assistant. All Home Assistant control must go through the Mac Vetri backend and require policy approval.",
+  "ssh_rule": "SSH is emergency fallback only and disabled by default except approved read-only export/status commands.",
+  "mac_export_rule": "Mac exports from ~/Ashvath-private-cloud/exports/for-vetri-ai are the operational truth source for Windows AI memory/RAG.",
+  "openai_rule": "OpenAI receives only sanitized context packets and can suggest or explain, never execute."
+}

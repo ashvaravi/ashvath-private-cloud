@@ -1,0 +1,15 @@
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"Mac backend V1","summary":"Mac backend V1 locked and healthy."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"Private cloud foundation","summary":"Backend/frontend/private cloud foundation completed."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"Home Assistant gateway","summary":"Home Assistant backend gateway working."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"V1A.4","summary":"Wake-word stability passed."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"V1C","summary":"Local Windows TTS passed."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"V2C","summary":"Spotify routing passed."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"V2D","summary":"Spotify memory/regional search started."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"Voice wake phrase","summary":"Hey Vetri postponed; keep hey jarvis until custom Colab model."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"Voice Station","summary":"Voice Station abandoned."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"Spotify NLP","summary":"Tamil Spotify search needs Unicode-safe normalization, aliases, title guards, memory correction, and better STT for music commands."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"Spotify safety","summary":"Spotify empty response bug was fixed."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"STT correction","summary":"STT corrections like resium/resim music to resume music were added."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"Mac exports","summary":"Mac safe export layer completed and validated."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"Mac backend smoke","summary":"Mac backend equivalent smoke test passed with 19 passed and 0 failed."}
+{"timestamp":"2026-05-14T00:00:00+05:30","phase":"Mac frontend smoke","summary":"Mac frontend smoke test passed with 26 passed and 0 failed."}

@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Vetri Voice Station</title>
+
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+  <main class="shell">
+    <section class="hero-card">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+
+      <div class="hero-content">
+        <div class="brand-row">
+          <div class="logo-mark">
+            <span>V</span>
+          </div>
+
+          <div>
+            <p class="eyebrow">Private Cloud Voice Layer</p>
+            <h1>Vetri Voice Station</h1>
+          </div>
+        </div>
+
+        <p class="hero-copy">
+          A wake-word control surface for your private cloud and bedroom automation.
+          Listening is local to this Windows machine, while actions still flow through
+          the Mac Vetri backend safety layer.
+        </p>
+
+        <div class="wake-pill">
+          <span class="pulse-dot"></span>
+          Wake phrase: <strong>Hey Vetri</strong>
+        </div>
+      </div>
+
+      <div class="status-panel">
+        <div class="status-topline">
+          <span id="statusLabel" class="status-label">Checking...</span>
+          <span id="pidLabel" class="pid-label">PID: —</span>
+        </div>
+
+        <div id="ring" class="ring idle">
+          <div class="ring-inner">
+            <span id="ringText">OFF</span>
+          </div>
+        </div>
+
+        <div class="metric-grid">
+          <div>
+            <span class="metric-label">Uptime</span>
+            <strong id="uptime">0s</strong>
+          </div>
+          <div>
+            <span class="metric-label">Autostart</span>
+            <strong id="autostart">—</strong>
+          </div>
+          <div>
+            <span class="metric-label">Exit Code</span>
+            <strong id="exitCode">—</strong>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button id="startBtn" class="primary">Start 24/7 Listening</button>
+          <button id="stopBtn" class="danger">Stop</button>
+          <button id="restartBtn" class="ghost">Restart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Live Safety Chain</h2>
+
+        <div class="chain">
+          <div>Wake Listener</div>
+          <span></span>
+          <div>Windows Router</div>
+          <span></span>
+          <div>Mac Vetri Backend</div>
+          <span></span>
+          <div>Home Assistant</div>
+        </div>
+
+        <p class="muted">
+          The Home Assistant token stays on the Mac. Windows does not directly control
+          Home Assistant. All live actions go through backend verification.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Enabled Bedroom Controls</h2>
+
+        <ul class="command-list">
+          <li>Turn on/off bedroom light one</li>
+          <li>Turn on/off bedroom light two</li>
+          <li>Turn on/off bedroom strip light</li>
+          <li>Turn on/off bedroom fan</li>
+          <li>Turn on/off bedroom lights</li>
+          <li>Turn on/off all bedroom devices</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Blocked by Design</h2>
+
+        <ul class="blocked-list">
+          <li>Locks and unlocks</li>
+          <li>Doors, covers, climate changes</li>
+          <li>Delete, restart, shutdown</li>
+          <li>Arbitrary Home Assistant services</li>
+          <li>Arbitrary SSH commands</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="console-card">
+      <div class="console-header">
+        <div>
+          <p class="eyebrow">Live Process Output</p>
+          <h2>Wake Listener Console</h2>
+        </div>
+
+        <button id="clearBtn" class="ghost small">Clear View</button>
+      </div>
+
+      <pre id="logs" class="logs">Loading logs...</pre>
+    </section>
+
+    <section class="footer-note">
+      <p>
+        Vetri Voice Station V1A.2. Keep this browser tab open to monitor the
+        listener. Use Stop to manually turn off 24/7 listening.
+      </p>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

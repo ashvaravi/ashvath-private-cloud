@@ -1,0 +1,34 @@
+{
+  "data": {
+    "contract": "notes/export-contract-for-windows-ai.md",
+    "export_policy": "safe summaries only; no credentials, raw logs, media, or database dumps",
+    "files": [
+      "README_EXPORTS.md",
+      "export_manifest.json",
+      "latest_backend_health.json",
+      "latest_backup_summary.json",
+      "latest_companion_context.json",
+      "latest_dashboard_summary.json",
+      "latest_diagnosis_context.json",
+      "latest_homeassistant_summary.json",
+      "latest_iot_registry_summary.json",
+      "latest_monitoring_inputs.json",
+      "latest_network_summary.json",
+      "latest_service_summary.json",
+      "latest_status_snapshot.json",
+      "sanitized_events.jsonl"
+    ],
+    "v4_context_exports": [
+      "latest_companion_context.json",
+      "latest_diagnosis_context.json",
+      "latest_iot_registry_summary.json",
+      "latest_monitoring_inputs.json"
+    ]
+  },
+  "errors": [],
+  "generated_at": "2026-05-14T23:50:09+05:30",
+  "ok": true,
+  "source": "vetri-mac-export",
+  "summary": "Export manifest generated.",
+  "warnings": []
+}

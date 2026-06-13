@@ -1,0 +1,157 @@
+{
+  "chat": {
+    "description": "General deterministic chat grounded in local memory",
+    "type": "chat",
+    "risk": "none",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": ["hello", "talk to me", "chat with me", "let's talk"]
+  },
+  "architecture_question": {
+    "description": "Answer architecture questions from private cloud memory",
+    "type": "architecture_memory",
+    "risk": "none",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": [
+      "explain my private cloud architecture",
+      "what runs on windows",
+      "what runs on mac",
+      "how does home assistant control work",
+      "why should windows not directly call home assistant",
+      "architecture",
+      "windows role",
+      "mac role"
+    ]
+  },
+  "project_status": {
+    "description": "Summarize completed phases and current phase",
+    "type": "project_memory",
+    "risk": "none",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": ["what phase are we in", "what did we complete today", "next safest step", "project status"]
+  },
+  "memory_query": {
+    "description": "Search local memory and RAG-safe files",
+    "type": "memory_query",
+    "risk": "none",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": ["what do you remember", "search memory", "remembered", "memory"]
+  },
+  "memory_update": {
+    "description": "Explicit low-risk user preference memory update",
+    "type": "memory_update",
+    "risk": "low",
+    "requires_confirmation": false,
+    "write_access": true,
+    "keywords": ["remember that", "remember i prefer", "save preference"]
+  },
+  "forget_last_memory": {
+    "description": "Forget the last personal memory entry",
+    "type": "forget_last_memory",
+    "risk": "low",
+    "requires_confirmation": false,
+    "write_access": true,
+    "keywords": ["forget last memory"]
+  },
+  "mac_export_summary": {
+    "description": "Summarize latest synced Mac safe export cache",
+    "type": "mac_export_summary",
+    "risk": "low",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": [
+      "summarize the latest mac export",
+      "is my private cloud healthy based on the latest export",
+      "latest backend health from export",
+      "latest backup summary from export",
+      "latest network summary from export",
+      "latest service summary from export",
+      "mac export"
+    ]
+  },
+  "backend_ping": {
+    "description": "Safe read-only backend root endpoint check",
+    "type": "backend_api",
+    "method": "GET",
+    "endpoint": "/",
+    "risk": "low",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": ["backend ping", "backend reachable", "check backend root"]
+  },
+  "dashboard_summary": {
+    "description": "Safe read-only dashboard summary",
+    "type": "backend_api",
+    "method": "GET",
+    "endpoint": "/api/v1/dashboard/summary",
+    "risk": "low",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": ["dashboard summary", "private cloud status", "cloud status"]
+  },
+  "network_status": {
+    "description": "Safe read-only network status",
+    "type": "backend_api",
+    "method": "GET",
+    "endpoint": "/api/v1/network/status",
+    "risk": "low",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": ["network status", "tailscale status", "check network"]
+  },
+  "storage_status": {
+    "description": "Safe read-only storage status",
+    "type": "backend_api",
+    "method": "GET",
+    "endpoint": "/api/v1/storage/status",
+    "risk": "low",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": ["storage status", "disk status", "check storage"]
+  },
+  "backup_status": {
+    "description": "Safe read-only backup summary",
+    "type": "backend_api",
+    "method": "GET",
+    "endpoint": "/api/v1/backups/summary",
+    "risk": "low",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": ["backup status", "backup summary", "check backups"]
+  },
+  "diagnostic": {
+    "description": "Read-only diagnosis using backend snapshots or synced Mac exports",
+    "type": "diagnosis_skill",
+    "risk": "low",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": ["diagnose", "diagnose immich", "diagnose backend", "diagnose home assistant", "diagnose network", "diagnose storage", "diagnose backup"]
+  },
+  "spotify_memory": {
+    "description": "Read Spotify memory without changing stable Spotify control",
+    "type": "spotify_memory",
+    "risk": "low",
+    "requires_confirmation": false,
+    "write_access": false,
+    "keywords": ["show spotify memory", "recent wrong mappings", "regional song search", "tamil spotify", "that song was wrong"]
+  },
+  "home_control": {
+    "description": "Home Assistant control through Mac backend only; not executed by chat brain by default",
+    "type": "home_control_backend_only",
+    "risk": "medium",
+    "requires_confirmation": true,
+    "write_access": true,
+    "keywords": ["turn off all devices", "turn on bedroom lights", "turn off bedroom", "home control"]
+  },
+  "unsafe": {
+    "description": "Blocked unsafe request",
+    "type": "blocked",
+    "risk": "high",
+    "requires_confirmation": false,
+    "write_access": true,
+    "keywords": ["delete all logs", "wipe", "format", "remove docker volume", "expose public port"]
+  }
+}

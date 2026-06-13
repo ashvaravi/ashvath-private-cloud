@@ -1,0 +1,16 @@
+{
+  "raw_imports_days": 14,
+  "cleaned_events_days": 180,
+  "health_snapshots_days": 90,
+  "daily_summaries_days": 1095,
+  "incident_memory": "manual_delete_only",
+  "personal_memory": "user_controlled",
+  "vector_indexes": "rebuildable",
+  "rules": [
+    "Raw logs expire.",
+    "Summaries survive.",
+    "Incidents persist.",
+    "Personal memory is user-controlled.",
+    "Vectors are rebuildable."
+  ]
+}

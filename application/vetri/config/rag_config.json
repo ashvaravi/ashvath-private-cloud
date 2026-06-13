@@ -1,0 +1,17 @@
+{
+  "backend": "local_keyword_search",
+  "sqlite_fts_optional": true,
+  "embeddings_enabled": false,
+  "vector_store": "placeholder_only",
+  "cloud_vector_db": false,
+  "include_mac_exports_after_sanitization": true,
+  "excluded_paths": [
+    ".env",
+    "legacy/old_logs_do_not_index",
+    "raw photos",
+    "raw videos",
+    "database dumps",
+    "tokens",
+    "secrets"
+  ]
+}

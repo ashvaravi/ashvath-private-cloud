@@ -1,0 +1,6 @@
+{
+  "last_spoken_summary": "Vetri Backend diagnosis completed. Overall status is healthy. Failed steps: 0. No immediate action is needed.",
+  "last_matched_command": "diagnose backend",
+  "last_transcript": "How is the health of the backend?",
+  "voice_muted": false
+}

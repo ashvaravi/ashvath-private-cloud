@@ -1,0 +1,14 @@
+{
+  "data": {
+    "control_rule": "Windows must use Vetri backend verified-control endpoints only.",
+    "port_open": true,
+    "reachable": true,
+    "status": 200
+  },
+  "errors": [],
+  "generated_at": "2026-05-14T23:50:09+05:30",
+  "ok": true,
+  "source": "vetri-mac-export",
+  "summary": "Home Assistant reachability summary only; no token or direct control data exported.",
+  "warnings": []
+}

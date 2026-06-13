@@ -1,0 +1,1483 @@
+2026-05-14T14:44:30.836504+00:00 | ========================================
+2026-05-14T14:44:30.837562+00:00 |  Vetri Terminal openWakeWord V1A.3
+2026-05-14T14:44:30.838082+00:00 | ========================================
+2026-05-14T14:44:30.838514+00:00 | Wake model target: hey_jarvis
+2026-05-14T14:44:30.838953+00:00 | Wake threshold: 0.55
+2026-05-14T14:44:30.839384+00:00 | Sample rate: 16000
+2026-05-14T14:44:30.839770+00:00 | Block size: 1280 samples
+2026-05-14T14:44:30.840233+00:00 | State: WAKE_ONLY
+2026-05-14T14:44:30.840623+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T14:44:30.841422+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T14:44:30.842107+00:00 | Press Ctrl+C to stop.
+2026-05-14T14:44:30.856060+00:00 | ========================================
+2026-05-14T14:44:43.627282+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.772
+2026-05-14T14:44:43.896437+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T14:44:48.591646+00:00 | [Vetri] Command audio RMS: 0.083763
+2026-05-14T14:44:51.781067+00:00 | [Vetri] Heard command: Turn on bedroom lights.
+2026-05-14T14:44:51.784559+00:00 | [Vetri] Routing command safely...
+2026-05-14T14:44:54.561649+00:00 | ========== Router Output ==========
+2026-05-14T14:44:54.563956+00:00 | [Router] Route: home_assistant_control
+2026-05-14T14:44:54.564630+00:00 | [HA Control] GROUP INTENT
+2026-05-14T14:44:54.565604+00:00 | Action: turn_on
+2026-05-14T14:44:54.566253+00:00 | Group ID: bedroom_lights
+2026-05-14T14:44:54.566786+00:00 | Group: Bedroom Lights
+2026-05-14T14:44:54.567294+00:00 | Target phrase: bedroom lights
+2026-05-14T14:44:54.567789+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T14:44:54.569639+00:00 | Status code: 200
+2026-05-14T14:44:54.570360+00:00 | Backend response: {"ok":true,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_lights","friendly_name":"Bedroom Lights","action":"turn_on","expected_state":"on","total_entities":3,"verified_count":3,"failed_count":0,"verified":true,"message":"Bedroom Lights are now on.","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_on","before_state":"off","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_on","before_state":"off","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_on","before_state":"off","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T14:44:54.571016+00:00 | Verified: True
+2026-05-14T14:44:54.571529+00:00 | Verified entities: 3/3
+2026-05-14T14:44:54.571944+00:00 | Failed entities: 0
+2026-05-14T14:44:54.572848+00:00 | Control summary: Bedroom Lights are now on.
+2026-05-14T14:44:54.573560+00:00 | ===================================
+2026-05-14T14:44:54.574298+00:00 | [Vetri] Summary: Bedroom Lights are now on.
+2026-05-14T14:44:54.575018+00:00 | State: WAKE_ONLY
+2026-05-14T14:44:54.589083+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.951
+2026-05-14T14:44:54.856454+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T14:44:54.863108+00:00 | [Vetri] Command audio RMS: 0.040599
+2026-05-14T14:44:59.530504+00:00 | [Vetri] Heard command: Please speak.
+2026-05-14T14:44:59.531834+00:00 | [Vetri] Ignored command: no approved command cue. Returning to wake-only mode.
+2026-05-14T14:44:59.533113+00:00 | State: WAKE_ONLY
+2026-05-14T14:44:59.546450+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.991
+2026-05-14T14:44:59.816160+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T14:44:59.837474+00:00 | [Vetri] Command audio RMS: 0.132447
+2026-05-14T14:45:01.746843+00:00 | [Vetri] Heard command: sensitivity, gum problems, and
+2026-05-14T14:45:01.747921+00:00 | [Vetri] Ignored command: no approved command cue. Returning to wake-only mode.
+2026-05-14T14:45:01.748454+00:00 | State: WAKE_ONLY
+2026-05-14T14:49:10.578951+00:00 | ========================================
+2026-05-14T14:49:10.580722+00:00 |  Vetri Terminal openWakeWord V1A.3
+2026-05-14T14:49:10.581319+00:00 | ========================================
+2026-05-14T14:49:10.581777+00:00 | Wake model target: hey_jarvis
+2026-05-14T14:49:10.582548+00:00 | Wake threshold: 0.7
+2026-05-14T14:49:10.583324+00:00 | Sample rate: 16000
+2026-05-14T14:49:10.584010+00:00 | Block size: 1280 samples
+2026-05-14T14:49:10.584957+00:00 | State: WAKE_ONLY
+2026-05-14T14:49:10.585938+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T14:49:10.586893+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T14:49:10.587576+00:00 | Press Ctrl+C to stop.
+2026-05-14T14:49:10.588244+00:00 | ========================================
+2026-05-14T14:49:30.160091+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.911
+2026-05-14T14:49:30.302838+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T14:49:30.561744+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T14:49:35.253156+00:00 | [Vetri] Command audio RMS: 0.093375
+2026-05-14T14:49:37.533322+00:00 | [Vetri] Heard command: Turn off bedroom lights.
+2026-05-14T14:49:37.534538+00:00 | [Vetri] Routing command safely...
+2026-05-14T14:49:39.913741+00:00 | ========== Router Output ==========
+2026-05-14T14:49:39.914445+00:00 | [Router] Route: home_assistant_control
+2026-05-14T14:49:39.915424+00:00 | [HA Control] GROUP INTENT
+2026-05-14T14:49:39.916725+00:00 | Action: turn_off
+2026-05-14T14:49:39.917523+00:00 | Group ID: bedroom_lights
+2026-05-14T14:49:39.918280+00:00 | Group: Bedroom Lights
+2026-05-14T14:49:39.919023+00:00 | Target phrase: bedroom lights
+2026-05-14T14:49:39.919772+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T14:49:39.920917+00:00 | Status code: 200
+2026-05-14T14:49:39.924023+00:00 | Backend response: {"ok":false,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_lights","friendly_name":"Bedroom Lights","action":"turn_off","expected_state":"off","total_entities":3,"verified_count":0,"failed_count":3,"verified":false,"message":"Bedroom Lights command completed with 3 verification issue(s).","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_off","before_state":"on","after_state":"on","expected_state":"off","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_off","before_state":"on","after_state":"on","expected_state":"off","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_off","before_state":"on","after_state":"on","expected_state":"off","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T14:49:39.924846+00:00 | Verified: False
+2026-05-14T14:49:39.925409+00:00 | Verified entities: 0/3
+2026-05-14T14:49:39.926295+00:00 | Failed entities: 3
+2026-05-14T14:49:39.927126+00:00 | Control summary: Bedroom Lights command completed with 3 verification issue(s).
+2026-05-14T14:49:39.927918+00:00 | ===================================
+2026-05-14T14:49:39.928783+00:00 | [Vetri] Summary: Bedroom Lights command completed with 3 verification issue(s).
+2026-05-14T14:49:40.055043+00:00 | [Vetri] Drained 60 buffered audio frame(s) after command.
+2026-05-14T14:49:40.058748+00:00 | State: WAKE_ONLY
+2026-05-14T14:49:55.875785+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.753
+2026-05-14T14:49:55.994279+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T14:49:56.265620+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T14:50:00.923358+00:00 | [Vetri] Command audio RMS: 0.075281
+2026-05-14T14:50:02.524894+00:00 | [Vetri] Heard command: Turn off bedroom lights.
+2026-05-14T14:50:02.527293+00:00 | [Vetri] Routing command safely...
+2026-05-14T14:50:04.489572+00:00 | ========== Router Output ==========
+2026-05-14T14:50:04.490651+00:00 | [Router] Route: home_assistant_control
+2026-05-14T14:50:04.492285+00:00 | [HA Control] GROUP INTENT
+2026-05-14T14:50:04.493220+00:00 | Action: turn_off
+2026-05-14T14:50:04.494084+00:00 | Group ID: bedroom_lights
+2026-05-14T14:50:04.494705+00:00 | Group: Bedroom Lights
+2026-05-14T14:50:04.495250+00:00 | Target phrase: bedroom lights
+2026-05-14T14:50:04.495712+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T14:50:04.496418+00:00 | Status code: 200
+2026-05-14T14:50:04.497541+00:00 | Backend response: {"ok":true,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_lights","friendly_name":"Bedroom Lights","action":"turn_off","expected_state":"off","total_entities":3,"verified_count":3,"failed_count":0,"verified":true,"message":"Bedroom Lights are now off.","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_off","before_state":"off","after_state":"off","expected_state":"off","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_off","before_state":"off","after_state":"off","expected_state":"off","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_off","before_state":"off","after_state":"off","expected_state":"off","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T14:50:04.498330+00:00 | Verified: True
+2026-05-14T14:50:04.499029+00:00 | Verified entities: 3/3
+2026-05-14T14:50:04.500021+00:00 | Failed entities: 0
+2026-05-14T14:50:04.501036+00:00 | Control summary: Bedroom Lights are now off.
+2026-05-14T14:50:04.501883+00:00 | ===================================
+2026-05-14T14:50:04.503251+00:00 | [Vetri] Summary: Bedroom Lights are now off.
+2026-05-14T14:50:04.623253+00:00 | [Vetri] Drained 46 buffered audio frame(s) after command.
+2026-05-14T14:50:04.624193+00:00 | State: WAKE_ONLY
+2026-05-14T14:54:02.701552+00:00 | ========================================
+2026-05-14T14:54:02.703243+00:00 |  Vetri Terminal openWakeWord V1A.3
+2026-05-14T14:54:02.704278+00:00 | ========================================
+2026-05-14T14:54:02.705162+00:00 | Wake model target: hey_jarvis
+2026-05-14T14:54:02.705966+00:00 | Wake threshold: 0.7
+2026-05-14T14:54:02.706931+00:00 | Sample rate: 16000
+2026-05-14T14:54:02.708068+00:00 | Block size: 1280 samples
+2026-05-14T14:54:02.710168+00:00 | State: WAKE_ONLY
+2026-05-14T14:54:02.711920+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T14:54:02.713484+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T14:54:02.714527+00:00 | Press Ctrl+C to stop.
+2026-05-14T14:54:02.716017+00:00 | ========================================
+2026-05-14T14:54:38.236993+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.703
+2026-05-14T14:54:38.389397+00:00 | [Vetri] Drained 2 buffered audio frame(s) after wake detection.
+2026-05-14T14:54:38.658634+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T14:54:43.362708+00:00 | [Vetri] Command audio RMS: 0.072187
+2026-05-14T14:54:45.063744+00:00 | [Vetri] Heard command: ChatGPT, me gustaría que me preguntas.
+2026-05-14T14:54:45.065368+00:00 | [Vetri] Ignored command: no approved command cue. Returning to wake-only mode.
+2026-05-14T14:54:45.186818+00:00 | [Vetri] Drained 23 buffered audio frame(s) after ignored command.
+2026-05-14T14:54:45.188453+00:00 | State: WAKE_ONLY
+2026-05-14T14:55:36.712319+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.949
+2026-05-14T14:55:36.842069+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T14:55:37.110353+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T14:55:41.801669+00:00 | [Vetri] Command audio RMS: 0.092246
+2026-05-14T14:55:43.729107+00:00 | [Vetri] Heard command: How's things?
+2026-05-14T14:55:43.731425+00:00 | [Vetri] Ignored command: no approved command cue. Returning to wake-only mode.
+2026-05-14T14:55:43.859876+00:00 | [Vetri] Drained 25 buffered audio frame(s) after ignored command.
+2026-05-14T14:55:43.861276+00:00 | State: WAKE_ONLY
+2026-05-14T14:55:55.072555+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.946
+2026-05-14T14:55:55.197645+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T14:55:55.461139+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T14:56:00.120964+00:00 | [Vetri] Command audio RMS: 0.102082
+2026-05-14T14:56:01.992434+00:00 | [Vetri] Heard command: Turn off all bedroom lights.
+2026-05-14T14:56:01.993739+00:00 | [Vetri] Routing command safely...
+2026-05-14T14:56:03.939187+00:00 | ========== Router Output ==========
+2026-05-14T14:56:03.939980+00:00 | [Router] Route: home_assistant_control
+2026-05-14T14:56:03.940657+00:00 | [HA Control] GROUP INTENT
+2026-05-14T14:56:03.941261+00:00 | Action: turn_off
+2026-05-14T14:56:03.942084+00:00 | Group ID: bedroom_lights
+2026-05-14T14:56:03.943379+00:00 | Group: Bedroom Lights
+2026-05-14T14:56:03.944178+00:00 | Target phrase: all bedroom lights
+2026-05-14T14:56:03.944933+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T14:56:03.945812+00:00 | Status code: 200
+2026-05-14T14:56:03.946615+00:00 | Backend response: {"ok":true,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_lights","friendly_name":"Bedroom Lights","action":"turn_off","expected_state":"off","total_entities":3,"verified_count":3,"failed_count":0,"verified":true,"message":"Bedroom Lights are now off.","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_off","before_state":"off","after_state":"off","expected_state":"off","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_off","before_state":"off","after_state":"off","expected_state":"off","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_off","before_state":"off","after_state":"off","expected_state":"off","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T14:56:03.947430+00:00 | Verified: True
+2026-05-14T14:56:03.948232+00:00 | Verified entities: 3/3
+2026-05-14T14:56:03.949004+00:00 | Failed entities: 0
+2026-05-14T14:56:03.949783+00:00 | Control summary: Bedroom Lights are now off.
+2026-05-14T14:56:03.950627+00:00 | ===================================
+2026-05-14T14:56:03.951118+00:00 | [Vetri] Summary: Bedroom Lights are now off.
+2026-05-14T14:56:04.073178+00:00 | [Vetri] Drained 49 buffered audio frame(s) after command.
+2026-05-14T14:56:04.074609+00:00 | State: WAKE_ONLY
+2026-05-14T14:56:08.350461+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.976
+2026-05-14T14:56:08.470099+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T14:56:08.737091+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T14:56:13.400445+00:00 | [Vetri] Command audio RMS: 0.089677
+2026-05-14T14:56:14.659560+00:00 | [Vetri] Heard command: Turn on all bedroom lights.
+2026-05-14T14:56:14.661230+00:00 | [Vetri] Routing command safely...
+2026-05-14T14:56:16.455174+00:00 | ========== Router Output ==========
+2026-05-14T14:56:16.455835+00:00 | [Router] Route: home_assistant_control
+2026-05-14T14:56:16.457053+00:00 | [HA Control] GROUP INTENT
+2026-05-14T14:56:16.458309+00:00 | Action: turn_on
+2026-05-14T14:56:16.458904+00:00 | Group ID: bedroom_lights
+2026-05-14T14:56:16.459531+00:00 | Group: Bedroom Lights
+2026-05-14T14:56:16.460215+00:00 | Target phrase: all bedroom lights
+2026-05-14T14:56:16.460837+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T14:56:16.461595+00:00 | Status code: 200
+2026-05-14T14:56:16.462404+00:00 | Backend response: {"ok":false,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_lights","friendly_name":"Bedroom Lights","action":"turn_on","expected_state":"on","total_entities":3,"verified_count":1,"failed_count":2,"verified":false,"message":"Bedroom Lights command completed with 2 verification issue(s).","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_on","before_state":"off","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T14:56:16.463283+00:00 | Verified: False
+2026-05-14T14:56:16.464046+00:00 | Verified entities: 1/3
+2026-05-14T14:56:16.464903+00:00 | Failed entities: 2
+2026-05-14T14:56:16.465449+00:00 | Control summary: Bedroom Lights command completed with 2 verification issue(s).
+2026-05-14T14:56:16.465962+00:00 | ===================================
+2026-05-14T14:56:16.466441+00:00 | [Vetri] Summary: Bedroom Lights command completed with 2 verification issue(s).
+2026-05-14T14:56:16.588344+00:00 | [Vetri] Drained 40 buffered audio frame(s) after command.
+2026-05-14T14:56:16.589674+00:00 | State: WAKE_ONLY
+2026-05-14T15:09:37.574473+00:00 | ========================================
+2026-05-14T15:09:37.577146+00:00 |  Vetri Terminal openWakeWord V1C
+2026-05-14T15:09:37.578242+00:00 | ========================================
+2026-05-14T15:09:37.579106+00:00 | Wake model target: hey_jarvis
+2026-05-14T15:09:37.579846+00:00 | Wake threshold: 0.7
+2026-05-14T15:09:37.580851+00:00 | Sample rate: 16000
+2026-05-14T15:09:37.582881+00:00 | Block size: 1280 samples
+2026-05-14T15:09:37.583852+00:00 | TTS enabled: True
+2026-05-14T15:09:37.584620+00:00 | State: WAKE_ONLY
+2026-05-14T15:09:37.585790+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T15:09:37.586579+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T15:09:37.587579+00:00 | Press Ctrl+C to stop.
+2026-05-14T15:09:37.588466+00:00 | ========================================
+2026-05-14T15:09:49.189564+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.887
+2026-05-14T15:09:49.322808+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:09:49.598096+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:09:54.249847+00:00 | [Vetri] Command audio RMS: 0.065408
+2026-05-14T15:09:56.337679+00:00 | [Vetri] Heard command: Turn on bedroom lights.
+2026-05-14T15:09:56.338685+00:00 | [Vetri] Routing command safely...
+2026-05-14T15:09:58.812298+00:00 | ========== Router Output ==========
+2026-05-14T15:09:58.814546+00:00 | [Router] Route: home_assistant_control
+2026-05-14T15:09:58.816133+00:00 | [HA Control] GROUP INTENT
+2026-05-14T15:09:58.816909+00:00 | Action: turn_on
+2026-05-14T15:09:58.817518+00:00 | Group ID: bedroom_lights
+2026-05-14T15:09:58.817851+00:00 | Group: Bedroom Lights
+2026-05-14T15:09:58.818099+00:00 | Target phrase: bedroom lights
+2026-05-14T15:09:58.818381+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T15:09:58.818621+00:00 | Status code: 200
+2026-05-14T15:09:58.818851+00:00 | Backend response: {"ok":true,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_lights","friendly_name":"Bedroom Lights","action":"turn_on","expected_state":"on","total_entities":3,"verified_count":3,"failed_count":0,"verified":true,"message":"Bedroom Lights are now on.","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T15:09:58.819237+00:00 | Verified: True
+2026-05-14T15:09:58.819725+00:00 | Verified entities: 3/3
+2026-05-14T15:09:58.820099+00:00 | Failed entities: 0
+2026-05-14T15:09:58.820490+00:00 | Control summary: Bedroom Lights are now on.
+2026-05-14T15:09:58.820853+00:00 | ===================================
+2026-05-14T15:09:58.821295+00:00 | [Vetri] Summary: Bedroom Lights are now on.
+2026-05-14T15:09:58.856616+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T15:09:58.984980+00:00 | [Vetri] Drained 59 buffered audio frame(s) after command.
+2026-05-14T15:09:58.986445+00:00 | State: WAKE_ONLY
+2026-05-14T15:30:40.083738+00:00 | ========================================
+2026-05-14T15:30:40.085168+00:00 |  Vetri Terminal openWakeWord V2C
+2026-05-14T15:30:40.086352+00:00 | ========================================
+2026-05-14T15:30:40.087165+00:00 | Wake model target: hey_jarvis
+2026-05-14T15:30:40.088321+00:00 | Wake threshold: 0.7
+2026-05-14T15:30:40.088876+00:00 | Sample rate: 16000
+2026-05-14T15:30:40.089742+00:00 | Block size: 1280 samples
+2026-05-14T15:30:40.090746+00:00 | TTS enabled: True
+2026-05-14T15:30:40.091859+00:00 | Spotify route: enabled
+2026-05-14T15:30:40.092723+00:00 | State: WAKE_ONLY
+2026-05-14T15:30:40.093536+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T15:30:40.094750+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T15:30:40.095721+00:00 | Press Ctrl+C to stop.
+2026-05-14T15:30:40.096194+00:00 | ========================================
+2026-05-14T15:30:45.823389+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.969
+2026-05-14T15:30:45.959689+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:30:46.223868+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:30:50.878552+00:00 | [Vetri] Command audio RMS: 0.086641
+2026-05-14T15:30:53.319491+00:00 | [Vetri] Heard command: Pause music.
+2026-05-14T15:30:53.320869+00:00 | [Vetri] Routing command safely...
+2026-05-14T15:30:54.115255+00:00 | ========== Router Output ==========
+2026-05-14T15:30:54.117103+00:00 | [Router] Route: spotify_control
+2026-05-14T15:30:54.118375+00:00 | ========================================
+2026-05-14T15:30:54.119315+00:00 |  Vetri Spotify Control
+2026-05-14T15:30:54.119995+00:00 | ========================================
+2026-05-14T15:30:54.121220+00:00 | Input: Pause music.
+2026-05-14T15:30:54.122001+00:00 | Spotify summary: Spotify command failed: Expecting value: line 1 column 1 (char 0)
+2026-05-14T15:30:54.123054+00:00 | ========================================
+2026-05-14T15:30:54.123983+00:00 | ===================================
+2026-05-14T15:30:54.124575+00:00 | [Vetri] Summary: Spotify command failed: Expecting value: line 1 column 1 (char 0)
+2026-05-14T15:30:54.155339+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T15:30:54.156882+00:00 | [Vetri] Router returned non-zero code: 1
+2026-05-14T15:30:54.314578+00:00 | [Vetri] Drained 43 buffered audio frame(s) after command.
+2026-05-14T15:30:54.315619+00:00 | State: WAKE_ONLY
+2026-05-14T15:31:03.344826+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.937
+2026-05-14T15:31:03.475265+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:31:03.748989+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:31:08.381461+00:00 | [Vetri] Command audio RMS: 0.068891
+2026-05-14T15:31:10.443206+00:00 | [Vetri] Heard command: レシーブミュージック。
+2026-05-14T15:31:10.445041+00:00 | [Vetri] Ignored command: empty transcript. Returning to wake-only mode.
+2026-05-14T15:31:10.568179+00:00 | [Vetri] Drained 27 buffered audio frame(s) after ignored command.
+2026-05-14T15:31:10.569303+00:00 | State: WAKE_ONLY
+2026-05-14T15:31:31.117294+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.910
+2026-05-14T15:31:31.242577+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:31:31.499880+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:31:36.165930+00:00 | [Vetri] Command audio RMS: 0.093793
+2026-05-14T15:31:37.094201+00:00 | [Vetri] Heard command: Pressium audio.
+2026-05-14T15:31:37.094917+00:00 | [Vetri] Ignored command: no approved command cue. Returning to wake-only mode.
+2026-05-14T15:31:37.224768+00:00 | [Vetri] Drained 13 buffered audio frame(s) after ignored command.
+2026-05-14T15:31:37.225929+00:00 | State: WAKE_ONLY
+2026-05-14T15:31:44.875703+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.943
+2026-05-14T15:31:44.999858+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:31:45.276484+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:31:50.013657+00:00 | [Vetri] Command audio RMS: 0.059790
+2026-05-14T15:31:51.663652+00:00 | [Vetri] Heard command: 레스유 뮤직.
+2026-05-14T15:31:51.679033+00:00 | [Vetri] Ignored command: empty transcript. Returning to wake-only mode.
+2026-05-14T15:31:51.809088+00:00 | [Vetri] Drained 22 buffered audio frame(s) after ignored command.
+2026-05-14T15:31:51.809827+00:00 | State: WAKE_ONLY
+2026-05-14T15:32:28.149483+00:00 | ========================================
+2026-05-14T15:32:28.151037+00:00 |  Vetri Terminal openWakeWord V2C
+2026-05-14T15:32:28.151637+00:00 | ========================================
+2026-05-14T15:32:28.152649+00:00 | Wake model target: hey_jarvis
+2026-05-14T15:32:28.153125+00:00 | Wake threshold: 0.7
+2026-05-14T15:32:28.153659+00:00 | Sample rate: 16000
+2026-05-14T15:32:28.154116+00:00 | Block size: 1280 samples
+2026-05-14T15:32:28.154634+00:00 | TTS enabled: True
+2026-05-14T15:32:28.155159+00:00 | Spotify route: enabled
+2026-05-14T15:32:28.155605+00:00 | State: WAKE_ONLY
+2026-05-14T15:32:28.156054+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T15:32:28.156456+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T15:32:28.156934+00:00 | Press Ctrl+C to stop.
+2026-05-14T15:32:28.157348+00:00 | ========================================
+2026-05-14T15:32:38.105663+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.970
+2026-05-14T15:32:38.240914+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:32:38.496907+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:32:43.154107+00:00 | [Vetri] Command audio RMS: 0.117731
+2026-05-14T15:32:45.966673+00:00 | [Vetri] Heard command: Resium music.
+2026-05-14T15:32:45.967950+00:00 | [Vetri] Routing command safely...
+2026-05-14T15:32:46.303713+00:00 | ========== Router Output ==========
+2026-05-14T15:32:46.304962+00:00 | [Router] Route: spotify_control
+2026-05-14T15:32:46.305704+00:00 | ========================================
+2026-05-14T15:32:46.306419+00:00 |  Vetri Spotify Control
+2026-05-14T15:32:46.307434+00:00 | ========================================
+2026-05-14T15:32:46.308193+00:00 | Input: Resium music.
+2026-05-14T15:32:46.309065+00:00 | Spotify summary: No safe Spotify command matched.
+2026-05-14T15:32:46.309705+00:00 | ========================================
+2026-05-14T15:32:46.310286+00:00 | ===================================
+2026-05-14T15:32:46.310869+00:00 | [Vetri] Summary: No safe Spotify command matched.
+2026-05-14T15:32:46.350402+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T15:32:46.350867+00:00 | [Vetri] Router returned non-zero code: 1
+2026-05-14T15:32:46.474459+00:00 | [Vetri] Drained 41 buffered audio frame(s) after command.
+2026-05-14T15:32:46.476147+00:00 | State: WAKE_ONLY
+2026-05-14T15:33:10.823802+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.750
+2026-05-14T15:33:10.956212+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:33:11.222944+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:33:15.873194+00:00 | [Vetri] Command audio RMS: 0.135276
+2026-05-14T15:33:17.271590+00:00 | [Vetri] Heard command: Resim Music
+2026-05-14T15:33:17.274096+00:00 | [Vetri] Routing command safely...
+2026-05-14T15:33:17.608912+00:00 | ========== Router Output ==========
+2026-05-14T15:33:17.609977+00:00 | [Router] Route: spotify_control
+2026-05-14T15:33:17.610495+00:00 | ========================================
+2026-05-14T15:33:17.610978+00:00 |  Vetri Spotify Control
+2026-05-14T15:33:17.611677+00:00 | ========================================
+2026-05-14T15:33:17.614349+00:00 | Input: Resim Music
+2026-05-14T15:33:17.615290+00:00 | Spotify summary: No safe Spotify command matched.
+2026-05-14T15:33:17.615847+00:00 | ========================================
+2026-05-14T15:33:17.616657+00:00 | ===================================
+2026-05-14T15:33:17.617366+00:00 | [Vetri] Summary: No safe Spotify command matched.
+2026-05-14T15:33:17.629522+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T15:33:17.631131+00:00 | [Vetri] Router returned non-zero code: 1
+2026-05-14T15:33:17.753781+00:00 | [Vetri] Drained 23 buffered audio frame(s) after command.
+2026-05-14T15:33:17.755619+00:00 | State: WAKE_ONLY
+2026-05-14T15:33:26.504536+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.976
+2026-05-14T15:33:26.635058+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:33:26.904330+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:33:31.536732+00:00 | [Vetri] Command audio RMS: 0.083592
+2026-05-14T15:33:32.954446+00:00 | [Vetri] Heard command: Resume music.
+2026-05-14T15:33:32.956839+00:00 | [Vetri] Routing command safely...
+2026-05-14T15:33:34.212105+00:00 | ========== Router Output ==========
+2026-05-14T15:33:34.213520+00:00 | [Router] Route: spotify_control
+2026-05-14T15:33:34.214888+00:00 | ========================================
+2026-05-14T15:33:34.215822+00:00 |  Vetri Spotify Control
+2026-05-14T15:33:34.216413+00:00 | ========================================
+2026-05-14T15:33:34.217351+00:00 | Input: Resume music.
+2026-05-14T15:33:34.218152+00:00 | Spotify summary: Spotify command failed: Expecting value: line 1 column 1 (char 0)
+2026-05-14T15:33:34.219001+00:00 | ========================================
+2026-05-14T15:33:34.219554+00:00 | ===================================
+2026-05-14T15:33:34.220160+00:00 | [Vetri] Summary: Spotify command failed: Expecting value: line 1 column 1 (char 0)
+2026-05-14T15:33:34.250151+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T15:33:34.251649+00:00 | [Vetri] Router returned non-zero code: 1
+2026-05-14T15:33:34.380823+00:00 | [Vetri] Drained 35 buffered audio frame(s) after command.
+2026-05-14T15:33:34.381699+00:00 | State: WAKE_ONLY
+2026-05-14T15:36:38.948942+00:00 | ========================================
+2026-05-14T15:36:38.951553+00:00 |  Vetri Terminal openWakeWord V2C
+2026-05-14T15:36:38.952385+00:00 | ========================================
+2026-05-14T15:36:38.953248+00:00 | Wake model target: hey_jarvis
+2026-05-14T15:36:38.954136+00:00 | Wake threshold: 0.7
+2026-05-14T15:36:38.955231+00:00 | Sample rate: 16000
+2026-05-14T15:36:38.956153+00:00 | Block size: 1280 samples
+2026-05-14T15:36:38.956984+00:00 | TTS enabled: True
+2026-05-14T15:36:38.957813+00:00 | Spotify route: enabled
+2026-05-14T15:36:38.958666+00:00 | State: WAKE_ONLY
+2026-05-14T15:36:38.959471+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T15:36:38.960223+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T15:36:38.961022+00:00 | Press Ctrl+C to stop.
+2026-05-14T15:36:38.961858+00:00 | ========================================
+2026-05-14T15:36:41.418781+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.849
+2026-05-14T15:36:41.564492+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:36:41.838453+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:36:46.493564+00:00 | [Vetri] Command audio RMS: 0.107876
+2026-05-14T15:36:48.182068+00:00 | [Vetri] Heard command: Pause music.
+2026-05-14T15:36:48.183378+00:00 | [Vetri] Routing command safely...
+2026-05-14T15:36:49.012077+00:00 | ========== Router Output ==========
+2026-05-14T15:36:49.013001+00:00 | [Router] Route: spotify_control
+2026-05-14T15:36:49.014002+00:00 | ========================================
+2026-05-14T15:36:49.014556+00:00 |  Vetri Spotify Control
+2026-05-14T15:36:49.015062+00:00 | ========================================
+2026-05-14T15:36:49.015584+00:00 | Input: Pause music.
+2026-05-14T15:36:49.016112+00:00 | Spotify summary: Spotify playback paused.
+2026-05-14T15:36:49.017065+00:00 | ========================================
+2026-05-14T15:36:49.017554+00:00 | ===================================
+2026-05-14T15:36:49.018112+00:00 | [Vetri] Summary: Spotify playback paused.
+2026-05-14T15:36:49.052355+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T15:36:49.184493+00:00 | [Vetri] Drained 33 buffered audio frame(s) after command.
+2026-05-14T15:36:49.185385+00:00 | State: WAKE_ONLY
+2026-05-14T15:36:56.809722+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.924
+2026-05-14T15:36:56.943830+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:36:57.215415+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:37:01.851217+00:00 | [Vetri] Command audio RMS: 0.065132
+2026-05-14T15:37:02.992478+00:00 | [Vetri] Heard command: Resume music.
+2026-05-14T15:37:02.993681+00:00 | [Vetri] Routing command safely...
+2026-05-14T15:37:04.101648+00:00 | ========== Router Output ==========
+2026-05-14T15:37:04.103145+00:00 | [Router] Route: spotify_control
+2026-05-14T15:37:04.104229+00:00 | ========================================
+2026-05-14T15:37:04.105332+00:00 |  Vetri Spotify Control
+2026-05-14T15:37:04.106146+00:00 | ========================================
+2026-05-14T15:37:04.106889+00:00 | Input: Resume music.
+2026-05-14T15:37:04.107686+00:00 | Spotify summary: Spotify playback resumed.
+2026-05-14T15:37:04.108515+00:00 | ========================================
+2026-05-14T15:37:04.109938+00:00 | ===================================
+2026-05-14T15:37:04.110410+00:00 | [Vetri] Summary: Spotify playback resumed.
+2026-05-14T15:37:04.150753+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T15:37:04.293774+00:00 | [Vetri] Drained 30 buffered audio frame(s) after command.
+2026-05-14T15:37:04.295099+00:00 | State: WAKE_ONLY
+2026-05-14T15:41:20.650677+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.853
+2026-05-14T15:41:20.789244+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:41:21.053594+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:41:25.722072+00:00 | [Vetri] Command audio RMS: 0.125781
+2026-05-14T15:41:26.648567+00:00 | [Vetri] Heard command: Play Aatma Garam.
+2026-05-14T15:41:26.649625+00:00 | [Vetri] Routing command safely...
+2026-05-14T15:41:28.839863+00:00 | ========== Router Output ==========
+2026-05-14T15:41:28.840725+00:00 | [Router] Route: spotify_control
+2026-05-14T15:41:28.841432+00:00 | ========================================
+2026-05-14T15:41:28.842174+00:00 |  Vetri Spotify Control
+2026-05-14T15:41:28.843052+00:00 | ========================================
+2026-05-14T15:41:28.843775+00:00 | Input: Play Aatma Garam.
+2026-05-14T15:41:28.844282+00:00 | Spotify summary: Playing Aatma Rama Ananda Ramana by Sayan Bhattacharya on Spotify.
+2026-05-14T15:41:28.844721+00:00 | ========================================
+2026-05-14T15:41:28.845176+00:00 | ===================================
+2026-05-14T15:41:28.845560+00:00 | [Vetri] Summary: Playing Aatma Rama Ananda Ramana by Sayan Bhattacharya on Spotify.
+2026-05-14T15:41:28.881487+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T15:41:29.006605+00:00 | [Vetri] Drained 41 buffered audio frame(s) after command.
+2026-05-14T15:41:29.008693+00:00 | State: WAKE_ONLY
+2026-05-14T15:41:47.392591+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.957
+2026-05-14T15:41:47.527520+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T15:41:47.796416+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T15:41:52.470570+00:00 | [Vetri] Command audio RMS: 0.096441
+2026-05-14T15:41:53.812631+00:00 | [Vetri] Heard command: Play Blinding Lights.
+2026-05-14T15:41:53.813657+00:00 | [Vetri] Routing command safely...
+2026-05-14T15:41:56.494042+00:00 | ========== Router Output ==========
+2026-05-14T15:41:56.496927+00:00 | [Router] Route: vetri_voice_cli
+2026-05-14T15:41:56.497575+00:00 | 
+2026-05-14T15:41:56.498034+00:00 | ========================================
+2026-05-14T15:41:56.498588+00:00 |  Vetri Voice V0G - Text Test Mode
+2026-05-14T15:41:56.499056+00:00 | ========================================
+2026-05-14T15:41:56.499536+00:00 | Mode: typed text -> policy-checked safe Vetri routing
+2026-05-14T15:41:56.499952+00:00 | No microphone used.
+2026-05-14T15:41:56.500384+00:00 | No OpenAI speech-to-text used.
+2026-05-14T15:41:56.500807+00:00 | No text-to-speech playback used.
+2026-05-14T15:41:56.501721+00:00 | ========================================
+2026-05-14T15:41:56.502186+00:00 | Input text: Play Blinding Lights.
+2026-05-14T15:41:56.502660+00:00 | Corrected transcript: play blinding lights
+2026-05-14T15:41:56.503044+00:00 | [NO SAFE MATCH] Score: 51
+2026-05-14T15:41:56.503515+00:00 | I could not safely match that to an approved Vetri command. Try diagnose backend, diagnose immich, validate endpoints, or repeat last response.
+2026-05-14T15:41:56.503903+00:00 | [Vetri Voice] Text test session logged: Z:\HomeLLM\voice\logs\voice_sessions.jsonl
+2026-05-14T15:41:56.504338+00:00 | ===================================
+2026-05-14T15:41:56.504936+00:00 | [Vetri] Summary: I could not safely match that to an approved Vetri command. Try diagnose backend, diagnose immich, validate endpoints, or repeat last response.
+2026-05-14T15:41:56.538013+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T15:41:56.677132+00:00 | [Vetri] Drained 52 buffered audio frame(s) after command.
+2026-05-14T15:41:56.677859+00:00 | State: WAKE_ONLY
+2026-05-14T16:00:49.223002+00:00 | ========================================
+2026-05-14T16:00:49.224274+00:00 |  Vetri Terminal openWakeWord V2C
+2026-05-14T16:00:49.225139+00:00 | ========================================
+2026-05-14T16:00:49.226099+00:00 | Wake model target: hey_jarvis
+2026-05-14T16:00:49.226876+00:00 | Wake threshold: 0.7
+2026-05-14T16:00:49.227796+00:00 | Sample rate: 16000
+2026-05-14T16:00:49.228400+00:00 | Block size: 1280 samples
+2026-05-14T16:00:49.229299+00:00 | TTS enabled: True
+2026-05-14T16:00:49.230118+00:00 | Spotify route: enabled
+2026-05-14T16:00:49.230946+00:00 | State: WAKE_ONLY
+2026-05-14T16:00:49.231825+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T16:00:49.232777+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T16:00:49.235643+00:00 | Press Ctrl+C to stop.
+2026-05-14T16:00:49.237194+00:00 | ========================================
+2026-05-14T16:00:51.730605+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.983
+2026-05-14T16:00:51.869286+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:00:52.129989+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:00:56.784140+00:00 | [Vetri] Command audio RMS: 0.129631
+2026-05-14T16:00:58.878865+00:00 | [Vetri] Heard command: Pause music.
+2026-05-14T16:00:58.881350+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:00:59.717073+00:00 | ========== Router Output ==========
+2026-05-14T16:00:59.717876+00:00 | [Router] Route: spotify_control
+2026-05-14T16:00:59.718560+00:00 | ========================================
+2026-05-14T16:00:59.719692+00:00 |  Vetri Spotify Control
+2026-05-14T16:00:59.720717+00:00 | ========================================
+2026-05-14T16:00:59.721221+00:00 | Input: Pause music.
+2026-05-14T16:00:59.721698+00:00 | Spotify summary: Spotify playback paused.
+2026-05-14T16:00:59.722198+00:00 | ========================================
+2026-05-14T16:00:59.723173+00:00 | ===================================
+2026-05-14T16:00:59.723702+00:00 | [Vetri] Summary: Spotify playback paused.
+2026-05-14T16:00:59.756089+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:00:59.881769+00:00 | [Vetri] Drained 38 buffered audio frame(s) after command.
+2026-05-14T16:00:59.882663+00:00 | State: WAKE_ONLY
+2026-05-14T16:01:11.574149+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.916
+2026-05-14T16:01:11.697993+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:01:11.964147+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:01:16.608288+00:00 | [Vetri] Command audio RMS: 0.101163
+2026-05-14T16:01:18.301405+00:00 | [Vetri] Heard command: Play ஆத்தங்கர மனமே by இளையராஜா.
+2026-05-14T16:01:18.304434+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:01:22.245022+00:00 | ========== Router Output ==========
+2026-05-14T16:01:22.245822+00:00 | [Router] Route: spotify_control
+2026-05-14T16:01:22.246805+00:00 | ========================================
+2026-05-14T16:01:22.248040+00:00 |  Vetri Spotify Control
+2026-05-14T16:01:22.248792+00:00 | ========================================
+2026-05-14T16:01:22.249785+00:00 | Input: Play ஆத்தங்கர மனமே by இளையராஜா.
+2026-05-14T16:01:22.250550+00:00 | Spotify summary: Playing By Moonlight by Prem Dhillon, MixSingh on Spotify.
+2026-05-14T16:01:22.251143+00:00 | ========================================
+2026-05-14T16:01:22.251764+00:00 | ===================================
+2026-05-14T16:01:22.252577+00:00 | [Vetri] Summary: Playing By Moonlight by Prem Dhillon, MixSingh on Spotify.
+2026-05-14T16:01:22.282262+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:01:22.408564+00:00 | [Vetri] Drained 72 buffered audio frame(s) after command.
+2026-05-14T16:01:22.409874+00:00 | State: WAKE_ONLY
+2026-05-14T16:01:38.294757+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.780
+2026-05-14T16:01:38.420126+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:01:38.697053+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:01:43.372311+00:00 | [Vetri] Command audio RMS: 0.140012
+2026-05-14T16:01:45.778286+00:00 | [Vetri] Heard command: கிளையாதங்கர மரமே பை இளையராஜா.
+2026-05-14T16:01:45.781175+00:00 | [Vetri] Ignored command: empty transcript. Returning to wake-only mode.
+2026-05-14T16:01:45.908315+00:00 | [Vetri] Drained 31 buffered audio frame(s) after ignored command.
+2026-05-14T16:01:45.921300+00:00 | State: WAKE_ONLY
+2026-05-14T16:01:57.764287+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.959
+2026-05-14T16:01:57.897962+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:01:58.162361+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:02:02.812248+00:00 | [Vetri] Command audio RMS: 0.119185
+2026-05-14T16:02:04.259084+00:00 | [Vetri] Heard command: Pause music.
+2026-05-14T16:02:04.260654+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:02:05.077094+00:00 | ========== Router Output ==========
+2026-05-14T16:02:05.079448+00:00 | [Router] Route: spotify_control
+2026-05-14T16:02:05.082732+00:00 | ========================================
+2026-05-14T16:02:05.084085+00:00 |  Vetri Spotify Control
+2026-05-14T16:02:05.085109+00:00 | ========================================
+2026-05-14T16:02:05.086147+00:00 | Input: Pause music.
+2026-05-14T16:02:05.087008+00:00 | Spotify summary: Spotify playback paused.
+2026-05-14T16:02:05.087795+00:00 | ========================================
+2026-05-14T16:02:05.088705+00:00 | ===================================
+2026-05-14T16:02:05.089636+00:00 | [Vetri] Summary: Spotify playback paused.
+2026-05-14T16:02:05.106753+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:02:05.238176+00:00 | [Vetri] Drained 30 buffered audio frame(s) after command.
+2026-05-14T16:02:05.238982+00:00 | State: WAKE_ONLY
+2026-05-14T16:06:27.786555+00:00 | ========================================
+2026-05-14T16:06:27.788201+00:00 |  Vetri Terminal openWakeWord V2C
+2026-05-14T16:06:27.789800+00:00 | ========================================
+2026-05-14T16:06:27.790645+00:00 | Wake model target: hey_jarvis
+2026-05-14T16:06:27.791665+00:00 | Wake threshold: 0.7
+2026-05-14T16:06:27.792417+00:00 | Sample rate: 16000
+2026-05-14T16:06:27.792954+00:00 | Block size: 1280 samples
+2026-05-14T16:06:27.793684+00:00 | TTS enabled: True
+2026-05-14T16:06:27.794428+00:00 | Spotify route: enabled
+2026-05-14T16:06:27.795173+00:00 | State: WAKE_ONLY
+2026-05-14T16:06:27.795870+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T16:06:27.796619+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T16:06:27.797388+00:00 | Press Ctrl+C to stop.
+2026-05-14T16:06:27.798135+00:00 | ========================================
+2026-05-14T16:06:31.306981+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.971
+2026-05-14T16:06:31.447306+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:06:31.714107+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:06:36.351435+00:00 | [Vetri] Command audio RMS: 0.121598
+2026-05-14T16:06:38.338105+00:00 | [Vetri] Heard command: Play Aathma Maramarame.
+2026-05-14T16:06:38.339629+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:06:45.729688+00:00 | ========== Router Output ==========
+2026-05-14T16:06:45.730689+00:00 | [Router] Route: spotify_control
+2026-05-14T16:06:45.731340+00:00 | ========================================
+2026-05-14T16:06:45.732049+00:00 |  Vetri Spotify Control
+2026-05-14T16:06:45.732692+00:00 | ========================================
+2026-05-14T16:06:45.733388+00:00 | Input: Play Aathma Maramarame.
+2026-05-14T16:06:45.734144+00:00 | Spotify summary: Playing Aathma Rama by Vayuu on Spotify.
+2026-05-14T16:06:45.734817+00:00 | ========================================
+2026-05-14T16:06:45.736414+00:00 | ===================================
+2026-05-14T16:06:45.737162+00:00 | [Vetri] Summary: Playing Aathma Rama by Vayuu on Spotify.
+2026-05-14T16:06:45.778010+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:06:45.905739+00:00 | [Vetri] Drained 119 buffered audio frame(s) after command.
+2026-05-14T16:06:45.907336+00:00 | State: WAKE_ONLY
+2026-05-14T16:06:54.827972+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.778
+2026-05-14T16:06:54.955087+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:06:55.223557+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:06:59.877341+00:00 | [Vetri] Command audio RMS: 0.122022
+2026-05-14T16:07:01.450003+00:00 | [Vetri] Heard command: ப்ளே ஆத்தனிற மரமே.
+2026-05-14T16:07:01.450837+00:00 | [Vetri] Ignored command: empty transcript. Returning to wake-only mode.
+2026-05-14T16:07:01.585195+00:00 | [Vetri] Drained 21 buffered audio frame(s) after ignored command.
+2026-05-14T16:07:01.586283+00:00 | State: WAKE_ONLY
+2026-05-14T16:07:38.212416+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.856
+2026-05-14T16:07:38.350778+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:07:38.612033+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:07:43.266642+00:00 | [Vetri] Command audio RMS: 0.047763
+2026-05-14T16:07:45.316837+00:00 | [Vetri] Heard command: Play
+2026-05-14T16:07:45.318052+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:07:48.221824+00:00 | ========== Router Output ==========
+2026-05-14T16:07:48.223293+00:00 | [Router] Route: vetri_voice_cli
+2026-05-14T16:07:48.223938+00:00 | 
+2026-05-14T16:07:48.225030+00:00 | ========================================
+2026-05-14T16:07:48.225710+00:00 |  Vetri Voice V0G - Text Test Mode
+2026-05-14T16:07:48.226241+00:00 | ========================================
+2026-05-14T16:07:48.226826+00:00 | Mode: typed text -> policy-checked safe Vetri routing
+2026-05-14T16:07:48.227347+00:00 | No microphone used.
+2026-05-14T16:07:48.227896+00:00 | No OpenAI speech-to-text used.
+2026-05-14T16:07:48.228386+00:00 | No text-to-speech playback used.
+2026-05-14T16:07:48.228791+00:00 | ========================================
+2026-05-14T16:07:48.229301+00:00 | Input text: Play
+2026-05-14T16:07:48.229760+00:00 | Corrected transcript: play
+2026-05-14T16:07:48.230252+00:00 | [NO SAFE MATCH] Score: 40
+2026-05-14T16:07:48.231231+00:00 | I could not safely match that to an approved Vetri command. Try diagnose backend, diagnose immich, validate endpoints, or repeat last response.
+2026-05-14T16:07:48.231683+00:00 | [Vetri Voice] Text test session logged: Z:\HomeLLM\voice\logs\voice_sessions.jsonl
+2026-05-14T16:07:48.232625+00:00 | ===================================
+2026-05-14T16:07:48.233325+00:00 | [Vetri] Summary: I could not safely match that to an approved Vetri command. Try diagnose backend, diagnose immich, validate endpoints, or repeat last response.
+2026-05-14T16:07:48.271960+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:07:48.404875+00:00 | [Vetri] Drained 64 buffered audio frame(s) after command.
+2026-05-14T16:07:48.405993+00:00 | State: WAKE_ONLY
+2026-05-14T16:07:59.742507+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.947
+2026-05-14T16:07:59.891336+00:00 | [Vetri] Drained 2 buffered audio frame(s) after wake detection.
+2026-05-14T16:08:00.157239+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:08:04.856351+00:00 | [Vetri] Command audio RMS: 0.083535
+2026-05-14T16:08:06.328235+00:00 | [Vetri] Heard command: பிளே ஆத்தங்கர மரமே.
+2026-05-14T16:08:06.329918+00:00 | [Vetri] Ignored command: empty transcript. Returning to wake-only mode.
+2026-05-14T16:08:06.461526+00:00 | [Vetri] Drained 20 buffered audio frame(s) after ignored command.
+2026-05-14T16:08:06.463258+00:00 | State: WAKE_ONLY
+2026-05-14T16:08:22.700310+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.857
+2026-05-14T16:08:22.829592+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:08:23.103462+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:08:27.747793+00:00 | [Vetri] Command audio RMS: 0.134813
+2026-05-14T16:08:29.848059+00:00 | [Vetri] Heard command: Play Aathangara Marame.
+2026-05-14T16:08:29.850345+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:08:39.429973+00:00 | ========== Router Output ==========
+2026-05-14T16:08:39.431290+00:00 | [Router] Route: spotify_control
+2026-05-14T16:08:39.432383+00:00 | ========================================
+2026-05-14T16:08:39.433362+00:00 |  Vetri Spotify Control
+2026-05-14T16:08:39.434194+00:00 | ========================================
+2026-05-14T16:08:39.435192+00:00 | Input: Play Aathangara Marame.
+2026-05-14T16:08:39.436184+00:00 | Spotify summary: Playing Aathangara Marame by Shravan Kalai on Spotify.
+2026-05-14T16:08:39.437034+00:00 | ========================================
+2026-05-14T16:08:39.437558+00:00 | ===================================
+2026-05-14T16:08:39.438011+00:00 | [Vetri] Summary: Playing Aathangara Marame by Shravan Kalai on Spotify.
+2026-05-14T16:08:39.508108+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:08:39.634694+00:00 | [Vetri] Drained 148 buffered audio frame(s) after command.
+2026-05-14T16:08:39.636366+00:00 | State: WAKE_ONLY
+2026-05-14T16:08:53.259545+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.804
+2026-05-14T16:08:53.399899+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:08:53.669337+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:08:58.315190+00:00 | [Vetri] Command audio RMS: 0.119216
+2026-05-14T16:08:59.753069+00:00 | [Vetri] Heard command: Play Aathangara Marame by Ilaiyaraaja.
+2026-05-14T16:08:59.754427+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:09:00.914431+00:00 | ========== Router Output ==========
+2026-05-14T16:09:00.915288+00:00 | [Router] Route: spotify_control
+2026-05-14T16:09:00.915932+00:00 | ========================================
+2026-05-14T16:09:00.916399+00:00 |  Vetri Spotify Control
+2026-05-14T16:09:00.916890+00:00 | ========================================
+2026-05-14T16:09:00.917302+00:00 | Input: Play Aathangara Marame by Ilaiyaraaja.
+2026-05-14T16:09:00.917728+00:00 | Spotify summary: Playing Aathangara Marame (From "Kizhakku Cheemayile") by Mano, Sujatha from memory.
+2026-05-14T16:09:00.918226+00:00 | ========================================
+2026-05-14T16:09:00.919057+00:00 | ===================================
+2026-05-14T16:09:00.919660+00:00 | [Vetri] Summary: Playing Aathangara Marame (From "Kizhakku Cheemayile") by Mano, Sujatha from memory.
+2026-05-14T16:09:00.947086+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:09:01.094489+00:00 | [Vetri] Drained 34 buffered audio frame(s) after command.
+2026-05-14T16:09:01.095569+00:00 | State: WAKE_ONLY
+2026-05-14T16:12:16.422512+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.986
+2026-05-14T16:12:16.563673+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:12:16.833369+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:12:21.465506+00:00 | [Vetri] Command audio RMS: 0.078280
+2026-05-14T16:12:23.621685+00:00 | [Vetri] Heard command: Turn off all bedroom lights.
+2026-05-14T16:12:23.623134+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:12:26.417104+00:00 | ========== Router Output ==========
+2026-05-14T16:12:26.419216+00:00 | [Router] Route: home_assistant_control
+2026-05-14T16:12:26.420524+00:00 | [HA Control] GROUP INTENT
+2026-05-14T16:12:26.421839+00:00 | Action: turn_off
+2026-05-14T16:12:26.422773+00:00 | Group ID: bedroom_lights
+2026-05-14T16:12:26.423514+00:00 | Group: Bedroom Lights
+2026-05-14T16:12:26.424177+00:00 | Target phrase: all bedroom lights
+2026-05-14T16:12:26.424725+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T16:12:26.425300+00:00 | Status code: 200
+2026-05-14T16:12:26.425978+00:00 | Backend response: {"ok":false,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_lights","friendly_name":"Bedroom Lights","action":"turn_off","expected_state":"off","total_entities":3,"verified_count":2,"failed_count":1,"verified":false,"message":"Bedroom Lights command completed with 1 verification issue(s).","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_off","before_state":"on","after_state":"on","expected_state":"off","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_off","before_state":"on","after_state":"off","expected_state":"off","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_off","before_state":"on","after_state":"off","expected_state":"off","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T16:12:26.426547+00:00 | Verified: False
+2026-05-14T16:12:26.427271+00:00 | Verified entities: 2/3
+2026-05-14T16:12:26.427799+00:00 | Failed entities: 1
+2026-05-14T16:12:26.428240+00:00 | Control summary: Bedroom Lights command completed with 1 verification issue(s).
+2026-05-14T16:12:26.428551+00:00 | ===================================
+2026-05-14T16:12:26.428962+00:00 | [Vetri] Summary: Bedroom Lights command completed with 1 verification issue(s).
+2026-05-14T16:12:26.459494+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:12:26.591225+00:00 | [Vetri] Drained 64 buffered audio frame(s) after command.
+2026-05-14T16:12:26.591827+00:00 | State: WAKE_ONLY
+2026-05-14T16:12:42.182887+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.755
+2026-05-14T16:12:42.314121+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:12:42.582151+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:12:47.213474+00:00 | [Vetri] Command audio RMS: 0.107026
+2026-05-14T16:12:48.807948+00:00 | [Vetri] Heard command: Turn on all bedroom lights.
+2026-05-14T16:12:48.809378+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:12:50.931695+00:00 | ========== Router Output ==========
+2026-05-14T16:12:50.933006+00:00 | [Router] Route: home_assistant_control
+2026-05-14T16:12:50.934263+00:00 | [HA Control] GROUP INTENT
+2026-05-14T16:12:50.934947+00:00 | Action: turn_on
+2026-05-14T16:12:50.935763+00:00 | Group ID: bedroom_lights
+2026-05-14T16:12:50.936294+00:00 | Group: Bedroom Lights
+2026-05-14T16:12:50.936589+00:00 | Target phrase: all bedroom lights
+2026-05-14T16:12:50.937127+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T16:12:50.937949+00:00 | Status code: 200
+2026-05-14T16:12:50.938526+00:00 | Backend response: {"ok":false,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_lights","friendly_name":"Bedroom Lights","action":"turn_on","expected_state":"on","total_entities":3,"verified_count":1,"failed_count":2,"verified":false,"message":"Bedroom Lights command completed with 2 verification issue(s).","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_on","before_state":"off","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T16:12:50.938816+00:00 | Verified: False
+2026-05-14T16:12:50.939505+00:00 | Verified entities: 1/3
+2026-05-14T16:12:50.940141+00:00 | Failed entities: 2
+2026-05-14T16:12:50.940892+00:00 | Control summary: Bedroom Lights command completed with 2 verification issue(s).
+2026-05-14T16:12:50.941689+00:00 | ===================================
+2026-05-14T16:12:50.942269+00:00 | [Vetri] Summary: Bedroom Lights command completed with 2 verification issue(s).
+2026-05-14T16:12:50.975050+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:12:51.104271+00:00 | [Vetri] Drained 48 buffered audio frame(s) after command.
+2026-05-14T16:12:51.105550+00:00 | State: WAKE_ONLY
+2026-05-14T16:13:00.902023+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.739
+2026-05-14T16:13:01.030682+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:13:01.300906+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:13:05.977554+00:00 | [Vetri] Command audio RMS: 0.071806
+2026-05-14T16:13:07.435452+00:00 | [Vetri] Heard command: Turn on bedroom fan.
+2026-05-14T16:13:07.438126+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:13:09.835473+00:00 | ========== Router Output ==========
+2026-05-14T16:13:09.836025+00:00 | [Router] Route: home_assistant_control
+2026-05-14T16:13:09.836585+00:00 | [HA Control] GROUP INTENT
+2026-05-14T16:13:09.837272+00:00 | Action: turn_on
+2026-05-14T16:13:09.838323+00:00 | Group ID: bedroom_all
+2026-05-14T16:13:09.839256+00:00 | Group: Bedroom Devices
+2026-05-14T16:13:09.839743+00:00 | Target phrase: bedroom fan
+2026-05-14T16:13:09.840238+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T16:13:09.841713+00:00 | Status code: 200
+2026-05-14T16:13:09.842835+00:00 | Backend response: {"ok":false,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_all","friendly_name":"Bedroom Devices","action":"turn_on","expected_state":"on","total_entities":4,"verified_count":3,"failed_count":1,"verified":false,"message":"Bedroom Devices command completed with 1 verification issue(s).","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_fan","friendly_name":"Bedroom Fan","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T16:13:09.843559+00:00 | Verified: False
+2026-05-14T16:13:09.844029+00:00 | Verified entities: 3/4
+2026-05-14T16:13:09.844867+00:00 | Failed entities: 1
+2026-05-14T16:13:09.845366+00:00 | Control summary: Bedroom Devices command completed with 1 verification issue(s).
+2026-05-14T16:13:09.845786+00:00 | ===================================
+2026-05-14T16:13:09.846171+00:00 | [Vetri] Summary: Bedroom Devices command completed with 1 verification issue(s).
+2026-05-14T16:13:09.884329+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:13:10.019272+00:00 | [Vetri] Drained 50 buffered audio frame(s) after command.
+2026-05-14T16:13:10.021126+00:00 | State: WAKE_ONLY
+2026-05-14T16:13:27.250757+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.987
+2026-05-14T16:13:27.382615+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:13:27.635724+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:13:32.297522+00:00 | [Vetri] Command audio RMS: 0.108765
+2026-05-14T16:13:33.922626+00:00 | [Vetri] Heard command: Turn off all switches in bedroom.
+2026-05-14T16:13:33.923567+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:13:36.609237+00:00 | ========== Router Output ==========
+2026-05-14T16:13:36.610763+00:00 | [Router] Route: home_assistant_control
+2026-05-14T16:13:36.611582+00:00 | [HA Control] GROUP INTENT
+2026-05-14T16:13:36.612599+00:00 | Action: turn_off
+2026-05-14T16:13:36.613295+00:00 | Group ID: bedroom_all
+2026-05-14T16:13:36.614069+00:00 | Group: Bedroom Devices
+2026-05-14T16:13:36.614510+00:00 | Target phrase: all switches in bedroom
+2026-05-14T16:13:36.614878+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T16:13:36.615160+00:00 | Status code: 200
+2026-05-14T16:13:36.615814+00:00 | Backend response: {"ok":false,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_all","friendly_name":"Bedroom Devices","action":"turn_off","expected_state":"off","total_entities":4,"verified_count":0,"failed_count":4,"verified":false,"message":"Bedroom Devices command completed with 4 verification issue(s).","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_off","before_state":"on","after_state":"on","expected_state":"off","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_off","before_state":"on","after_state":"on","expected_state":"off","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_off","before_state":"on","after_state":"on","expected_state":"off","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_fan","friendly_name":"Bedroom Fan","action":"turn_off","before_state":"on","after_state":"on","expected_state":"off","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T16:13:36.616656+00:00 | Verified: False
+2026-05-14T16:13:36.617278+00:00 | Verified entities: 0/4
+2026-05-14T16:13:36.617948+00:00 | Failed entities: 4
+2026-05-14T16:13:36.618965+00:00 | Control summary: Bedroom Devices command completed with 4 verification issue(s).
+2026-05-14T16:13:36.619668+00:00 | ===================================
+2026-05-14T16:13:36.620189+00:00 | [Vetri] Summary: Bedroom Devices command completed with 4 verification issue(s).
+2026-05-14T16:13:36.665109+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:13:36.806165+00:00 | [Vetri] Drained 56 buffered audio frame(s) after command.
+2026-05-14T16:13:36.807119+00:00 | State: WAKE_ONLY
+2026-05-14T16:13:54.048180+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.851
+2026-05-14T16:13:54.180707+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:13:54.451822+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:13:59.119499+00:00 | [Vetri] Command audio RMS: 0.117039
+2026-05-14T16:14:02.748232+00:00 | [Vetri] Heard command: Turn on all lights.
+2026-05-14T16:14:02.750381+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:14:04.835392+00:00 | ========== Router Output ==========
+2026-05-14T16:14:04.836170+00:00 | [Router] Route: home_assistant_control
+2026-05-14T16:14:04.836745+00:00 | [HA Control] GROUP INTENT
+2026-05-14T16:14:04.837276+00:00 | Action: turn_on
+2026-05-14T16:14:04.837799+00:00 | Group ID: bedroom_lights
+2026-05-14T16:14:04.838398+00:00 | Group: Bedroom Lights
+2026-05-14T16:14:04.839023+00:00 | Target phrase: all lights
+2026-05-14T16:14:04.839866+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T16:14:04.840320+00:00 | Status code: 200
+2026-05-14T16:14:04.841084+00:00 | Backend response: {"ok":false,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_lights","friendly_name":"Bedroom Lights","action":"turn_on","expected_state":"on","total_entities":3,"verified_count":1,"failed_count":2,"verified":false,"message":"Bedroom Lights command completed with 2 verification issue(s).","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_on","before_state":"off","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T16:14:04.841810+00:00 | Verified: False
+2026-05-14T16:14:04.842458+00:00 | Verified entities: 1/3
+2026-05-14T16:14:04.842976+00:00 | Failed entities: 2
+2026-05-14T16:14:04.843571+00:00 | Control summary: Bedroom Lights command completed with 2 verification issue(s).
+2026-05-14T16:14:04.844092+00:00 | ===================================
+2026-05-14T16:14:04.844654+00:00 | [Vetri] Summary: Bedroom Lights command completed with 2 verification issue(s).
+2026-05-14T16:14:04.858632+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:14:04.994796+00:00 | [Vetri] Drained 73 buffered audio frame(s) after command.
+2026-05-14T16:14:04.996134+00:00 | State: WAKE_ONLY
+2026-05-14T16:14:16.070049+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.880
+2026-05-14T16:14:16.218148+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:14:16.480528+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:14:21.119191+00:00 | [Vetri] Command audio RMS: 0.087033
+2026-05-14T16:14:22.719917+00:00 | [Vetri] Heard command: What is the verification issue?
+2026-05-14T16:14:22.721364+00:00 | [Vetri] Ignored command: no approved command cue. Returning to wake-only mode.
+2026-05-14T16:14:22.850758+00:00 | [Vetri] Drained 21 buffered audio frame(s) after ignored command.
+2026-05-14T16:14:22.852758+00:00 | State: WAKE_ONLY
+2026-05-14T16:14:39.831891+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.738
+2026-05-14T16:14:39.961405+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:14:40.230213+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:14:44.888774+00:00 | [Vetri] Command audio RMS: 0.011612
+2026-05-14T16:14:46.247037+00:00 | [Vetri] Heard command: 
+2026-05-14T16:14:46.249018+00:00 | [Vetri] Ignored command: empty transcript. Returning to wake-only mode.
+2026-05-14T16:14:46.375730+00:00 | [Vetri] Drained 18 buffered audio frame(s) after ignored command.
+2026-05-14T16:14:46.376529+00:00 | State: WAKE_ONLY
+2026-05-14T16:16:13.358825+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.999
+2026-05-14T16:16:13.478429+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:16:13.745545+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:16:18.409540+00:00 | [Vetri] Command audio RMS: 0.078419
+2026-05-14T16:16:20.013975+00:00 | [Vetri] Heard command: How is the health of the backend?
+2026-05-14T16:16:20.015933+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:16:27.286356+00:00 | ========== Router Output ==========
+2026-05-14T16:16:27.287192+00:00 | [Router] Route: vetri_voice_cli
+2026-05-14T16:16:27.288154+00:00 | 
+2026-05-14T16:16:27.289182+00:00 | ========================================
+2026-05-14T16:16:27.289755+00:00 |  Vetri Voice V0G - Text Test Mode
+2026-05-14T16:16:27.290275+00:00 | ========================================
+2026-05-14T16:16:27.290896+00:00 | Mode: typed text -> policy-checked safe Vetri routing
+2026-05-14T16:16:27.291563+00:00 | No microphone used.
+2026-05-14T16:16:27.292141+00:00 | No OpenAI speech-to-text used.
+2026-05-14T16:16:27.292719+00:00 | No text-to-speech playback used.
+2026-05-14T16:16:27.293441+00:00 | ========================================
+2026-05-14T16:16:27.294014+00:00 | Input text: How is the health of the backend?
+2026-05-14T16:16:27.294589+00:00 | Corrected transcript: how is the healthy of the backend
+2026-05-14T16:16:27.295059+00:00 | Matched Vetri command: diagnose backend
+2026-05-14T16:16:27.295570+00:00 | Confidence score: 75
+2026-05-14T16:16:27.296021+00:00 | Policy: Command policy passed.
+2026-05-14T16:16:27.296474+00:00 | Confirmed safe execution: diagnose backend
+2026-05-14T16:16:27.296914+00:00 | [Vetri Voice] Running safe Vetri command: diagnose backend
+2026-05-14T16:16:27.297436+00:00 | [Vetri Voice] Module: vetri_ai.main
+2026-05-14T16:16:27.297875+00:00 | [Vetri Voice] Working directory: Z:\HomeLLM
+2026-05-14T16:16:27.298462+00:00 | 
+2026-05-14T16:16:27.299070+00:00 | ========== Vetri CLI Output ==========
+2026-05-14T16:16:27.299511+00:00 | ===================================
+2026-05-14T16:16:27.300029+00:00 |  Vetri AI - Phase 3.5
+2026-05-14T16:16:27.301028+00:00 |  OpenAI-assisted read-only execution
+2026-05-14T16:16:27.301759+00:00 |  Local validation required
+2026-05-14T16:16:27.302281+00:00 | ===================================
+2026-05-14T16:16:27.302978+00:00 | Type 'help' to see commands.
+2026-05-14T16:16:27.303540+00:00 | Prefix with 'json' for full debug output.
+2026-05-14T16:16:27.304564+00:00 | Example: json openai run why is immich slow
+2026-05-14T16:16:27.305173+00:00 | Type 'exit' to quit.
+2026-05-14T16:16:27.305660+00:00 | 
+2026-05-14T16:16:27.306093+00:00 | Vetri > 
+2026-05-14T16:16:27.306464+00:00 | [OK] Backend Diagnose
+2026-05-14T16:16:27.306943+00:00 | =====================
+2026-05-14T16:16:27.307334+00:00 | Service: Vetri Backend
+2026-05-14T16:16:27.307808+00:00 | Category: backend
+2026-05-14T16:16:27.308244+00:00 | Severity if failed: high
+2026-05-14T16:16:27.309494+00:00 | Message: Diagnosis completed.
+2026-05-14T16:16:27.310648+00:00 | Overall status: healthy
+2026-05-14T16:16:27.311432+00:00 | Steps run: 5
+2026-05-14T16:16:27.312037+00:00 | Failed steps: 0
+2026-05-14T16:16:27.312889+00:00 | 
+2026-05-14T16:16:27.313721+00:00 | Assessment:
+2026-05-14T16:16:27.314517+00:00 | - Vetri Backend diagnosis is healthy. All configured read-only checks passed.
+2026-05-14T16:16:27.315459+00:00 | 
+2026-05-14T16:16:27.315897+00:00 | Expected healthy signals:
+2026-05-14T16:16:27.316389+00:00 | - Backend root endpoint responds
+2026-05-14T16:16:27.316836+00:00 | - System ping endpoint responds
+2026-05-14T16:16:27.317230+00:00 | - System health is healthy
+2026-05-14T16:16:27.317673+00:00 | - Dashboard summary is healthy
+2026-05-14T16:16:27.318321+00:00 | - Backend network port is reachable
+2026-05-14T16:16:27.319157+00:00 | 
+2026-05-14T16:16:27.319809+00:00 | Reasoning:
+2026-05-14T16:16:27.320364+00:00 | - Backend root endpoint is reachable.
+2026-05-14T16:16:27.320885+00:00 | - System ping endpoint is reachable.
+2026-05-14T16:16:27.321442+00:00 | - System health check passed, so core Mac project paths and backend basics are intact.
+2026-05-14T16:16:27.322241+00:00 | - Dashboard summary is healthy, so the main service layer is responding.
+2026-05-14T16:16:27.325158+00:00 | - Network status is healthy, so LAN/Tailscale/service reachability checks are acceptable.
+2026-05-14T16:16:27.325952+00:00 | 
+2026-05-14T16:16:27.326512+00:00 | Possible causes if this becomes unhealthy:
+2026-05-14T16:16:27.327137+00:00 | - Backend process may be down
+2026-05-14T16:16:27.327843+00:00 | - API key may be incorrect
+2026-05-14T16:16:27.328821+00:00 | - Backend port may be blocked
+2026-05-14T16:16:27.329807+00:00 | - LaunchAgent may not have started backend
+2026-05-14T16:16:27.330703+00:00 | - Mac may be reachable but backend service unavailable
+2026-05-14T16:16:27.331279+00:00 | 
+2026-05-14T16:16:27.331894+00:00 | Recommended next steps:
+2026-05-14T16:16:27.332840+00:00 | - No immediate action needed.
+2026-05-14T16:16:27.333866+00:00 | - Use 'json diagnose backend' if you want raw backend details.
+2026-05-14T16:16:27.334366+00:00 | 
+2026-05-14T16:16:27.334663+00:00 | Raw findings:
+2026-05-14T16:16:27.334953+00:00 | - backend_ping: running
+2026-05-14T16:16:27.335280+00:00 | - system_ping: running
+2026-05-14T16:16:27.335553+00:00 | - system_health: healthy
+2026-05-14T16:16:27.335829+00:00 | - dashboard_summary: healthy
+2026-05-14T16:16:27.336320+00:00 | - network_status: healthy
+2026-05-14T16:16:27.336748+00:00 | 
+2026-05-14T16:16:27.337180+00:00 | Step details:
+2026-05-14T16:16:27.337616+00:00 | - [OK] backend_ping: running | backend_ping returned status: running
+2026-05-14T16:16:27.338364+00:00 | - [OK] system_ping: running | system_ping returned status: running
+2026-05-14T16:16:27.341207+00:00 | - [OK] system_health: healthy | system_health returned status: healthy
+2026-05-14T16:16:27.342325+00:00 | - [OK] dashboard_summary: healthy | dashboard_summary returned status: healthy
+2026-05-14T16:16:27.343115+00:00 | - [OK] network_status: healthy | network_status returned status: healthy
+2026-05-14T16:16:27.344177+00:00 | 
+2026-05-14T16:16:27.345271+00:00 | Vetri > Vetri stopped.
+2026-05-14T16:16:27.345897+00:00 | ======================================
+2026-05-14T16:16:27.346349+00:00 | 
+2026-05-14T16:16:27.346766+00:00 | [Vetri Voice] Text-mode spoken summary: Vetri Backend diagnosis completed. Overall status is healthy. Failed steps: 0. No immediate action is needed.
+2026-05-14T16:16:27.347080+00:00 | [Vetri Voice] Text test session logged: Z:\HomeLLM\voice\logs\voice_sessions.jsonl
+2026-05-14T16:16:27.347353+00:00 | ===================================
+2026-05-14T16:16:27.347792+00:00 | [Vetri] Summary: Vetri Backend diagnosis completed. Overall status is healthy. Failed steps: 0. No immediate action is needed.
+2026-05-14T16:16:27.361102+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:16:27.488616+00:00 | [Vetri] Drained 113 buffered audio frame(s) after command.
+2026-05-14T16:16:27.490691+00:00 | State: WAKE_ONLY
+2026-05-14T16:17:39.599178+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.995
+2026-05-14T16:17:39.720660+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:17:39.983565+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:17:44.655723+00:00 | [Vetri] Command audio RMS: 0.059808
+2026-05-14T16:17:46.852415+00:00 | [Vetri] Heard command: Pause song.
+2026-05-14T16:17:46.853972+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:17:47.849050+00:00 | ========== Router Output ==========
+2026-05-14T16:17:47.850809+00:00 | [Router] Route: spotify_control
+2026-05-14T16:17:47.851582+00:00 | ========================================
+2026-05-14T16:17:47.852418+00:00 |  Vetri Spotify Control
+2026-05-14T16:17:47.852940+00:00 | ========================================
+2026-05-14T16:17:47.854033+00:00 | Input: Pause song.
+2026-05-14T16:17:47.854892+00:00 | Spotify summary: Spotify playback paused.
+2026-05-14T16:17:47.855606+00:00 | ========================================
+2026-05-14T16:17:47.856204+00:00 | ===================================
+2026-05-14T16:17:47.856537+00:00 | [Vetri] Summary: Spotify playback paused.
+2026-05-14T16:17:47.887889+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:17:48.015402+00:00 | [Vetri] Drained 42 buffered audio frame(s) after command.
+2026-05-14T16:17:48.016991+00:00 | State: WAKE_ONLY
+2026-05-14T16:18:39.690493+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.706
+2026-05-14T16:18:39.821404+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:18:40.094872+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:18:44.736257+00:00 | [Vetri] Command audio RMS: 0.072620
+2026-05-14T16:18:46.500161+00:00 | [Vetri] Heard command: How are you?
+2026-05-14T16:18:46.502319+00:00 | [Vetri] Ignored command: no approved command cue. Returning to wake-only mode.
+2026-05-14T16:18:46.626618+00:00 | [Vetri] Drained 23 buffered audio frame(s) after ignored command.
+2026-05-14T16:18:46.628176+00:00 | State: WAKE_ONLY
+2026-05-14T16:21:18.659650+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.982
+2026-05-14T16:21:18.783708+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:21:19.044948+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:21:23.751311+00:00 | [Vetri] Command audio RMS: 0.116552
+2026-05-14T16:21:25.697501+00:00 | [Vetri] Heard command: Turn on bedroom light two.
+2026-05-14T16:21:25.699206+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:21:28.844791+00:00 | ========== Router Output ==========
+2026-05-14T16:21:28.845749+00:00 | [Router] Route: home_assistant_control
+2026-05-14T16:21:28.846379+00:00 | [HA Control] GROUP INTENT
+2026-05-14T16:21:28.847018+00:00 | Action: turn_on
+2026-05-14T16:21:28.847570+00:00 | Group ID: bedroom_all
+2026-05-14T16:21:28.848768+00:00 | Group: Bedroom Devices
+2026-05-14T16:21:28.849510+00:00 | Target phrase: bedroom light 2
+2026-05-14T16:21:28.850302+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T16:21:28.851055+00:00 | Status code: 200
+2026-05-14T16:21:28.851750+00:00 | Backend response: {"ok":false,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_all","friendly_name":"Bedroom Devices","action":"turn_on","expected_state":"on","total_entities":4,"verified_count":3,"failed_count":1,"verified":false,"message":"Bedroom Devices command completed with 1 verification issue(s).","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_on","before_state":"off","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_fan","friendly_name":"Bedroom Fan","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T16:21:28.852603+00:00 | Verified: False
+2026-05-14T16:21:28.853221+00:00 | Verified entities: 3/4
+2026-05-14T16:21:28.853794+00:00 | Failed entities: 1
+2026-05-14T16:21:28.854600+00:00 | Control summary: Bedroom Devices command completed with 1 verification issue(s).
+2026-05-14T16:21:28.855322+00:00 | ===================================
+2026-05-14T16:21:28.856077+00:00 | [Vetri] Summary: Bedroom Devices command completed with 1 verification issue(s).
+2026-05-14T16:21:28.874284+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:21:29.000402+00:00 | [Vetri] Drained 65 buffered audio frame(s) after command.
+2026-05-14T16:21:29.001920+00:00 | State: WAKE_ONLY
+2026-05-14T16:22:19.337580+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.912
+2026-05-14T16:22:19.462743+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T16:22:19.723898+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T16:22:24.387780+00:00 | [Vetri] Command audio RMS: 0.106064
+2026-05-14T16:22:25.662629+00:00 | [Vetri] Heard command: Turn on bedroom light 2.
+2026-05-14T16:22:25.666052+00:00 | [Vetri] Routing command safely...
+2026-05-14T16:22:28.452190+00:00 | ========== Router Output ==========
+2026-05-14T16:22:28.453203+00:00 | [Router] Route: home_assistant_control
+2026-05-14T16:22:28.454093+00:00 | [HA Control] GROUP INTENT
+2026-05-14T16:22:28.455385+00:00 | Action: turn_on
+2026-05-14T16:22:28.456077+00:00 | Group ID: bedroom_all
+2026-05-14T16:22:28.456695+00:00 | Group: Bedroom Devices
+2026-05-14T16:22:28.457246+00:00 | Target phrase: bedroom light 2
+2026-05-14T16:22:28.457816+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T16:22:28.458358+00:00 | Status code: 200
+2026-05-14T16:22:28.458892+00:00 | Backend response: {"ok":true,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_all","friendly_name":"Bedroom Devices","action":"turn_on","expected_state":"on","total_entities":4,"verified_count":4,"failed_count":0,"verified":true,"message":"Bedroom Devices are now on.","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_fan","friendly_name":"Bedroom Fan","action":"turn_on","before_state":"on","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T16:22:28.459501+00:00 | Verified: True
+2026-05-14T16:22:28.460002+00:00 | Verified entities: 4/4
+2026-05-14T16:22:28.460633+00:00 | Failed entities: 0
+2026-05-14T16:22:28.461190+00:00 | Control summary: Bedroom Devices are now on.
+2026-05-14T16:22:28.461703+00:00 | ===================================
+2026-05-14T16:22:28.462127+00:00 | [Vetri] Summary: Bedroom Devices are now on.
+2026-05-14T16:22:28.491333+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T16:22:28.610552+00:00 | [Vetri] Drained 53 buffered audio frame(s) after command.
+2026-05-14T16:22:28.611784+00:00 | State: WAKE_ONLY
+2026-05-14T18:46:04.979766+00:00 | ========================================
+2026-05-14T18:46:04.982110+00:00 |  Vetri Terminal openWakeWord V2C
+2026-05-14T18:46:04.983166+00:00 | ========================================
+2026-05-14T18:46:04.984038+00:00 | Wake model target: hey_jarvis
+2026-05-14T18:46:04.984709+00:00 | Wake threshold: 0.7
+2026-05-14T18:46:04.985223+00:00 | Sample rate: 16000
+2026-05-14T18:46:04.986065+00:00 | Block size: 1280 samples
+2026-05-14T18:46:04.986924+00:00 | TTS enabled: True
+2026-05-14T18:46:04.987770+00:00 | Spotify route: enabled
+2026-05-14T18:46:04.988587+00:00 | State: WAKE_ONLY
+2026-05-14T18:46:04.989368+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T18:46:04.990211+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T18:46:04.991020+00:00 | Press Ctrl+C to stop.
+2026-05-14T18:46:04.991766+00:00 | ========================================
+2026-05-14T18:46:10.693849+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.993
+2026-05-14T18:46:10.830210+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:46:11.104171+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:46:15.750656+00:00 | [Vetri] Command audio RMS: 0.055639
+2026-05-14T18:46:17.638688+00:00 | [Vetri] Heard command: How are you?
+2026-05-14T18:46:17.640747+00:00 | [Vetri] Ignored command: no approved command cue. Returning to wake-only mode.
+2026-05-14T18:46:17.767588+00:00 | [Vetri] Drained 25 buffered audio frame(s) after ignored command.
+2026-05-14T18:46:17.768740+00:00 | State: WAKE_ONLY
+2026-05-14T18:46:31.175598+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.814
+2026-05-14T18:46:31.296794+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:46:31.563571+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:46:36.225270+00:00 | [Vetri] Command audio RMS: 0.077458
+2026-05-14T18:46:37.699390+00:00 | [Vetri] Heard command: Talk to me like a friend.
+2026-05-14T18:46:37.701392+00:00 | [Vetri] Routing command safely...
+2026-05-14T18:46:37.703767+00:00 | ========== Router Output ==========
+2026-05-14T18:46:37.705330+00:00 | [Router] Route: vetri_ai_bridge
+2026-05-14T18:46:37.706738+00:00 | [Vetri AI] The AI brain had an issue, but the voice system is still running.
+2026-05-14T18:46:37.708032+00:00 | [Vetri AI error handled safely: No module named 'vetri_ai']
+2026-05-14T18:46:37.712144+00:00 | ===================================
+2026-05-14T18:46:37.713029+00:00 | [Vetri] Summary: The AI brain had an issue, but the voice system is still running.
+2026-05-14T18:46:37.742204+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T18:46:37.883929+00:00 | [Vetri] Drained 20 buffered audio frame(s) after command.
+2026-05-14T18:46:37.885139+00:00 | State: WAKE_ONLY
+2026-05-14T18:46:55.736981+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.918
+2026-05-14T18:46:55.862359+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:46:56.119771+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:47:00.851807+00:00 | [Vetri] Command audio RMS: 0.081248
+2026-05-14T18:47:02.387767+00:00 | [Vetri] Heard command: How is Home Assistant now?
+2026-05-14T18:47:02.389710+00:00 | [Vetri] Routing command safely...
+2026-05-14T18:47:03.189423+00:00 | ========== Router Output ==========
+2026-05-14T18:47:03.190393+00:00 | [Router] Route: home_assistant_read
+2026-05-14T18:47:03.192299+00:00 | [HA Voice] SUMMARY
+2026-05-14T18:47:03.193583+00:00 | Home Assistant is reachable through Vetri backend. I found 81 entities. 12 entities are unavailable or unknown. Top domains are binary_sensor: 42, sensor: 12, camera: 8, switch: 7, select: 2.
+2026-05-14T18:47:03.194397+00:00 | ===================================
+2026-05-14T18:47:03.195792+00:00 | [Vetri] Summary: [Router] Route: home_assistant_read [HA Voice] SUMMARY Home Assistant is reachable through Vetri backend. I found 81 entities. 12 entities are unavailable or unknown. Top domains are binary_sensor: 42, sensor: 12, camera: 8, switch: 7, select: 2.
+2026-05-14T18:47:03.227516+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T18:47:03.354196+00:00 | [Vetri] Drained 31 buffered audio frame(s) after command.
+2026-05-14T18:47:03.355415+00:00 | State: WAKE_ONLY
+2026-05-14T18:47:35.575941+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.897
+2026-05-14T18:47:35.707087+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:47:35.957928+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:47:40.626193+00:00 | [Vetri] Command audio RMS: 0.143986
+2026-05-14T18:47:41.908504+00:00 | [Vetri] Heard command: Talk to me like a friend about how my private club...
+2026-05-14T18:47:41.910947+00:00 | [Vetri] Routing command safely...
+2026-05-14T18:47:41.913522+00:00 | ========== Router Output ==========
+2026-05-14T18:47:41.914515+00:00 | [Router] Route: vetri_ai_bridge
+2026-05-14T18:47:41.915565+00:00 | [Vetri AI] The AI brain had an issue, but the voice system is still running.
+2026-05-14T18:47:41.916591+00:00 | [Vetri AI error handled safely: No module named 'vetri_ai']
+2026-05-14T18:47:41.917513+00:00 | ===================================
+2026-05-14T18:47:41.918459+00:00 | [Vetri] Summary: The AI brain had an issue, but the voice system is still running.
+2026-05-14T18:47:41.932794+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T18:47:42.065585+00:00 | [Vetri] Drained 18 buffered audio frame(s) after command.
+2026-05-14T18:47:42.066597+00:00 | State: WAKE_ONLY
+2026-05-14T18:48:18.375754+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.836
+2026-05-14T18:48:18.510565+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:48:18.777684+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:48:23.411095+00:00 | [Vetri] Command audio RMS: 0.097941
+2026-05-14T18:48:25.341100+00:00 | [Vetri] Heard command: What's the state of the private cloud?
+2026-05-14T18:48:25.343225+00:00 | [Vetri] Ignored command: no approved command cue. Returning to wake-only mode.
+2026-05-14T18:48:25.460650+00:00 | [Vetri] Drained 25 buffered audio frame(s) after ignored command.
+2026-05-14T18:48:25.462127+00:00 | State: WAKE_ONLY
+2026-05-14T18:48:42.137119+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.967
+2026-05-14T18:48:42.264471+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:48:42.523300+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:48:47.183124+00:00 | [Vetri] Command audio RMS: 0.060643
+2026-05-14T18:48:48.434051+00:00 | [Vetri] Heard command: How are you?
+2026-05-14T18:48:48.436795+00:00 | [Vetri] Ignored command: no approved command cue. Returning to wake-only mode.
+2026-05-14T18:48:48.566839+00:00 | [Vetri] Drained 17 buffered audio frame(s) after ignored command.
+2026-05-14T18:48:48.568627+00:00 | State: WAKE_ONLY
+2026-05-14T18:49:08.620337+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.899
+2026-05-14T18:49:08.738820+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:49:09.002230+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:49:13.752344+00:00 | [Vetri] Command audio RMS: 0.107908
+2026-05-14T18:49:15.002118+00:00 | [Vetri] Heard command: What are all the devices in my room?
+2026-05-14T18:49:15.003334+00:00 | [Vetri] Routing command safely...
+2026-05-14T18:49:15.005369+00:00 | ========== Router Output ==========
+2026-05-14T18:49:15.006194+00:00 | [Router] Route: vetri_ai_bridge
+2026-05-14T18:49:15.006975+00:00 | [Vetri AI] The AI brain had an issue, but the voice system is still running.
+2026-05-14T18:49:15.007514+00:00 | [Vetri AI error handled safely: No module named 'vetri_ai']
+2026-05-14T18:49:15.008047+00:00 | ===================================
+2026-05-14T18:49:15.008947+00:00 | [Vetri] Summary: The AI brain had an issue, but the voice system is still running.
+2026-05-14T18:49:15.023341+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T18:49:15.143861+00:00 | [Vetri] Drained 17 buffered audio frame(s) after command.
+2026-05-14T18:49:15.145574+00:00 | State: WAKE_ONLY
+2026-05-14T18:49:24.305763+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.905
+2026-05-14T18:49:24.424930+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:49:24.690971+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:49:29.400293+00:00 | [Vetri] Command audio RMS: 0.108789
+2026-05-14T18:49:30.549456+00:00 | [Vetri] Heard command: What are all the devices in my bedroom?
+2026-05-14T18:49:30.551878+00:00 | [Vetri] Routing command safely...
+2026-05-14T18:49:30.554185+00:00 | ========== Router Output ==========
+2026-05-14T18:49:30.554858+00:00 | [Router] Route: vetri_ai_bridge
+2026-05-14T18:49:30.555676+00:00 | [Vetri AI] The AI brain had an issue, but the voice system is still running.
+2026-05-14T18:49:30.556920+00:00 | [Vetri AI error handled safely: No module named 'vetri_ai']
+2026-05-14T18:49:30.557998+00:00 | ===================================
+2026-05-14T18:49:30.559048+00:00 | [Vetri] Summary: The AI brain had an issue, but the voice system is still running.
+2026-05-14T18:49:30.583739+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T18:49:30.702988+00:00 | [Vetri] Drained 16 buffered audio frame(s) after command.
+2026-05-14T18:49:30.703996+00:00 | State: WAKE_ONLY
+2026-05-14T18:56:12.965541+00:00 | ========================================
+2026-05-14T18:56:12.966742+00:00 |  Vetri Terminal openWakeWord V2C
+2026-05-14T18:56:12.967575+00:00 | ========================================
+2026-05-14T18:56:12.968120+00:00 | Wake model target: hey_jarvis
+2026-05-14T18:56:12.969035+00:00 | Wake threshold: 0.7
+2026-05-14T18:56:12.970073+00:00 | Sample rate: 16000
+2026-05-14T18:56:12.971022+00:00 | Block size: 1280 samples
+2026-05-14T18:56:12.971863+00:00 | TTS enabled: True
+2026-05-14T18:56:12.972506+00:00 | Spotify route: enabled
+2026-05-14T18:56:12.973242+00:00 | State: WAKE_ONLY
+2026-05-14T18:56:12.974113+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T18:56:12.974907+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T18:56:12.975714+00:00 | Press Ctrl+C to stop.
+2026-05-14T18:56:12.976328+00:00 | ========================================
+2026-05-14T18:56:40.543556+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.827
+2026-05-14T18:56:40.677930+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:56:40.942460+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:56:45.592983+00:00 | [Vetri] Command audio RMS: 0.070240
+2026-05-14T18:56:47.822978+00:00 | [Vetri] Heard command: So what are you?
+2026-05-14T18:56:47.824573+00:00 | [Vetri] Ignored command: no approved command cue. Returning to wake-only mode.
+2026-05-14T18:56:47.946417+00:00 | [Vetri] Drained 29 buffered audio frame(s) after ignored command.
+2026-05-14T18:56:47.948078+00:00 | State: WAKE_ONLY
+2026-05-14T18:57:00.063408+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.771
+2026-05-14T18:57:00.190002+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:57:00.451334+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:57:05.100547+00:00 | [Vetri] Command audio RMS: 0.075543
+2026-05-14T18:57:06.972086+00:00 | [Vetri] Heard command: How's the front-end?
+2026-05-14T18:57:06.975377+00:00 | [Vetri] Routing command safely...
+2026-05-14T18:57:12.528260+00:00 | ========== Router Output ==========
+2026-05-14T18:57:12.528981+00:00 | [Router] Route: vetri_ai_bridge
+2026-05-14T18:57:12.529775+00:00 | Safety: Allowed by policy.
+2026-05-14T18:57:12.530445+00:00 | AI route: companion_chat
+2026-05-14T18:57:12.530933+00:00 | Hi Ashvath,
+2026-05-14T18:57:12.531817+00:00 | 
+2026-05-14T18:57:12.532394+00:00 | To provide a clear technical status check on the front-end of your project, here’s a step-by-step reasoning approach:
+2026-05-14T18:57:12.533025+00:00 | 
+2026-05-14T18:57:12.533566+00:00 | 1. **Current Status Summary**: I don’t have any recent specific status or error logs related to the Vetri Frontend service in the latest summary or recent events. This suggests no critical alerts have been reported so far.
+2026-05-14T18:57:12.534249+00:00 | 
+2026-05-14T18:57:12.534888+00:00 | 2. **Smoke Tests Memory**: There are multiple mentions in your relevant memory that smoke tests (V4) are working. If these tests include the front-end smoke tests, it indicates the front-end is probably functioning at a basic operational level.
+2026-05-14T18:57:12.535590+00:00 | 
+2026-05-14T18:57:12.536316+00:00 | 3. **Service List**: Vetri Frontend is running alongside other services on your MacBook Pro 2016. There’s no indication of resource contention or failures reported in your latest information.
+2026-05-14T18:57:12.537027+00:00 | 
+2026-05-14T18:57:12.537748+00:00 | 4. **Next Recommended Steps**: 
+2026-05-14T18:57:12.538478+00:00 |    - Verify that the front-end deployment is running by checking logs or the build/deploy pipeline.
+2026-05-14T18:57:12.539161+00:00 |    - Run manual or automated front-end tests if available.
+2026-05-14T18:57:12.539872+00:00 |    - Validate UI/UX responsiveness and error-free render on your preferred browsers.
+2026-05-14T18:57:12.540573+00:00 |    - Check integration points with Vetri Backend and other services if the front-end depends on them.
+2026-05-14T18:57:12.541279+00:00 | 
+2026-05-14T18:57:12.542015+00:00 | If you want, I can help guide you through specific checks or diagnostics to gather precise health indicators on the front-end.
+2026-05-14T18:57:12.542735+00:00 | 
+2026-05-14T18:57:12.543578+00:00 | Would you like me to assist with specific front-end status checks or troubleshooting steps?
+2026-05-14T18:57:12.544608+00:00 | ===================================
+2026-05-14T18:57:12.545898+00:00 | [Vetri] Summary: [Router] Route: vetri_ai_bridge Safety: Allowed by policy. AI route: companion_chat Hi Ashvath, To provide a clear technical status check on the front-end of your project, here’s a step-by-step reasoning approach: 1. **Current Status Summary**: I don’t have.
+2026-05-14T18:57:12.589752+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T18:57:12.722516+00:00 | [Vetri] Drained 95 buffered audio frame(s) after command.
+2026-05-14T18:57:12.724024+00:00 | State: WAKE_ONLY
+2026-05-14T18:57:49.344223+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.977
+2026-05-14T18:57:49.479944+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:57:49.746257+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:57:54.399350+00:00 | [Vetri] Command audio RMS: 0.086613
+2026-05-14T18:57:57.047904+00:00 | [Vetri] Heard command: Hello, my backup's starting.
+2026-05-14T18:57:57.050050+00:00 | [Vetri] Routing command safely...
+2026-05-14T18:57:57.776541+00:00 | ========== Router Output ==========
+2026-05-14T18:57:57.778816+00:00 | [Router] Route: home_assistant_control
+2026-05-14T18:57:57.779576+00:00 | [HA Control] INTENT
+2026-05-14T18:57:57.780140+00:00 | Action: turn_on
+2026-05-14T18:57:57.780588+00:00 | Target phrase: hello my backup s ing
+2026-05-14T18:57:57.781101+00:00 | [HA Control] NO MATCH
+2026-05-14T18:57:57.781662+00:00 | No matching allowed-domain candidates found.
+2026-05-14T18:57:57.782299+00:00 | ===================================
+2026-05-14T18:57:57.783012+00:00 | [Vetri] Summary: [Router] Route: home_assistant_control Action: turn_on Target phrase: hello my backup s ing No matching allowed-domain candidates found.
+2026-05-14T18:57:57.816534+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T18:57:57.818163+00:00 | [Vetri] Router returned non-zero code: 1
+2026-05-14T18:57:57.944169+00:00 | [Vetri] Drained 44 buffered audio frame(s) after command.
+2026-05-14T18:57:57.945424+00:00 | State: WAKE_ONLY
+2026-05-14T18:58:15.184483+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.868
+2026-05-14T18:58:15.308555+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T18:58:15.571197+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T18:58:20.233371+00:00 | [Vetri] Command audio RMS: 0.102258
+2026-05-14T18:58:22.646828+00:00 | [Vetri] Heard command: What song is playing?
+2026-05-14T18:58:22.648268+00:00 | [Vetri] Routing command safely...
+2026-05-14T18:58:23.597894+00:00 | ========== Router Output ==========
+2026-05-14T18:58:23.599463+00:00 | [Router] Route: spotify_control
+2026-05-14T18:58:23.600699+00:00 | ========================================
+2026-05-14T18:58:23.602261+00:00 |  Vetri Spotify Control
+2026-05-14T18:58:23.603120+00:00 | ========================================
+2026-05-14T18:58:23.604397+00:00 | Input: What song is playing?
+2026-05-14T18:58:23.605504+00:00 | Spotify summary: Spotify is not currently playing anything.
+2026-05-14T18:58:23.606528+00:00 | ========================================
+2026-05-14T18:58:23.607078+00:00 | ===================================
+2026-05-14T18:58:23.607892+00:00 | [Vetri] Summary: Spotify is not currently playing anything.
+2026-05-14T18:58:23.640212+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T18:58:23.755738+00:00 | [Vetri] Drained 44 buffered audio frame(s) after command.
+2026-05-14T18:58:23.756827+00:00 | State: WAKE_ONLY
+2026-05-14T19:01:37.686066+00:00 | ========================================
+2026-05-14T19:01:37.687522+00:00 |  Vetri Terminal openWakeWord V2C
+2026-05-14T19:01:37.688565+00:00 | ========================================
+2026-05-14T19:01:37.689787+00:00 | Wake model target: hey_jarvis
+2026-05-14T19:01:37.690774+00:00 | Wake threshold: 0.7
+2026-05-14T19:01:37.691727+00:00 | Sample rate: 16000
+2026-05-14T19:01:37.692679+00:00 | Block size: 1280 samples
+2026-05-14T19:01:37.693584+00:00 | TTS enabled: True
+2026-05-14T19:01:37.694502+00:00 | Spotify route: enabled
+2026-05-14T19:01:37.695596+00:00 | State: WAKE_ONLY
+2026-05-14T19:01:37.696537+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T19:01:37.697336+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T19:01:37.698126+00:00 | Press Ctrl+C to stop.
+2026-05-14T19:01:37.699011+00:00 | ========================================
+2026-05-14T19:01:43.607386+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.921
+2026-05-14T19:01:43.747103+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T19:01:44.009779+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:01:48.666837+00:00 | [Vetri] Command audio RMS: 0.073543
+2026-05-14T19:01:50.561076+00:00 | [Vetri] Heard command: How are you?
+2026-05-14T19:01:50.562291+00:00 | [Vetri] Routing command safely...
+2026-05-14T19:01:50.578389+00:00 | ========== Router Output ==========
+2026-05-14T19:01:50.579288+00:00 | [Router] Route: vetri_ai_bridge_natural_fallback
+2026-05-14T19:01:50.580107+00:00 | Safety: safe_local_fallback
+2026-05-14T19:01:50.580878+00:00 | AI route: companion_greeting
+2026-05-14T19:01:50.581603+00:00 | I'm here, Ashva. Your Vetri system is running, and I can help with your private cloud, memory, diagnosis, music, and Home Assistant.
+2026-05-14T19:01:50.585907+00:00 | ===================================
+2026-05-14T19:01:50.587866+00:00 | [Vetri] Summary: [Router] Route: vetri_ai_bridge_natural_fallback Safety: safe_local_fallback AI route: companion_greeting I'm here, Ashva. Your Vetri system is running, and I can help with your private cloud, memory, diagnosis, music, and Home Assistant.
+2026-05-14T19:01:50.629880+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T19:01:50.747713+00:00 | [Vetri] Drained 26 buffered audio frame(s) after command.
+2026-05-14T19:01:50.749072+00:00 | State: WAKE_ONLY
+2026-05-14T19:02:22.263834+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.771
+2026-05-14T19:02:22.388496+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T19:02:22.659942+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:02:27.302631+00:00 | [Vetri] Command audio RMS: 0.073848
+2026-05-14T19:02:29.052702+00:00 | [Vetri] Heard command: Am I a good person?
+2026-05-14T19:02:29.054568+00:00 | [Vetri] Routing command safely...
+2026-05-14T19:02:33.769087+00:00 | ========== Router Output ==========
+2026-05-14T19:02:33.770145+00:00 | [Router] Route: vetri_ai_bridge_natural_fallback
+2026-05-14T19:02:33.771192+00:00 | Safety: Allowed by policy.
+2026-05-14T19:02:33.772000+00:00 | AI route: companion_chat
+2026-05-14T19:02:33.787697+00:00 | Hi Ashvath, your question "Am I a good person?" is thoughtful and introspective. To approach this in a technical, step-by-step manner, let's break down the evaluation into components:
+2026-05-14T19:02:33.788862+00:00 | 
+2026-05-14T19:02:33.789877+00:00 | 1. **Define “Good Person” Criteria**  
+2026-05-14T19:02:33.790762+00:00 |    - Ethical behavior: acting with integrity, honesty, and fairness  
+2026-05-14T19:02:33.791658+00:00 |    - Empathy and kindness: showing care and understanding toward others  
+2026-05-14T19:02:33.792458+00:00 |    - Responsibility: owning actions and their consequences  
+2026-05-14T19:02:33.793058+00:00 |    - Contribution: positively impacting others or community  
+2026-05-14T19:02:33.793548+00:00 | 
+2026-05-14T19:02:33.794271+00:00 | 2. **Self-Assessment**  
+2026-05-14T19:02:33.794882+00:00 |    - Review recent actions and decisions: Were they aligned with ethical and empathetic principles?  
+2026-05-14T19:02:33.795532+00:00 |    - Reflect on intentions: Did you intend to do good or help others?  
+2026-05-14T19:02:33.796265+00:00 |    - Consider feedback: Have others expressed appreciation or acknowledged your kindness or integrity?  
+2026-05-14T19:02:33.797176+00:00 | 
+2026-05-14T19:02:33.798234+00:00 | 3. **Consistency and Improvement**  
+2026-05-14T19:02:33.799400+00:00 |    - Are your actions consistently good over time or sporadic?  
+2026-05-14T19:02:33.800294+00:00 |    - Do you seek self-improvement when mistakes are made?  
+2026-05-14T19:02:33.801008+00:00 | 
+2026-05-14T19:02:33.801814+00:00 | If you want, I can help you structure your self-reflection based on specific examples or areas you’d like to assess. Would that be helpful?
+2026-05-14T19:02:33.802550+00:00 | ===================================
+2026-05-14T19:02:33.803627+00:00 | [Vetri] Summary: [Router] Route: vetri_ai_bridge_natural_fallback Safety: Allowed by policy. AI route: companion_chat Hi Ashvath, your question "Am I a good person?" is thoughtful and introspective. To approach this in a technical, step-by-step manner, let's break down the.
+2026-05-14T19:02:33.832723+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T19:02:33.952809+00:00 | [Vetri] Drained 83 buffered audio frame(s) after command.
+2026-05-14T19:02:33.953976+00:00 | State: WAKE_ONLY
+2026-05-14T19:05:32.791396+00:00 | ========================================
+2026-05-14T19:05:32.792778+00:00 |  Vetri Terminal openWakeWord V2C
+2026-05-14T19:05:32.794320+00:00 | ========================================
+2026-05-14T19:05:32.795242+00:00 | Wake model target: hey_jarvis
+2026-05-14T19:05:32.796459+00:00 | Wake threshold: 0.7
+2026-05-14T19:05:32.797976+00:00 | Sample rate: 16000
+2026-05-14T19:05:32.799066+00:00 | Block size: 1280 samples
+2026-05-14T19:05:32.800033+00:00 | TTS enabled: True
+2026-05-14T19:05:32.801097+00:00 | Spotify route: enabled
+2026-05-14T19:05:32.802100+00:00 | State: WAKE_ONLY
+2026-05-14T19:05:32.803054+00:00 | Temporary wake phrase for now: hey jarvis
+2026-05-14T19:05:32.803932+00:00 | After wake, speak command within 5 seconds.
+2026-05-14T19:05:32.806303+00:00 | Press Ctrl+C to stop.
+2026-05-14T19:05:32.807902+00:00 | ========================================
+2026-05-14T19:05:35.548537+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.969
+2026-05-14T19:05:35.757255+00:00 | [Vetri] Drained 2 buffered audio frame(s) after wake detection.
+2026-05-14T19:05:36.057091+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:05:40.667173+00:00 | [Vetri] Command audio RMS: 0.094463
+2026-05-14T19:05:43.491369+00:00 | [Vetri] Heard command: How is the weather today in Ahmedabad?
+2026-05-14T19:05:43.492702+00:00 | [Vetri] Routing command safely...
+2026-05-14T19:05:48.735002+00:00 | ========== Router Output ==========
+2026-05-14T19:05:48.736730+00:00 | [Router] Route: vetri_ai_bridge_natural_fallback
+2026-05-14T19:05:48.739613+00:00 | Safety: Allowed by policy.
+2026-05-14T19:05:48.740589+00:00 | AI route: companion_chat
+2026-05-14T19:05:48.741570+00:00 | Hi Ashvath,
+2026-05-14T19:05:48.743004+00:00 | 
+2026-05-14T19:05:48.743946+00:00 | To determine the weather today in Ahmedabad in a technical, step-by-step manner, here’s the approach you can follow:
+2026-05-14T19:05:48.744803+00:00 | 
+2026-05-14T19:05:48.745617+00:00 | 1. **Identify the Data Source**: Choose a reliable weather API (such as OpenWeatherMap, Weatherbit, or AccuWeather) for real-time weather data.
+2026-05-14T19:05:48.746481+00:00 | 
+2026-05-14T19:05:48.747516+00:00 | 2. **Formulate the API Request**: Construct the API call with parameters for location (Ahmedabad), date (today), and API key.
+2026-05-14T19:05:48.748495+00:00 | 
+2026-05-14T19:05:48.749192+00:00 | 3. **Send the Request and Receive Response**: Execute the request to get the current weather data.
+2026-05-14T19:05:48.750358+00:00 | 
+2026-05-14T19:05:48.751497+00:00 | 4. **Parse the Response**: Extract relevant weather information like temperature, humidity, wind speed, and conditions.
+2026-05-14T19:05:48.752529+00:00 | 
+2026-05-14T19:05:48.753475+00:00 | 5. **Present the Data**: Format the extracted data clearly.
+2026-05-14T19:05:48.757860+00:00 | 
+2026-05-14T19:05:48.758780+00:00 | Since I cannot execute these steps directly, you may use one of your services or devices to fetch this data, for example:
+2026-05-14T19:05:48.759689+00:00 | 
+2026-05-14T19:05:48.760446+00:00 | - Use your MacBook Pro 2016 to run a script calling a weather API.
+2026-05-14T19:05:48.761188+00:00 | - Or check a weather app or website for Ahmedabad.
+2026-05-14T19:05:48.761962+00:00 | 
+2026-05-14T19:05:48.762711+00:00 | If you would like, I can draft a sample script or guide you on accessing weather APIs step-by-step. Would you like me to do that?
+2026-05-14T19:05:48.763359+00:00 | ===================================
+2026-05-14T19:05:48.764450+00:00 | [Vetri] Summary: Hi Ashvath, To determine the weather today in Ahmedabad in a technical, step-by-step manner, here’s the approach you can follow: 1. **Identify the Data Source**: Choose a reliable weather API (such as OpenWeatherMap, Weatherbit, or AccuWeather) for real-time weather data. 2. **Formulate the API Request**: Construct the API call with parameters for location (Ahmedabad), date (today), and API key. 3. **Send the Request and Receive Response**: Execute the request to get the current weather data. 4. **Parse the Response**: Extract relevant weather information like temperature, humidity, wind speed, and conditions. 5. **Present the Data**: Format the extracted data clearly. Since I cannot execute these steps directly, you may use one of your services or devices to fetch this data, for example: - Use your MacBook Pro 2016 to run a script calling a weather API. - Or check a weather app or website for Ahmedabad. If you would like, I can draft a sample script or guide you on accessing weather APIs step-by-step. Would you like me to do that?
+2026-05-14T19:05:48.809142+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T19:05:48.942937+00:00 | [Vetri] Drained 103 buffered audio frame(s) after command.
+2026-05-14T19:05:48.943832+00:00 | State: WAKE_ONLY
+2026-05-14T19:06:11.869741+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.977
+2026-05-14T19:06:11.987209+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T19:06:12.259654+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:06:16.917619+00:00 | [Vetri] Command audio RMS: 0.054481
+2026-05-14T19:06:18.713835+00:00 | [Vetri] Heard command: How are you?
+2026-05-14T19:06:18.715934+00:00 | [Vetri] Routing command safely...
+2026-05-14T19:06:18.718528+00:00 | ========== Router Output ==========
+2026-05-14T19:06:18.723802+00:00 | [Router] Route: vetri_ai_bridge_natural_fallback
+2026-05-14T19:06:18.724495+00:00 | Safety: safe_local_fallback
+2026-05-14T19:06:18.725036+00:00 | AI route: companion_greeting
+2026-05-14T19:06:18.725579+00:00 | I'm here, Ashva. Your Vetri system is running, and I can help with your private cloud, memory, diagnosis, music, and Home Assistant.
+2026-05-14T19:06:18.726417+00:00 | ===================================
+2026-05-14T19:06:18.727759+00:00 | [Vetri] Summary: I'm here, Ashva. Your Vetri system is running, and I can help with your private cloud, memory, diagnosis, music, and Home Assistant.
+2026-05-14T19:06:18.756122+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T19:06:18.886734+00:00 | [Vetri] Drained 24 buffered audio frame(s) after command.
+2026-05-14T19:06:18.888211+00:00 | State: WAKE_ONLY
+2026-05-14T19:06:38.025768+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.973
+2026-05-14T19:06:38.147953+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T19:06:38.415883+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:06:43.075824+00:00 | [Vetri] Command audio RMS: 0.077139
+2026-05-14T19:06:44.810830+00:00 | [Vetri] Heard command: Diagnose emic.
+2026-05-14T19:06:44.812761+00:00 | [Vetri] Routing command safely...
+2026-05-14T19:06:44.817352+00:00 | ========== Router Output ==========
+2026-05-14T19:06:44.819757+00:00 | [Router] Route: vetri_ai_bridge_natural_fallback
+2026-05-14T19:06:44.820660+00:00 | Safety: Allowed by policy.
+2026-05-14T19:06:44.821540+00:00 | AI route: diagnostic
+2026-05-14T19:06:44.822434+00:00 | Diagnosis status: unknown_target
+2026-05-14T19:06:44.823240+00:00 | Evidence:
+2026-05-14T19:06:44.824015+00:00 | - none available
+2026-05-14T19:06:44.824797+00:00 | Likely cause: I could not identify which subsystem to diagnose.
+2026-05-14T19:06:44.825557+00:00 | Safe next step: Ask for a specific read-only diagnosis, such as diagnose backups, diagnose network, or diagnose Home Assistant.
+2026-05-14T19:06:44.826527+00:00 | Confidence: 0.3
+2026-05-14T19:06:44.827636+00:00 | ===================================
+2026-05-14T19:06:44.829645+00:00 | [Vetri] Summary: Diagnosis status: unknown_target Evidence: - none available Likely cause: I could not identify which subsystem to diagnose. Safe next step: Ask for a specific read-only diagnosis, such as diagnose backups, diagnose network, or diagnose Home Assistant. Confidence: 0.3
+2026-05-14T19:06:44.859620+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T19:06:44.980427+00:00 | [Vetri] Drained 24 buffered audio frame(s) after command.
+2026-05-14T19:06:44.981456+00:00 | State: WAKE_ONLY
+2026-05-14T19:07:05.465404+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.964
+2026-05-14T19:07:05.583021+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T19:07:05.854018+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:07:10.517646+00:00 | [Vetri] Command audio RMS: 0.085003
+2026-05-14T19:07:12.167636+00:00 | [Vetri] Heard command: Диагноз гемик.
+2026-05-14T19:07:12.169274+00:00 | [Vetri] Ignored command: empty transcript. Returning to wake-only mode.
+2026-05-14T19:07:12.292831+00:00 | [Vetri] Drained 22 buffered audio frame(s) after ignored command.
+2026-05-14T19:07:12.294627+00:00 | State: WAKE_ONLY
+2026-05-14T19:07:23.146367+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.984
+2026-05-14T19:07:23.266986+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T19:07:23.542488+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:07:28.213964+00:00 | [Vetri] Command audio RMS: 0.084500
+2026-05-14T19:07:30.294700+00:00 | [Vetri] Heard command: Diagnose Immik.
+2026-05-14T19:07:30.296539+00:00 | [Vetri] Routing command safely...
+2026-05-14T19:07:30.302812+00:00 | ========== Router Output ==========
+2026-05-14T19:07:30.304091+00:00 | [Router] Route: vetri_ai_bridge_natural_fallback
+2026-05-14T19:07:30.304779+00:00 | Safety: Allowed by policy.
+2026-05-14T19:07:30.305361+00:00 | AI route: diagnostic
+2026-05-14T19:07:30.306500+00:00 | Diagnosis status: unknown_target
+2026-05-14T19:07:30.307478+00:00 | Evidence:
+2026-05-14T19:07:30.308325+00:00 | - none available
+2026-05-14T19:07:30.309143+00:00 | Likely cause: I could not identify which subsystem to diagnose.
+2026-05-14T19:07:30.310055+00:00 | Safe next step: Ask for a specific read-only diagnosis, such as diagnose backups, diagnose network, or diagnose Home Assistant.
+2026-05-14T19:07:30.310699+00:00 | Confidence: 0.3
+2026-05-14T19:07:30.311164+00:00 | ===================================
+2026-05-14T19:07:30.311961+00:00 | [Vetri] Summary: Diagnosis status: unknown_target Evidence: - none available Likely cause: I could not identify which subsystem to diagnose. Safe next step: Ask for a specific read-only diagnosis, such as diagnose backups, diagnose network, or diagnose Home Assistant. Confidence: 0.3
+2026-05-14T19:07:30.332603+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T19:07:30.458032+00:00 | [Vetri] Drained 28 buffered audio frame(s) after command.
+2026-05-14T19:07:30.459337+00:00 | State: WAKE_ONLY
+2026-05-14T19:07:41.570177+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.886
+2026-05-14T19:07:41.697128+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T19:07:41.967990+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:07:46.617352+00:00 | [Vetri] Command audio RMS: 0.083190
+2026-05-14T19:07:48.421630+00:00 | [Vetri] Heard command: Diagnose backups.
+2026-05-14T19:07:48.423179+00:00 | [Vetri] Routing command safely...
+2026-05-14T19:07:48.431837+00:00 | ========== Router Output ==========
+2026-05-14T19:07:48.434450+00:00 | [Router] Route: vetri_ai_bridge_natural_fallback
+2026-05-14T19:07:48.435183+00:00 | Safety: Allowed by policy.
+2026-05-14T19:07:48.435811+00:00 | AI route: diagnostic
+2026-05-14T19:07:48.436601+00:00 | Diagnosis status: healthy
+2026-05-14T19:07:48.437135+00:00 | Evidence:
+2026-05-14T19:07:48.437842+00:00 | - local_backup_dir_exists=True
+2026-05-14T19:07:48.438675+00:00 | - recent_backup_count=12
+2026-05-14T19:07:48.439439+00:00 | - latest=immich-control-2026-05-14_21-39-04.tar.gz at 2026-05-14T21:39:04+05:30
+2026-05-14T19:07:48.440273+00:00 | - backend_endpoint auth_required is protected endpoint, not failure
+2026-05-14T19:07:48.442377+00:00 | Likely cause: No issue detected in latest backup metadata.
+2026-05-14T19:07:48.443348+00:00 | Safe next step: Review backup metadata; do not delete or rotate backups automatically.
+2026-05-14T19:07:48.444336+00:00 | Confidence: 0.84
+2026-05-14T19:07:48.445261+00:00 | ===================================
+2026-05-14T19:07:48.446173+00:00 | [Vetri] Summary: Diagnosis status: healthy Evidence: - local_backup_dir_exists=True - recent_backup_count=12 - latest=immich-control-2026-05-14_21-39-04.tar.gz at 2026-05-14T21:39:04+05:30 - backend_endpoint auth_required is protected endpoint, not failure Likely cause: No issue detected in latest backup metadata. Safe next step: Review backup metadata; do not delete or rotate backups automatically. Confidence: 0.84
+2026-05-14T19:07:48.478112+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T19:07:48.597545+00:00 | [Vetri] Drained 24 buffered audio frame(s) after command.
+2026-05-14T19:07:48.598807+00:00 | State: WAKE_ONLY
+2026-05-14T19:08:42.456476+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.970
+2026-05-14T19:08:42.584783+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T19:08:42.842865+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:08:47.507225+00:00 | [Vetri] Command audio RMS: 0.114215
+2026-05-14T19:08:48.834193+00:00 | [Vetri] Heard command: Is there any switch on in my bedroom?
+2026-05-14T19:08:48.836157+00:00 | [Vetri] Routing command safely...
+2026-05-14T19:08:51.632370+00:00 | ========== Router Output ==========
+2026-05-14T19:08:51.633504+00:00 | [Router] Route: home_assistant_control
+2026-05-14T19:08:51.634160+00:00 | [HA Control] GROUP INTENT
+2026-05-14T19:08:51.634765+00:00 | Action: turn_on
+2026-05-14T19:08:51.635674+00:00 | Group ID: bedroom_all
+2026-05-14T19:08:51.637615+00:00 | Group: Bedroom Devices
+2026-05-14T19:08:51.638805+00:00 | Target phrase: is there any in my bedroom
+2026-05-14T19:08:51.639386+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T19:08:51.640453+00:00 | Status code: 200
+2026-05-14T19:08:51.642510+00:00 | Backend response: {"ok":false,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_all","friendly_name":"Bedroom Devices","action":"turn_on","expected_state":"on","total_entities":4,"verified_count":1,"failed_count":3,"verified":false,"message":"Bedroom Devices command completed with 3 verification issue(s).","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_on","before_state":"off","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_fan","friendly_name":"Bedroom Fan","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T19:08:51.643113+00:00 | Verified: False
+2026-05-14T19:08:51.643476+00:00 | Verified entities: 1/4
+2026-05-14T19:08:51.643770+00:00 | Failed entities: 3
+2026-05-14T19:08:51.644075+00:00 | Control summary: Bedroom Devices command completed with 3 verification issue(s).
+2026-05-14T19:08:51.644611+00:00 | ===================================
+2026-05-14T19:08:51.645032+00:00 | [Vetri] Summary: Bedroom Devices command completed with 3 verification issue(s).
+2026-05-14T19:08:51.680396+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T19:08:51.807967+00:00 | [Vetri] Drained 54 buffered audio frame(s) after command.
+2026-05-14T19:08:51.809017+00:00 | State: WAKE_ONLY
+2026-05-14T19:09:37.975102+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.820
+2026-05-14T19:09:38.093484+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T19:09:38.355960+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:09:43.011729+00:00 | [Vetri] Command audio RMS: 0.108355
+2026-05-14T19:09:44.602073+00:00 | [Vetri] Heard command: Turn off all switches in my bedroom.
+2026-05-14T19:09:44.604293+00:00 | [Vetri] Routing command safely...
+2026-05-14T19:09:47.086725+00:00 | ========== Router Output ==========
+2026-05-14T19:09:47.087687+00:00 | [Router] Route: home_assistant_control
+2026-05-14T19:09:47.088230+00:00 | [HA Control] GROUP INTENT
+2026-05-14T19:09:47.088721+00:00 | Action: turn_off
+2026-05-14T19:09:47.089366+00:00 | Group ID: bedroom_all
+2026-05-14T19:09:47.089826+00:00 | Group: Bedroom Devices
+2026-05-14T19:09:47.090242+00:00 | Target phrase: all switches in my bedroom
+2026-05-14T19:09:47.090725+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T19:09:47.091115+00:00 | Status code: 200
+2026-05-14T19:09:47.091541+00:00 | Backend response: {"ok":false,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_all","friendly_name":"Bedroom Devices","action":"turn_off","expected_state":"off","total_entities":4,"verified_count":1,"failed_count":3,"verified":false,"message":"Bedroom Devices command completed with 3 verification issue(s).","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_off","before_state":"on","after_state":"off","expected_state":"off","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_off","before_state":"on","after_state":"on","expected_state":"off","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_off","before_state":"on","after_state":"on","expected_state":"off","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_fan","friendly_name":"Bedroom Fan","action":"turn_off","before_state":"on","after_state":"on","expected_state":"off","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T19:09:47.091928+00:00 | Verified: False
+2026-05-14T19:09:47.092321+00:00 | Verified entities: 1/4
+2026-05-14T19:09:47.092727+00:00 | Failed entities: 3
+2026-05-14T19:09:47.094935+00:00 | Control summary: Bedroom Devices command completed with 3 verification issue(s).
+2026-05-14T19:09:47.095762+00:00 | ===================================
+2026-05-14T19:09:47.096247+00:00 | [Vetri] Summary: Bedroom Devices command completed with 3 verification issue(s).
+2026-05-14T19:09:47.111965+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T19:09:47.236977+00:00 | [Vetri] Drained 52 buffered audio frame(s) after command.
+2026-05-14T19:09:47.238180+00:00 | State: WAKE_ONLY
+2026-05-14T19:10:07.819834+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.950
+2026-05-14T19:10:07.942652+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T19:10:08.203159+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:10:12.868057+00:00 | [Vetri] Command audio RMS: 0.151269
+2026-05-14T19:10:14.270361+00:00 | [Vetri] Heard command: What is the state of the switches in my bedroom?
+2026-05-14T19:10:14.271101+00:00 | [Vetri] Routing command safely...
+2026-05-14T19:10:18.852030+00:00 | ========== Router Output ==========
+2026-05-14T19:10:18.853790+00:00 | [Router] Route: vetri_ai_bridge_natural_fallback
+2026-05-14T19:10:18.854453+00:00 | Safety: Allowed by policy.
+2026-05-14T19:10:18.855086+00:00 | AI route: companion_chat
+2026-05-14T19:10:18.855788+00:00 | To determine the state of the switches in your bedroom, I would typically need access to the home automation system you use, such as Home Assistant, which you have listed in your server profile. 
+2026-05-14T19:10:18.856836+00:00 | 
+2026-05-14T19:10:18.859339+00:00 | Since I cannot directly access or execute commands, I recommend the following technical steps to check the state of the bedroom switches:
+2026-05-14T19:10:18.860499+00:00 | 
+2026-05-14T19:10:18.861339+00:00 | 1. **Access Home Assistant Dashboard:**
+2026-05-14T19:10:18.862352+00:00 |    - Open your browser.
+2026-05-14T19:10:18.863212+00:00 |    - Navigate to your Home Assistant web interface (usually something like `http://<home_assistant_ip>:8123`).
+2026-05-14T19:10:18.863674+00:00 | 
+2026-05-14T19:10:18.864078+00:00 | 2. **Locate Bedroom Switch Entities:**
+2026-05-14T19:10:18.864595+00:00 |    - Use the search bar or look under the devices/entities section.
+2026-05-14T19:10:18.864999+00:00 |    - Identify switches labeled with names indicating they are in the bedroom.
+2026-05-14T19:10:18.865421+00:00 | 
+2026-05-14T19:10:18.866216+00:00 | 3. **Check Switch States:**
+2026-05-14T19:10:18.866701+00:00 |    - For each bedroom switch entity, view the current state (ON/OFF).
+2026-05-14T19:10:18.867108+00:00 |    - This should be visible directly on the dashboard or under the “Entities” section.
+2026-05-14T19:10:18.867527+00:00 | 
+2026-05-14T19:10:18.867995+00:00 | 4. **Optional - Use Home Assistant API:**
+2026-05-14T19:10:18.868395+00:00 |    - You can also query the state via API if you prefer command line or scripts:
+2026-05-14T19:10:18.868766+00:00 |      - Use a GET request to `http://<home_assistant_ip>:8123/api/states/<entity_id>` replacing `<entity_id>` with the switch identifier.
+2026-05-14T19:10:18.869162+00:00 |      - Include your Long-Lived Access Token in the header for authentication.
+2026-05-14T19:10:18.869512+00:00 | 
+2026-05-14T19:10:18.869913+00:00 | If you want, I can help you draft the API requests or guide you through any of these steps in detail. Let me know!
+2026-05-14T19:10:18.870278+00:00 | ===================================
+2026-05-14T19:10:18.870731+00:00 | [Vetri] Summary: To determine the state of the switches in your bedroom, I would typically need access to the home automation system you use, such as Home Assistant, which you have listed in your server profile. Since I cannot directly access or execute commands, I recommend the following technical steps to check the state of the bedroom switches: 1. **Access Home Assistant Dashboard:** - Open your browser. - Navigate to your Home Assistant web interface (usually something like `http://<home_assistant_ip>:8123`). 2. **Locate Bedroom Switch Entities:** - Use the search bar or look under the devices/entities section. - Identify switches labeled with names indicating they are in the bedroom. 3. **Check Switch States:** - For each bedroom switch entity, view the current state (ON/OFF). - This should be visible directly on the dashboard or under the “Entities” section. 4. **Optional - Use Home Assistant API:** - You can also query the state via API if you prefer command line or scripts: - Use a GET request to `http://<home_assistant_ip>:8123/api/states/<entity_id>` replacing `<entity_id>` with the switch identifier. - Include your Long-Lived Access Token in the header for authentication. If you want, I can help you draft the API requests or guide you through any of these steps in detail. Let me know!
+2026-05-14T19:10:18.905694+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T19:10:19.032549+00:00 | [Vetri] Drained 77 buffered audio frame(s) after command.
+2026-05-14T19:10:19.034021+00:00 | State: WAKE_ONLY
+2026-05-14T19:10:45.897510+00:00 | [Vetri] Wake detected by hey_jarvis with score 0.827
+2026-05-14T19:10:46.022127+00:00 | [Vetri] Drained 1 buffered audio frame(s) after wake detection.
+2026-05-14T19:10:46.282975+00:00 | [Vetri] Listening for command for 5 seconds...
+2026-05-14T19:10:50.944748+00:00 | [Vetri] Command audio RMS: 0.097309
+2026-05-14T19:10:53.254965+00:00 | [Vetri] Heard command: Turn on bedrooms two light.
+2026-05-14T19:10:53.257838+00:00 | [Vetri] Routing command safely...
+2026-05-14T19:10:56.325172+00:00 | ========== Router Output ==========
+2026-05-14T19:10:56.328581+00:00 | [Router] Route: home_assistant_control
+2026-05-14T19:10:56.329579+00:00 | [HA Control] GROUP INTENT
+2026-05-14T19:10:56.330657+00:00 | Action: turn_on
+2026-05-14T19:10:56.331714+00:00 | Group ID: bedroom_all
+2026-05-14T19:10:56.332602+00:00 | Group: Bedroom Devices
+2026-05-14T19:10:56.333454+00:00 | Target phrase: bedrooms 2 light
+2026-05-14T19:10:56.334343+00:00 | [HA Control] GROUP BACKEND LIVE REQUEST SENT
+2026-05-14T19:10:56.335157+00:00 | Status code: 200
+2026-05-14T19:10:56.336046+00:00 | Backend response: {"ok":false,"type":"group","source":"vetri_voice_v2c_d","group_id":"bedroom_all","friendly_name":"Bedroom Devices","action":"turn_on","expected_state":"on","total_entities":4,"verified_count":1,"failed_count":3,"verified":false,"message":"Bedroom Devices command completed with 3 verification issue(s).","results":[{"entity_id":"switch.ashvas_bedroom_light_1","friendly_name":"Bedroom Light One","action":"turn_on","before_state":"off","after_state":"on","expected_state":"on","verified":true,"ok":true,"home_assistant":{"service_status":200,"service_response":[{"entity_id":"switch.ashvas_bedroom_light_1","state":"on","attributes":{"device_class":"outlet","friendly_name":"Light 1"},"last_changed":"2026-05-14T19:11:01.642349+00:00","last_reported":"2026-05-14T19:11:01.642349+00:00","last_updated":"2026-05-14T19:11:01.642349+00:00","context":{"id":"01KRKYCFHSRQR5FZ07ND5YNXKB","parent_id":null,"user_id":"bbb3c56658c44cf5ac6008ba821442aa"}}]}},{"entity_id":"switch.ashvas_bedroom_light_2","friendly_name":"Bedroom Light Two","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_strip_light","friendly_name":"Bedroom Strip Light","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}},{"entity_id":"switch.ashvas_bedroom_fan","friendly_name":"Bedroom Fan","action":"turn_on","before_state":"off","after_state":"off","expected_state":"on","verified":false,"ok":true,"home_assistant":{"service_status":200,"service_response":[]}}]}
+2026-05-14T19:10:56.336968+00:00 | Verified: False
+2026-05-14T19:10:56.342026+00:00 | Verified entities: 1/4
+2026-05-14T19:10:56.342966+00:00 | Failed entities: 3
+2026-05-14T19:10:56.343433+00:00 | Control summary: Bedroom Devices command completed with 3 verification issue(s).
+2026-05-14T19:10:56.343893+00:00 | ===================================
+2026-05-14T19:10:56.344318+00:00 | [Vetri] Summary: Bedroom Devices command completed with 3 verification issue(s).
+2026-05-14T19:10:56.358665+00:00 | [Vetri TTS] Spoken response queued.
+2026-05-14T19:10:56.471773+00:00 | [Vetri] Drained 69 buffered audio frame(s) after command.
+2026-05-14T19:10:56.473368+00:00 | State: WAKE_ONLY

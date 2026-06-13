@@ -1,0 +1,135 @@
+{
+  "version": "1.0",
+  "system": "Vetri Skeleton Phase 1",
+  "execution_model": "windows_to_mac_via_ssh",
+  "mac_project_root": "/Users/Ashvath/Ashvath-private-cloud",
+  "allowed_scripts_dir": "/Users/Ashvath/Ashvath-private-cloud/scripts",
+
+  "risk_policy": {
+    "low": "execute",
+    "medium": "confirm",
+    "high": "block"
+  },
+
+  "actions": {
+    "health_check": {
+      "description": "Run overall private cloud health check.",
+      "risk": "low",
+      "script": "remote-health-check.sh",
+      "allowed": true,
+      "requires_confirmation": false,
+      "intent_keywords": [
+        "health",
+        "status",
+        "check server",
+        "server status",
+        "is cloud running",
+        "private cloud status"
+      ],
+      "intent_patterns": [
+        ".*health.*",
+        ".*status.*",
+        ".*check.*server.*",
+        ".*cloud.*running.*"
+      ]
+    },
+
+    "view_logs": {
+      "description": "View recent safe service logs.",
+      "risk": "low",
+      "script": "view-logs.sh",
+      "allowed": true,
+      "requires_confirmation": false,
+      "intent_keywords": [
+        "logs",
+        "show logs",
+        "view logs",
+        "recent logs",
+        "what happened"
+      ],
+      "intent_patterns": [
+        ".*log.*",
+        ".*what happened.*",
+        ".*recent.*logs.*"
+      ]
+    },
+
+    "cloud_control_status": {
+      "description": "Run the main cloud control/status script.",
+      "risk": "low",
+      "script": "cloudctl.sh",
+      "allowed": true,
+      "requires_confirmation": false,
+      "intent_keywords": [
+        "cloudctl",
+        "cloud control",
+        "control status",
+        "full status"
+      ],
+      "intent_patterns": [
+        ".*cloud.*control.*",
+        ".*full.*status.*"
+      ]
+    },
+
+    "emergency_restart": {
+      "description": "Restart predefined private cloud services using the emergency restart script.",
+      "risk": "medium",
+      "script": "emergency-restart.sh",
+      "allowed": true,
+      "requires_confirmation": true,
+      "confirmation_text": "YES RESTART",
+      "intent_keywords": [
+        "restart cloud",
+        "emergency restart",
+        "restart services",
+        "fix services",
+        "services down"
+      ],
+      "intent_patterns": [
+        ".*restart.*cloud.*",
+        ".*emergency.*restart.*",
+        ".*restart.*services.*",
+        ".*services.*down.*"
+      ]
+    }
+  },
+
+  "blocked_actions": {
+    "delete_files": {
+      "description": "File deletion is blocked in Phase 1.",
+      "risk": "high",
+      "allowed": false
+    },
+    "modify_firewall": {
+      "description": "Firewall changes are blocked in Phase 1.",
+      "risk": "high",
+      "allowed": false
+    },
+    "modify_ssh": {
+      "description": "SSH configuration changes are blocked in Phase 1.",
+      "risk": "high",
+      "allowed": false
+    },
+    "raw_shell": {
+      "description": "Arbitrary shell commands are blocked permanently.",
+      "risk": "high",
+      "allowed": false
+    }
+  },
+
+  "blocked_keywords": [
+    "delete",
+    "remove",
+    "rm -rf",
+    "wipe",
+    "format",
+    "firewall",
+    "pfctl",
+    "ssh config",
+    "authorized_keys",
+    "chmod 777",
+    "sudo nano",
+    "kill all"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "wake_model_name": "hey_jarvis",
+  "wake_threshold": 0.7,
+  "wake_cooldown_seconds": 1.2,
+  "sample_rate": 16000,
+  "frame_ms": 80,
+  "command_record_seconds": 5,
+  "command_min_rms": 0.0065,
+  "speech_to_text_model": "gpt-4o-mini-transcribe",
+  "command_prompt": "Transcribe exactly what the user says after the wake word. Do not invent a command if the audio is silent, unclear, or background noise. If nothing clear is spoken, return an empty transcript. For Indian, Tamil, Hindi, or regional song names, prefer Latin transliteration instead of native script when possible. Example: transcribe ???????? ???? as Aathangara Marame.",
+  "log_file": "Z:\\HomeLLM\\voice\\logs\\terminal_openwakeword.log",
+  "print_wake_scores": false,
+  "debug_every_n_frames": 0,
+  "post_command_wake_lockout_seconds": 4.0,
+  "tts_enabled": true,
+  "tts_rate": 0,
+  "tts_volume": 90
+}

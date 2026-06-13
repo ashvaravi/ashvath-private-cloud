@@ -1,0 +1,27 @@
+{
+  "diagnosis_skills": [
+    "immich_diagnose",
+    "homeassistant_diagnose",
+    "backup_diagnose",
+    "storage_diagnose",
+    "network_diagnose",
+    "frontend_diagnose",
+    "backend_diagnose",
+    "tailscale_diagnose"
+  ],
+  "backup_skills": ["backup_status", "backup_diagnose"],
+  "storage_skills": ["storage_status", "storage_diagnose"],
+  "network_skills": ["network_status", "tailscale_diagnose"],
+  "iot_skills": ["home_read", "home_control_backend_only"],
+  "spotify_memory_skills": ["show_spotify_memory", "explain_regional_song_search_issue"],
+  "companion_chat_skills": ["project_status", "next_safest_step", "architecture_question"],
+  "correction_skills": ["safe_stt_correction", "spotify_mapping_correction"],
+  "mac_export_summary_skills": ["summarize_latest_export", "private_cloud_health_from_export"],
+  "future_proactive_monitoring_skills": ["health_check_runner", "incident_rule_scan"],
+  "rules": [
+    "Read-only skills prefer backend snapshots or Mac exports.",
+    "No restarts in foundation phase.",
+    "No direct shell.",
+    "No destructive action."
+  ]
+}

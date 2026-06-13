@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-05-15T00:09:48+05:30",
+  "ok": false,
+  "warning_count": 2,
+  "findings": [
+    {
+      "rule": "export_freshness",
+      "status": "ok",
+      "severity": "low",
+      "message": "Export manifest is present."
+    },
+    {
+      "rule": "backup_freshness",
+      "status": "ok",
+      "severity": "medium",
+      "message": "Recent backup files exported: 12."
+    },
+    {
+      "rule": "disk_free_space",
+      "status": "ok",
+      "severity": "medium",
+      "message": "Storage mounted=True path=/Volumes/AshvathCloud."
+    },
+    {
+      "rule": "known_service_ports",
+      "status": "ok",
+      "severity": "medium",
+      "message": "Known ports checked=7 closed=[]."
+    },
+    {
+      "rule": "frontend_reachable",
+      "status": "ok",
+      "severity": "medium",
+      "message": "Frontend reachable=True status=200."
+    },
+    {
+      "rule": "homeassistant_reachable",
+      "status": "ok",
+      "severity": "medium",
+      "message": "Home Assistant reachable=True port_open=True."
+    },
+    {
+      "rule": "docker_metadata",
+      "status": "warning",
+      "severity": "low",
+      "message": "docker_available=False."
+    },
+    {
+      "rule": "tailscale_ipv4",
+      "status": "warning",
+      "severity": "low",
+      "message": "tailscale_ipv4_available=False."
+    },
+    {
+      "rule": "launch_agents",
+      "status": "ok",
+      "severity": "medium",
+      "message": "LaunchAgents checked=2 missing=[]."
+    }
+  ],
+  "summary": "Read-only monitoring completed with 2 warning(s)."
+}
